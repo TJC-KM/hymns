@@ -240,7 +240,8 @@ function renderDetail(no){
   const chorus = (h.lyrics_chorus||'').trim()
     ? `<div class="chorus"><div class="lbl">副歌</div><p>${lines(h.lyrics_chorus)}</p></div>` : '';
 
-  const audio = (h.audio_files||[]).slice().sort((a,b)=>(a.audio_category_id||0)-(b.audio_category_id||0));
+  const rank = x => x.audio_category_id === 6 ? -2 : x.audio_category_id === 4 ? -1 : (x.audio_category_id||0);  // 四部合唱(6)第一、人聲(4)第二
+  const audio = (h.audio_files||[]).slice().sort((a,b)=>rank(a)-rank(b));
   const player = audio.length ? `
     <div class="player">
       <div class="pctrl">
