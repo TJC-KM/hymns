@@ -63,6 +63,8 @@
   .rname{flex:1;font-size:18px}
   .badge{display:inline-flex;align-items:center;gap:5px;font-size:12px;padding:3px 11px;
     border-radius:20px;background:var(--accent-soft);color:var(--accent)}
+  .badge.vari{background:#F5E3D7;color:#A8542B}
+  @media (prefers-color-scheme: dark){ .badge.vari{background:#33261E;color:#D89A6E} }
   .rico{color:var(--muted);display:inline-flex}
   .empty{color:var(--muted);text-align:center;padding:60px 0}
 
@@ -129,10 +131,20 @@
   /* detail: side/main wrappers flatten on mobile, keep original order */
   .dside,.dmain{display:contents}
   .detail{display:flex;flex-direction:column}
-  .dhead{order:1}.player{order:2}.verses{order:3}.chorus{order:4}
-  .aux{order:5}.history{order:6}.nav{order:7}
+  .dhead{order:1}.player{order:2}.tune{order:3}.verses{order:4}.chorus{order:5}
+  .aux{order:6}.history{order:7}.nav{order:8}
   /* flex 直排時 margin:auto 會讓區塊縮成內容寬，補回滿寬 */
-  .verses,.chorus,.aux,.history,.nav{width:100%}
+  .tune,.verses,.chorus,.aux,.history,.nav{width:100%}
+
+  /* tune annotation (正調/變奏) */
+  .tune{max-width:520px;margin:0 auto 30px;display:flex;align-items:center;
+    justify-content:center;flex-wrap:wrap;gap:8px;font-size:13px;color:var(--muted)}
+  .tbtn{cursor:pointer;font-size:13px;padding:5px 13px;border-radius:8px;
+    border:1px solid var(--line);background:none;color:var(--ink-soft)}
+  .tbtn[data-on="1"]{background:var(--accent-soft);color:var(--accent);border-color:transparent}
+  .tstate.ok{color:var(--accent)}
+  .toast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:99;
+    background:var(--ink);color:var(--paper);font-size:14px;padding:9px 16px;border-radius:10px}
 
   /* desktop mode: same flow as mobile, just wider + two verses per row */
   body.desktop .wrap{max-width:none}
@@ -142,7 +154,7 @@
   body.desktop .detail{display:grid;grid-template-columns:1fr 1fr;column-gap:56px;align-items:center}
   body.desktop .dhead{grid-column:1;margin:18px 0}
   body.desktop .player{grid-column:2;margin:0 auto}
-  body.desktop .verses,body.desktop .chorus,body.desktop .aux,
+  body.desktop .tune,body.desktop .verses,body.desktop .chorus,body.desktop .aux,
   body.desktop .history,body.desktop .nav{grid-column:1 / -1}
   body.desktop .dno{font-size:24px}
   body.desktop .verses{display:grid;grid-template-columns:1fr 1fr;gap:6px 56px;max-width:none}
@@ -210,12 +222,16 @@ MQ_DESKTOP.addEventListener('change', () => {
 window.addEventListener('resize', () => {
   if(!localStorage.getItem(MODE_KEY)) applyMode();
 });
-let HYMNS = [], BY_NO = new Map();
+let HYMNS = [], BY_NO = new Map(), TUNE = {};
 let ui = { q:'', cat:'全部' };   // list state kept across renders
 
 const esc = s => (s||'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const hasAudio = h => (h.audio_files||[]).length > 0;
 const hasFour  = h => (h.audio_files||[]).some(a => (a.audio_category?.name||'').startsWith('四部合唱'));
+/* 曲調狀態：有四部合唱(6)一律正調(自動判定贏)，否則看人工註記，沒有就是未註記('') */
+const hasSATB  = h => (h.audio_files||[]).some(a => a.audio_category_id === 6);
+const tuneOf   = h => hasSATB(h) ? '正調'
+  : (TUNE[String(h.no)] === '正調' || TUNE[String(h.no)] === '變奏' ? TUNE[String(h.no)] : '');
 const dispNo   = no => String(no).replace(/_a$/,'甲').replace(/_b$/,'乙');
 const catOf    = h => h.category?.name || '';
 const lines    = t => esc(t).split(/\r?\n/).join('<br>');
@@ -227,6 +243,8 @@ async function boot(){
     HYMNS = await res.json();
     BY_NO = new Map(HYMNS.map(h => [String(h.no), h]));
     await applyOverrides();
+    try{ const r = await fetch('data/tune-status.json', {cache:'no-cache'}); if(r.ok) TUNE = await r.json(); }
+    catch(e){ console.warn('tune-status.json 讀取失敗', e); }
     route();
   }catch(e){
     app.innerHTML = '<p class="empty">找不到 data/hymns.json。<br>請把同步產生的詩歌資料放到 data/hymns.json 後重新整理。</p>';
@@ -320,10 +338,11 @@ function paintRows(){
   rows.innerHTML = list.map(h => {
     const no = dispNo(h.no);
     const num = /甲|乙$/.test(no) ? `${no.slice(0,-1)}<small>${no.slice(-1)}</small>` : no;
+    const tune = tuneOf(h);
     return `<div class="row" data-no="${esc(h.no)}">
       <span class="rnum">${num}</span>
       <span class="rname">${esc(h.name)}</span>
-      ${hasFour(h)?`<span class="badge">${SVG.users}四部</span>`:''}
+      ${tune?`<span class="badge${tune==='變奏'?' vari':''}">${tune}</span>`:''}
       ${hasAudio(h)?`<span class="rico">${SVG.music}</span>`:''}
     </div>`;
   }).join('');
@@ -382,6 +401,7 @@ function renderDetail(no){
           ${meta?`<div class="dmeta">${esc(meta)}</div>`:''}
         </div>
         ${player}
+        ${tuneRow(h)}
         ${scores.length?`<div class="aux">${scores.join('')}</div>`:''}
         ${history}
         <nav class="nav">${navLink(prev,'p')}${navLink(next,'n')}</nav>
@@ -393,6 +413,60 @@ function renderDetail(no){
     </section>`;
 
   if(audio.length) wireAudio(audio[0].file_url);
+  wireTune(h);
+}
+
+/* ---------- tune annotation (正調/變奏) ---------- */
+function tuneRow(h){
+  if(hasSATB(h))
+    return `<div class="tune">曲調：<span class="tstate ok">正調</span><span>（有四部合唱，自動判定）</span></div>`;
+  const t = tuneOf(h);
+  const btn = v => `<button class="tbtn" data-val="${v}" data-on="${(t||'')===v?1:0}">${v||'未註記'}</button>`;
+  return `<div class="tune">曲調：${btn('正調')}${btn('變奏')}${btn('')}</div>`;
+}
+function wireTune(h){
+  document.querySelectorAll('.tune .tbtn').forEach(b => b.addEventListener('click', () => {
+    const no = String(h.no), val = b.dataset.val;
+    if((TUNE[no]||'') === val) return;
+    if(val) TUNE[no] = val; else delete TUNE[no];
+    document.querySelectorAll('.tune .tbtn').forEach(x => x.dataset.on = x === b ? '1' : '0');
+    saveTune(val ? `註記 ${no} ${val}` : `清除 ${no} 曲調註記`);
+  }));
+}
+function toast(msg){
+  const t = document.createElement('div'); t.className = 'toast'; t.textContent = msg;
+  document.body.appendChild(t); setTimeout(() => t.remove(), 3000);
+}
+const b64utf8 = s => btoa(String.fromCharCode(...new TextEncoder().encode(s)));
+async function saveTune(msg){
+  let token = localStorage.getItem('hymn_gh_token');
+  if(!token){
+    token = (prompt('第一次儲存需要 GitHub Token。\n請到 GitHub → Settings → Developer settings → Fine-grained tokens 建立，只勾選 TJC-KM/hymns 的 Contents 讀寫權限，貼在這裡（會記住在這台裝置）：') || '').trim();
+    if(!token){ toast('未儲存：沒有提供 Token'); return; }
+    localStorage.setItem('hymn_gh_token', token);
+  }
+  const api = 'https://api.github.com/repos/TJC-KM/hymns/contents/data/tune-status.json';
+  const headers = { authorization: 'Bearer ' + token, accept: 'application/vnd.github+json' };
+  try{
+    for(let attempt = 0; attempt < 2; attempt++){
+      const cur = await fetch(api + '?ref=main', { headers });
+      if(cur.status === 401 || cur.status === 403){
+        localStorage.removeItem('hymn_gh_token'); toast('Token 無效或權限不足，已清除，請再按一次重新輸入'); return;
+      }
+      const sha = cur.ok ? (await cur.json()).sha : undefined;
+      const put = await fetch(api, { method: 'PUT', headers, body: JSON.stringify({
+        message: msg, branch: 'main',
+        content: b64utf8(JSON.stringify(TUNE, null, 2) + '\n'), ...(sha ? { sha } : {})
+      })});
+      if(put.ok){ toast('已儲存 ✓'); return; }
+      if(put.status === 409) continue;   // 別人同時改了，重抓 sha 再試一次
+      if(put.status === 401 || put.status === 403){
+        localStorage.removeItem('hymn_gh_token'); toast('Token 無效或權限不足，已清除，請再按一次重新輸入'); return;
+      }
+      toast('儲存失敗：HTTP ' + put.status); return;
+    }
+    toast('儲存失敗：與他人的修改衝突，請重新整理再試');
+  }catch(e){ toast('儲存失敗：' + e.message); }
 }
 
 /* ---------- changes page ---------- */
