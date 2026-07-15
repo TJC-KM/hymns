@@ -134,22 +134,15 @@
   /* flex 直排時 margin:auto 會讓區塊縮成內容寬，補回滿寬 */
   .verses,.chorus,.aux,.history,.nav{width:100%}
 
-  /* desktop mode */
+  /* desktop mode: same flow as mobile, just wider + two verses per row */
   body.desktop .wrap{max-width:1160px}
   body.desktop #rows{column-count:2;column-gap:48px}
   body.desktop .row{break-inside:avoid}
-  body.desktop .detail{display:grid;grid-template-columns:320px minmax(0,1fr);
-    column-gap:56px;align-items:start;padding:26px 0 40px}
-  body.desktop .dside{display:block;min-width:0}
-  body.desktop .dhead{margin:6px 0 26px}
-  body.desktop .dmain{display:block;min-width:0;height:calc(100vh - 150px);overflow:hidden}
-  body.desktop .verses{display:grid;grid-template-columns:1fr 1fr;column-gap:56px}
-  body.desktop .verses,body.desktop .chorus{max-width:none;margin:0}
-  body.desktop .verse{margin:0 0 1.3em;min-width:0}
-  body.desktop .vt{font-size:var(--lyr,22px);line-height:1.9}
-  body.desktop .vn{font-size:calc(var(--lyr,22px)*.95)}
-  body.desktop .chorus{margin-top:4px}
-  body.desktop .chorus p{font-size:var(--lyr,22px);line-height:1.9}
+  body.desktop .verses{display:grid;grid-template-columns:1fr 1fr;gap:6px 56px;max-width:none}
+  body.desktop .verse{margin-bottom:20px;min-width:0}
+  body.desktop .chorus{max-width:none}
+  body.desktop .vt{font-size:var(--lyr,23px)}
+  body.desktop .chorus p{font-size:var(--lyr,23px)}
   @media (prefers-reduced-motion:no-preference){
     .detail,.list{animation:fade .3s ease}
     @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1}}
@@ -197,7 +190,7 @@ function applyMode(){
   const m = effMode();
   document.body.classList.toggle('desktop', m === 'desktop');
   modeBtn.textContent = m === 'desktop' ? '🖥 電腦版' : '📱 手機版';
-  fitLyrics();
+  if(typeof fitLyrics === 'function') fitLyrics();
 }
 modeBtn.addEventListener('click', () => {
   localStorage.setItem(MODE_KEY, effMode() === 'desktop' ? 'mobile' : 'desktop');
@@ -207,17 +200,24 @@ MQ_DESKTOP.addEventListener('change', () => {
   if(!localStorage.getItem(MODE_KEY)) applyMode();
 });
 window.addEventListener('resize', () => {
-  if(!localStorage.getItem(MODE_KEY)) applyMode(); else fitLyrics();
+  if(!localStorage.getItem(MODE_KEY)) applyMode();
+  fitLyrics();
 });
 
-/* desktop: shrink lyric font until the whole hymn fits without scrolling */
+/* 電腦版：預設 23px，只在該首有歌詞行折行時逐步縮小字級（下限 16px） */
 function fitLyrics(){
-  const main = document.querySelector('.dmain');
-  if(!main) return;
-  if(!document.body.classList.contains('desktop')){ main.style.removeProperty('--lyr'); return; }
-  for(let s = 30; s >= 15; s--){
-    main.style.setProperty('--lyr', s + 'px');
-    if(main.scrollWidth <= main.clientWidth + 1 && main.scrollHeight <= main.clientHeight + 1) break;
+  const box = document.querySelector('.dmain');
+  if(!box) return;
+  if(!document.body.classList.contains('desktop')){ box.style.removeProperty('--lyr'); return; }
+  const wrapped = () => [...box.querySelectorAll('.vt, .chorus p')].some(p => {
+    const lh = parseFloat(getComputedStyle(p).lineHeight);
+    return Math.round(p.getBoundingClientRect().height / lh) > p.innerHTML.split('<br>').length;
+  });
+  box.style.removeProperty('--lyr');
+  if(!wrapped()) return;
+  for(let s = 22; s >= 16; s--){
+    box.style.setProperty('--lyr', s + 'px');
+    if(!wrapped()) break;
   }
 }
 let HYMNS = [], BY_NO = new Map();
