@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>讚美詩</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F7F6F2; --surface:#FFFFFF; --ink:#242320; --ink-soft:#4A4842;
+    --muted:#928E84; --line:#E7E4DC; --accent:#3B6A5F; --accent-soft:#EAF1EE;
+    --sans:"Noto Sans TC",system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;
+    --serif:"Noto Serif TC",Georgia,"Songti TC",serif;
+    --wrap:720px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --paper:#171719; --surface:#1F2022; --ink:#ECEAE3; --ink-soft:#B7B4AB;
+      --muted:#807D75; --line:#2D2E31; --accent:#83B6A8; --accent-soft:#21302C; }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:var(--paper);color:var(--ink);font-family:var(--sans);
+    line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+  /* top bar */
+  .top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper) 88%,transparent);
+    backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .top .wrap{display:flex;align-items:center;gap:14px;height:60px}
+  .brand{font-family:var(--serif);font-size:20px;letter-spacing:.06em}
+  .back{display:inline-flex;align-items:center;gap:6px;color:var(--muted);font-size:15px}
+  .spacer{flex:1}
+
+  /* search + chips */
+  .search{display:flex;align-items:center;gap:12px;border:1px solid var(--line);
+    background:var(--surface);border-radius:12px;padding:14px 18px;margin:26px 0 16px}
+  .search svg{flex:none;color:var(--muted)}
+  .search input{border:0;background:none;outline:none;font-family:var(--sans);
+    font-size:18px;color:var(--ink);width:100%}
+  .chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:8px;
+    scrollbar-width:none}
+  .chips::-webkit-scrollbar{display:none}
+  .chip{flex:none;cursor:pointer;font-size:14px;padding:8px 16px;border-radius:22px;
+    border:1px solid var(--line);color:var(--ink-soft);background:none;white-space:nowrap}
+  .chip[data-on="1"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+  .chip.four{border-color:var(--accent);color:var(--accent)}
+  .chip.four[data-on="1"]{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .count{color:var(--muted);font-size:13px;margin:2px 0 6px}
+
+  /* list */
+  .row{display:flex;align-items:center;gap:18px;padding:16px 4px;
+    border-bottom:1px solid var(--line);cursor:pointer}
+  .row:hover{background:var(--surface)}
+  .rnum{font-family:var(--serif);font-size:21px;color:var(--muted);min-width:52px}
+  .rnum small{font-size:13px}
+  .rname{flex:1;font-size:18px}
+  .badge{display:inline-flex;align-items:center;gap:5px;font-size:12px;padding:3px 11px;
+    border-radius:20px;background:var(--accent-soft);color:var(--accent)}
+  .rico{color:var(--muted);display:inline-flex}
+  .empty{color:var(--muted);text-align:center;padding:60px 0}
+
+  /* detail */
+  .detail{padding:14px 0 60px}
+  .dhead{text-align:center;margin:18px 0 34px}
+  .dno{color:var(--muted);font-size:15px;letter-spacing:.28em}
+  .dname{font-family:var(--serif);font-weight:500;font-size:clamp(30px,5.2vw,44px);
+    margin:8px 0 12px;line-height:1.2}
+  .dmeta{color:var(--muted);font-size:13px}
+  .verses{max-width:520px;margin:0 auto}
+  .verse{display:flex;gap:18px;margin-bottom:26px}
+  .vn{font-family:var(--serif);color:var(--muted);font-size:22px;line-height:1.1;flex:none}
+  .vt{margin:0;font-size:clamp(19px,2.5vw,23px);line-height:2;color:var(--ink)}
+  .chorus{max-width:520px;margin:6px auto 0;padding:14px 0 14px 20px;
+    border-left:2px solid var(--accent)}
+  .chorus .lbl{color:var(--accent);font-size:13px;letter-spacing:.1em;margin-bottom:6px}
+  .chorus p{margin:0;font-size:clamp(18px,2.4vw,22px);line-height:2;color:var(--ink-soft)}
+
+  /* player */
+  .player{max-width:520px;margin:38px auto 0;padding-top:24px;border-top:1px solid var(--line)}
+  .pctrl{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+  .play{width:46px;height:46px;flex:none;border-radius:50%;border:0;cursor:pointer;
+    background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center}
+  .bar{flex:1;height:5px;background:var(--line);border-radius:3px;cursor:pointer;position:relative}
+  .fill{position:absolute;left:0;top:0;height:5px;width:0;background:var(--accent);border-radius:3px}
+  .time{font-size:12px;color:var(--muted);min-width:82px;text-align:right;font-variant-numeric:tabular-nums}
+  .vers{display:flex;flex-wrap:wrap;gap:7px}
+  .ver{cursor:pointer;font-size:13px;padding:6px 13px;border-radius:8px;border:1px solid var(--line);
+    background:none;color:var(--ink-soft)}
+  .ver[data-on="1"]{background:var(--accent-soft);color:var(--accent);border-color:transparent}
+
+  /* secondary */
+  .aux{max-width:520px;margin:30px auto 0;display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+  .auxbtn{display:inline-flex;align-items:center;gap:7px;font-size:13px;color:var(--ink-soft);
+    border:1px solid var(--line);border-radius:9px;padding:8px 14px}
+  .history{max-width:520px;margin:34px auto 0;color:var(--ink-soft);font-size:14px;line-height:1.9}
+  .history summary{color:var(--muted);cursor:pointer;font-size:13px;margin-bottom:8px}
+  .nav{max-width:520px;margin:40px auto 0;display:flex;justify-content:space-between;
+    border-top:1px solid var(--line);padding-top:14px;color:var(--ink-soft);font-size:15px}
+  .nav a{display:inline-flex;align-items:center;gap:8px}
+  .nav .muted{color:var(--muted)}
+  @media (prefers-reduced-motion:no-preference){
+    .detail,.list{animation:fade .3s ease}
+    @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1}}
+  }
+</style>
+</head>
+<body>
+  <header class="top"><div class="wrap">
+    <a class="brand" href="#/">讚美詩</a>
+    <a class="back" href="#/" id="backBtn" hidden>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      詩歌列表
+    </a>
+    <span class="spacer"></span>
+  </div></header>
+
+  <main class="wrap" id="app"><p class="empty">載入中…</p></main>
+
+<script>
+const SVG = {
+  search:'<svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>',
+  users:'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3 3-5 6-5s6 2 6 5"/><path d="M16 5a3 3 0 010 6M21 20c0-2-1-3.5-3-4.3"/></svg>',
+  music:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6" cy="18" r="2.5"/><circle cx="17" cy="16" r="2.5"/><path d="M8.5 18V6l11-2v10"/></svg>',
+  play:'<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>',
+  pause:'<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>',
+  chevL:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>',
+  chevR:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>',
+  score:'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M14 3v6h6"/></svg>',
+  yt:'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M10 9l5 3-5 3z" fill="currentColor" stroke="none"/></svg>'
+};
+const app = document.getElementById('app');
+const backBtn = document.getElementById('backBtn');
+let HYMNS = [], BY_NO = new Map();
+let ui = { q:'', cat:'全部' };   // list state kept across renders
+
+const esc = s => (s||'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const hasAudio = h => (h.audio_files||[]).length > 0;
+const hasFour  = h => (h.audio_files||[]).some(a => (a.audio_category?.name||'').startsWith('四部合唱'));
+const dispNo   = no => String(no).replace(/_a$/,'甲').replace(/_b$/,'乙');
+const catOf    = h => h.category?.name || '';
+const lines    = t => esc(t).split(/\r?\n/).join('<br>');
+
+async function boot(){
+  try{
+    const res = await fetch('data/hymns.json', {cache:'no-cache'});
+    if(!res.ok) throw new Error(res.status);
+    HYMNS = await res.json();
+    BY_NO = new Map(HYMNS.map(h => [String(h.no), h]));
+    route();
+  }catch(e){
+    app.innerHTML = '<p class="empty">找不到 data/hymns.json。<br>請把同步產生的詩歌資料放到 data/hymns.json 後重新整理。</p>';
+  }
+}
+
+/* ---------- routing ---------- */
+window.addEventListener('hashchange', route);
+function route(){
+  stopAudio();
+  const m = location.hash.match(/^#\/hymn\/(.+)$/);
+  if(m){ renderDetail(decodeURIComponent(m[1])); backBtn.hidden = false; }
+  else { renderList(); backBtn.hidden = true; }
+  window.scrollTo(0,0);
+}
+
+/* ---------- list / search ---------- */
+function categories(){
+  const set = new Map();
+  for(const h of HYMNS){ const c = catOf(h); if(c) set.set(c,(set.get(c)||0)+1); }
+  return [...set.keys()];
+}
+function filtered(){
+  const q = ui.q.trim().toLowerCase();
+  return HYMNS.filter(h => {
+    if(ui.cat === '四部合唱'){ if(!hasFour(h)) return false; }
+    else if(ui.cat !== '全部'){ if(catOf(h) !== ui.cat) return false; }
+    if(!q) return true;
+    if(String(h.no).toLowerCase().includes(q)) return true;
+    if(dispNo(h.no).toLowerCase().includes(q)) return true;
+    if((h.name||'').toLowerCase().includes(q)) return true;
+    return (h.lyrics||[]).some(v => (v.text||'').toLowerCase().includes(q));
+  });
+}
+function renderList(){
+  const cats = categories();
+  const chip = (label, cls='') =>
+    `<button class="chip ${cls}" data-cat="${esc(label)}" data-on="${ui.cat===label?1:0}">${label==='四部合唱'?SVG.users:''}${esc(label)}</button>`;
+  app.innerHTML = `
+    <div class="list">
+      <div class="search">${SVG.search}<input id="q" placeholder="輸入編號、詩歌名或歌詞…" value="${esc(ui.q)}" autocomplete="off"></div>
+      <div class="chips">
+        ${chip('全部')}
+        ${chip('四部合唱','four')}
+        ${cats.map(c=>chip(c)).join('')}
+      </div>
+      <div class="count" id="count"></div>
+      <div id="rows"></div>
+    </div>`;
+  const q = document.getElementById('q');
+  q.addEventListener('input', () => { ui.q = q.value; paintRows(); });
+  app.querySelectorAll('.chip').forEach(b =>
+    b.addEventListener('click', () => { ui.cat = b.dataset.cat; renderList(); q.focus({preventScroll:true}); }));
+  paintRows();
+}
+function paintRows(){
+  const list = filtered();
+  document.getElementById('count').textContent = `共 ${list.length} 首`;
+  const rows = document.getElementById('rows');
+  if(!list.length){ rows.innerHTML = '<p class="empty">找不到符合的詩歌</p>'; return; }
+  rows.innerHTML = list.map(h => {
+    const no = dispNo(h.no);
+    const num = /甲|乙$/.test(no) ? `${no.slice(0,-1)}<small>${no.slice(-1)}</small>` : no;
+    return `<div class="row" data-no="${esc(h.no)}">
+      <span class="rnum">${num}</span>
+      <span class="rname">${esc(h.name)}</span>
+      ${hasFour(h)?`<span class="badge">${SVG.users}四部</span>`:''}
+      ${hasAudio(h)?`<span class="rico">${SVG.music}</span>`:''}
+    </div>`;
+  }).join('');
+  rows.querySelectorAll('.row').forEach(r =>
+    r.addEventListener('click', () => { location.hash = '#/hymn/' + encodeURIComponent(r.dataset.no); }));
+}
+
+/* ---------- detail ---------- */
+function renderDetail(no){
+  const h = BY_NO.get(String(no));
+  if(!h){ app.innerHTML = '<p class="empty">找不到這首詩歌</p>'; return; }
+  const idx = HYMNS.indexOf(h);
+  const prev = HYMNS[idx-1], next = HYMNS[idx+1];
+  const meta = [catOf(h),
+    (h.lyricists||[]).map(x=>x.name).filter(Boolean).map(n=>'詞 '+n).join('、'),
+    (h.composers||[]).map(x=>x.name).filter(Boolean).map(n=>'曲 '+n).join('、')
+  ].filter(Boolean).join('　·　');
+
+  const verses = (h.lyrics||[]).map((v,i) =>
+    `<div class="verse"><span class="vn">${i+1}</span><p class="vt">${lines(v.text)}</p></div>`).join('');
+  const chorus = (h.lyrics_chorus||'').trim()
+    ? `<div class="chorus"><div class="lbl">副歌</div><p>${lines(h.lyrics_chorus)}</p></div>` : '';
+
+  const audio = (h.audio_files||[]).slice().sort((a,b)=>(a.audio_category_id||0)-(b.audio_category_id||0));
+  const player = audio.length ? `
+    <div class="player">
+      <div class="pctrl">
+        <button class="play" id="play" aria-label="播放">${SVG.play}</button>
+        <div class="bar" id="bar"><div class="fill" id="fill"></div></div>
+        <span class="time" id="time">0:00 / 0:00</span>
+      </div>
+      <div class="vers" id="vers">
+        ${audio.map((a,i)=>`<button class="ver" data-src="${esc(a.file_url)}" data-on="${i===0?1:0}">${esc(a.audio_category?.name||'音檔')}</button>`).join('')}
+      </div>
+    </div>` : '';
+
+  const scores = [];
+  if(h.sheet_score_pdf_url) scores.push(`<a class="auxbtn" target="_blank" rel="noopener" href="${esc(h.sheet_score_pdf_url)}">${SVG.score}五線譜</a>`);
+  if(h.num_score_pdf_url)   scores.push(`<a class="auxbtn" target="_blank" rel="noopener" href="${esc(h.num_score_pdf_url)}">${SVG.score}簡譜</a>`);
+  for(const y of (h.youtube_urls||[])) if(y.url) scores.push(`<a class="auxbtn" target="_blank" rel="noopener" href="${esc(y.url)}">${SVG.yt}YouTube</a>`);
+
+  const history = (h.history||'').trim()
+    ? `<details class="history"><summary>背景介紹</summary><div>${h.history}</div></details>` : '';
+
+  const navLink = (x,dir) => x
+    ? `<a href="#/hymn/${encodeURIComponent(x.no)}">${dir==='p'?SVG.chevL:''}<span>${dispNo(x.no)} ${esc(x.name)}</span>${dir==='n'?SVG.chevR:''}</a>`
+    : '<span class="muted">—</span>';
+
+  app.innerHTML = `
+    <section class="detail">
+      <div class="dhead">
+        <div class="dno">第 ${dispNo(h.no)} 首</div>
+        <h1 class="dname">${esc(h.name)}</h1>
+        ${meta?`<div class="dmeta">${esc(meta)}</div>`:''}
+      </div>
+      <div class="verses">${verses}</div>
+      ${chorus}
+      ${player}
+      ${scores.length?`<div class="aux">${scores.join('')}</div>`:''}
+      ${history}
+      <nav class="nav">${navLink(prev,'p')}${navLink(next,'n')}</nav>
+    </section>`;
+
+  if(audio.length) wireAudio(audio[0].file_url);
+}
+
+/* ---------- audio player ---------- */
+let AUDIO = null;
+function fmt(s){ s=Math.floor(s||0); return Math.floor(s/60)+':'+String(s%60).padStart(2,'0'); }
+function stopAudio(){ if(AUDIO){ AUDIO.pause(); AUDIO.src=''; AUDIO=null; } }
+function wireAudio(src){
+  AUDIO = new Audio(src);
+  const play = document.getElementById('play');
+  const fill = document.getElementById('fill');
+  const time = document.getElementById('time');
+  const bar  = document.getElementById('bar');
+  const setIcon = () => play.innerHTML = AUDIO.paused ? SVG.play : SVG.pause;
+
+  play.addEventListener('click', () => { AUDIO.paused ? AUDIO.play() : AUDIO.pause(); });
+  AUDIO.addEventListener('play', setIcon);
+  AUDIO.addEventListener('pause', setIcon);
+  AUDIO.addEventListener('timeupdate', () => {
+    const d = AUDIO.duration || 0;
+    fill.style.width = (d ? (AUDIO.currentTime/d*100) : 0) + '%';
+    time.textContent = fmt(AUDIO.currentTime) + ' / ' + fmt(d);
+  });
+  AUDIO.addEventListener('ended', setIcon);
+  bar.addEventListener('click', e => {
+    const r = bar.getBoundingClientRect();
+    if(AUDIO.duration) AUDIO.currentTime = (e.clientX - r.left)/r.width * AUDIO.duration;
+  });
+
+  document.querySelectorAll('#vers .ver').forEach(btn =>
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#vers .ver').forEach(b => b.dataset.on = '0');
+      btn.dataset.on = '1';
+      const wasPlaying = !AUDIO.paused;
+      AUDIO.src = btn.dataset.src; AUDIO.currentTime = 0;
+      if(wasPlaying) AUDIO.play();
+      setIcon();
+    }));
+}
+
+boot();
+</script>
+</body>
+</html>
