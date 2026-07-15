@@ -80,7 +80,7 @@
   .chorus p{margin:0;font-size:clamp(18px,2.4vw,22px);line-height:2;color:var(--ink-soft)}
 
   /* player */
-  .player{max-width:520px;margin:38px auto 0;padding-top:24px;border-top:1px solid var(--line)}
+  .player{width:100%;max-width:520px;margin:0 auto 36px;padding-bottom:22px;border-bottom:1px solid var(--line)}
   .pctrl{display:flex;align-items:center;gap:14px;margin-bottom:14px}
   .play{width:46px;height:46px;flex:none;border-radius:50%;border:0;cursor:pointer;
     background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center}
@@ -102,6 +102,36 @@
     border-top:1px solid var(--line);padding-top:14px;color:var(--ink-soft);font-size:15px}
   .nav a{display:inline-flex;align-items:center;gap:8px}
   .nav .muted{color:var(--muted)}
+
+  /* mode toggle */
+  .modebtn{display:inline-flex;align-items:center;gap:6px;cursor:pointer;font-size:13px;
+    color:var(--ink-soft);background:none;border:1px solid var(--line);border-radius:9px;
+    padding:6px 12px;font-family:var(--sans);white-space:nowrap}
+
+  /* detail: side/main wrappers flatten on mobile, keep original order */
+  .dside,.dmain{display:contents}
+  .detail{display:flex;flex-direction:column}
+  .dhead{order:1}.player{order:2}.verses{order:3}.chorus{order:4}
+  .aux{order:5}.history{order:6}.nav{order:7}
+  /* flex 直排時 margin:auto 會讓區塊縮成內容寬，補回滿寬 */
+  .verses,.chorus,.aux,.history,.nav{width:100%}
+
+  /* desktop mode */
+  body.desktop .wrap{max-width:1160px}
+  body.desktop #rows{column-count:2;column-gap:48px}
+  body.desktop .row{break-inside:avoid}
+  body.desktop .detail{display:grid;grid-template-columns:320px minmax(0,1fr);
+    column-gap:56px;align-items:start;padding:26px 0 40px}
+  body.desktop .dside{display:block;min-width:0}
+  body.desktop .dhead{margin:6px 0 26px}
+  body.desktop .dmain{display:block;min-width:0;height:calc(100vh - 150px);overflow:hidden}
+  body.desktop .verses{display:grid;grid-template-columns:1fr 1fr;column-gap:56px}
+  body.desktop .verses,body.desktop .chorus{max-width:none;margin:0}
+  body.desktop .verse{margin:0 0 1.3em;min-width:0}
+  body.desktop .vt{font-size:var(--lyr,22px);line-height:1.9}
+  body.desktop .vn{font-size:calc(var(--lyr,22px)*.95)}
+  body.desktop .chorus{margin-top:4px}
+  body.desktop .chorus p{font-size:var(--lyr,22px);line-height:1.9}
   @media (prefers-reduced-motion:no-preference){
     .detail,.list{animation:fade .3s ease}
     @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1}}
@@ -116,6 +146,7 @@
       詩歌列表
     </a>
     <span class="spacer"></span>
+    <button class="modebtn" id="modeBtn" title="切換手機／電腦版面"></button>
   </div></header>
 
   <main class="wrap" id="app"><p class="empty">載入中…</p></main>
@@ -134,6 +165,42 @@ const SVG = {
 };
 const app = document.getElementById('app');
 const backBtn = document.getElementById('backBtn');
+const modeBtn = document.getElementById('modeBtn');
+
+/* ---------- mobile / desktop mode ---------- */
+const MODE_KEY = 'hymn_mode';
+const MQ_DESKTOP = window.matchMedia('(min-width: 1000px)');
+function effMode(){
+  const o = localStorage.getItem(MODE_KEY);
+  return o || (MQ_DESKTOP.matches ? 'desktop' : 'mobile');
+}
+function applyMode(){
+  const m = effMode();
+  document.body.classList.toggle('desktop', m === 'desktop');
+  modeBtn.textContent = m === 'desktop' ? '🖥 電腦版' : '📱 手機版';
+  fitLyrics();
+}
+modeBtn.addEventListener('click', () => {
+  localStorage.setItem(MODE_KEY, effMode() === 'desktop' ? 'mobile' : 'desktop');
+  applyMode();
+});
+MQ_DESKTOP.addEventListener('change', () => {
+  if(!localStorage.getItem(MODE_KEY)) applyMode();
+});
+window.addEventListener('resize', () => {
+  if(!localStorage.getItem(MODE_KEY)) applyMode(); else fitLyrics();
+});
+
+/* desktop: shrink lyric font until the whole hymn fits without scrolling */
+function fitLyrics(){
+  const main = document.querySelector('.dmain');
+  if(!main) return;
+  if(!document.body.classList.contains('desktop')){ main.style.removeProperty('--lyr'); return; }
+  for(let s = 30; s >= 15; s--){
+    main.style.setProperty('--lyr', s + 'px');
+    if(main.scrollWidth <= main.clientWidth + 1 && main.scrollHeight <= main.clientHeight + 1) break;
+  }
+}
 let HYMNS = [], BY_NO = new Map();
 let ui = { q:'', cat:'全部' };   // list state kept across renders
 
@@ -268,20 +335,25 @@ function renderDetail(no){
 
   app.innerHTML = `
     <section class="detail">
-      <div class="dhead">
-        <div class="dno">第 ${dispNo(h.no)} 首</div>
-        <h1 class="dname">${esc(h.name)}</h1>
-        ${meta?`<div class="dmeta">${esc(meta)}</div>`:''}
+      <div class="dside">
+        <div class="dhead">
+          <div class="dno">第 ${dispNo(h.no)} 首</div>
+          <h1 class="dname">${esc(h.name)}</h1>
+          ${meta?`<div class="dmeta">${esc(meta)}</div>`:''}
+        </div>
+        ${player}
+        ${scores.length?`<div class="aux">${scores.join('')}</div>`:''}
+        ${history}
+        <nav class="nav">${navLink(prev,'p')}${navLink(next,'n')}</nav>
       </div>
-      <div class="verses">${verses}</div>
-      ${chorus}
-      ${player}
-      ${scores.length?`<div class="aux">${scores.join('')}</div>`:''}
-      ${history}
-      <nav class="nav">${navLink(prev,'p')}${navLink(next,'n')}</nav>
+      <div class="dmain">
+        <div class="verses">${verses}</div>
+        ${chorus}
+      </div>
     </section>`;
 
   if(audio.length) wireAudio(audio[0].file_url);
+  fitLyrics();
 }
 
 /* ---------- audio player ---------- */
@@ -321,6 +393,7 @@ function wireAudio(src){
     }));
 }
 
+applyMode();
 boot();
 </script>
 </body>
