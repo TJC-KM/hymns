@@ -81,6 +81,10 @@
     border-left:2px solid var(--accent)}
   .chorus .lbl{color:var(--accent);font-size:13px;letter-spacing:.1em;margin-bottom:6px}
   .chorus p{margin:0;font-size:clamp(18px,2.4vw,22px);line-height:2;color:var(--ink-soft)}
+  /* 半透明底色，讓歌詞在背景圖上保持清晰 */
+  .verses,.chorus{background:color-mix(in srgb,var(--paper) 50%,transparent);border-radius:12px}
+  .verses{padding:16px 18px}
+  .chorus{padding-right:18px}
 
   /* player */
   .player{width:100%;max-width:520px;margin:0 auto 36px;padding-bottom:22px;border-bottom:1px solid var(--line)}
@@ -105,6 +109,17 @@
     border-top:1px solid var(--line);padding-top:14px;color:var(--ink-soft);font-size:15px}
   .nav a{display:inline-flex;align-items:center;gap:8px}
   .nav .muted{color:var(--muted)}
+
+  /* changes page */
+  .hlink{color:var(--muted);font-size:14px;white-space:nowrap}
+  .hlink:hover{color:var(--ink)}
+  .changes{max-width:640px;margin:0 auto;padding:20px 0 60px}
+  .ctitle{font-family:var(--serif);font-weight:500;font-size:26px;margin:10px 0 6px}
+  .chg{border-bottom:1px solid var(--line);padding:12px 4px}
+  .chg summary{cursor:pointer;font-size:15px;color:var(--ink-soft)}
+  .chg summary b{color:var(--ink);font-weight:500}
+  .chglist{margin:10px 0 4px;padding-left:20px;color:var(--ink-soft);font-size:14px;line-height:1.9}
+  .chglist a{color:var(--accent)}
 
   /* mode toggle */
   .modebtn{display:inline-flex;align-items:center;gap:6px;cursor:pointer;font-size:13px;
@@ -149,6 +164,7 @@
       詩歌列表
     </a>
     <span class="spacer"></span>
+    <a class="hlink" href="#/changes">最近更新</a>
     <button class="modebtn" id="modeBtn" title="切換手機／電腦版面"></button>
   </div></header>
 
@@ -232,6 +248,7 @@ function route(){
   stopAudio();
   const m = location.hash.match(/^#\/hymn\/(.+)$/);
   if(m){ renderDetail(decodeURIComponent(m[1])); backBtn.hidden = false; }
+  else if(location.hash === '#/changes'){ renderChanges(); backBtn.hidden = false; }
   else { renderList(); backBtn.hidden = true; }
   window.scrollTo(0,0);
 }
@@ -357,6 +374,38 @@ function renderDetail(no){
 
   if(audio.length) wireAudio(audio[0].file_url);
   fitLyrics();
+}
+
+/* ---------- changes page ---------- */
+const fmtTW = s => s ? new Date(s).toLocaleString('zh-TW',
+  {timeZone:'Asia/Taipei', year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', hour12:false}) : '';
+async function renderChanges(){
+  app.innerHTML = '<p class="empty">載入中…</p>';
+  let meta = null, index = [];
+  try{ const r = await fetch('data/meta.json', {cache:'no-cache'}); if(r.ok) meta = await r.json(); }catch(e){}
+  try{ const r = await fetch('data/changes/index.json', {cache:'no-cache'}); if(r.ok) index = await r.json(); }catch(e){}
+  const metaLine = meta
+    ? `<p class="count">資料更新於 ${fmtTW(meta.last_synced)}（台灣時間）　·　共 ${meta.total} 首</p>` : '';
+  const rows = index.length ? index.map(e => `
+    <details class="chg" data-file="${esc(e.file)}">
+      <summary><b>${esc(e.date)}</b>　新增 ${e.added}　·　異動 ${e.changed}　·　移除 ${e.removed}</summary>
+      <div class="chgbody">載入中…</div>
+    </details>`).join('')
+    : '<p class="empty">目前尚無更新紀錄。<br>資料每月 1 日自動同步，官方有變動時會記錄在這裡。</p>';
+  app.innerHTML = `<section class="changes"><h1 class="ctitle">最近更新</h1>${metaLine}${rows}</section>`;
+  app.querySelectorAll('.chg').forEach(d => d.addEventListener('toggle', async () => {
+    if(!d.open || d.dataset.loaded) return;
+    d.dataset.loaded = '1';
+    const body = d.querySelector('.chgbody');
+    try{
+      const rec = await (await fetch('data/' + d.dataset.file, {cache:'no-cache'})).json();
+      const li = [];
+      for(const h of rec.added   || []) li.push(`<li>➕ 新增　<a href="#/hymn/${encodeURIComponent(h.no)}">${dispNo(h.no)}　${esc(h.name)}</a></li>`);
+      for(const h of rec.removed || []) li.push(`<li>➖ 移除　${dispNo(h.no)}　${esc(h.name)}</li>`);
+      for(const c of rec.changed || []) li.push(`<li>✏️ <a href="#/hymn/${encodeURIComponent(c.no)}">${dispNo(c.no)}　${esc(c.name)}</a>：${esc((c.changes||[]).join('；'))}</li>`);
+      body.innerHTML = li.length ? `<ul class="chglist">${li.join('')}</ul>` : '無明細';
+    }catch(e){ body.textContent = '讀取明細失敗'; }
+  }));
 }
 
 /* ---------- audio player ---------- */
