@@ -213,13 +213,13 @@ const lines    = t => esc(t).split(/\r?\n/).join('<br>');
 
 async function boot(){
   try{
-    const res = await fetch('tjc-sacredmusic-hymns-all-474.json', {cache:'no-cache'});
+    const res = await fetch('data/hymns.json', {cache:'no-cache'});
     if(!res.ok) throw new Error(res.status);
     HYMNS = await res.json();
     BY_NO = new Map(HYMNS.map(h => [String(h.no), h]));
     route();
   }catch(e){
-    app.innerHTML = '<p class="empty">找不到 tjc-sacredmusic-hymns-all-474.json。<br>請確認詩歌資料檔與 index 位於同一目錄後重新整理。</p>';
+    app.innerHTML = '<p class="empty">找不到 data/hymns.json。<br>請把同步產生的詩歌資料放到 data/hymns.json 後重新整理。</p>';
   }
 }
 
