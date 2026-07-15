@@ -138,12 +138,20 @@
   body.desktop .wrap{max-width:none}
   body.desktop #rows{column-count:2;column-gap:48px}
   body.desktop .row{break-inside:avoid}
+  /* dhead 與 player 併成同一列 */
+  body.desktop .detail{display:grid;grid-template-columns:1fr 1fr;column-gap:56px;align-items:center}
+  body.desktop .dhead{grid-column:1;margin:18px 0}
+  body.desktop .player{grid-column:2;margin:0 auto}
+  body.desktop .verses,body.desktop .chorus,body.desktop .aux,
+  body.desktop .history,body.desktop .nav{grid-column:1 / -1}
+  body.desktop .dno{font-size:24px}
   body.desktop .verses{display:grid;grid-template-columns:1fr 1fr;gap:6px 56px;max-width:none}
-  body.desktop .verse{margin-bottom:20px;min-width:0}
+  body.desktop .verse{margin-bottom:20px;min-width:0;justify-content:center}
   body.desktop .chorus{max-width:none}
-  body.desktop .vt{font-size:32px}
-  body.desktop .vn{font-size:28px}
-  body.desktop .chorus p{font-size:32px}
+  body.desktop .vt{font-size:40px;text-align:center}
+  body.desktop .vn{font-size:34px}
+  body.desktop .chorus .lbl{text-align:center}
+  body.desktop .chorus p{font-size:40px;text-align:center}
   @media (prefers-reduced-motion:no-preference){
     .detail,.list{animation:fade .3s ease}
     @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1}}
