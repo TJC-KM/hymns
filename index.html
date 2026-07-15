@@ -141,8 +141,9 @@
   body.desktop .verses{display:grid;grid-template-columns:1fr 1fr;gap:6px 56px;max-width:none}
   body.desktop .verse{margin-bottom:20px;min-width:0}
   body.desktop .chorus{max-width:none}
-  body.desktop .vt{font-size:var(--lyr,23px)}
-  body.desktop .chorus p{font-size:var(--lyr,23px)}
+  body.desktop .vt{font-size:32px}
+  body.desktop .vn{font-size:28px}
+  body.desktop .chorus p{font-size:32px}
   @media (prefers-reduced-motion:no-preference){
     .detail,.list{animation:fade .3s ease}
     @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1}}
@@ -190,7 +191,6 @@ function applyMode(){
   const m = effMode();
   document.body.classList.toggle('desktop', m === 'desktop');
   modeBtn.textContent = m === 'desktop' ? '🖥 電腦版' : '📱 手機版';
-  if(typeof fitLyrics === 'function') fitLyrics();
 }
 modeBtn.addEventListener('click', () => {
   localStorage.setItem(MODE_KEY, effMode() === 'desktop' ? 'mobile' : 'desktop');
@@ -201,25 +201,7 @@ MQ_DESKTOP.addEventListener('change', () => {
 });
 window.addEventListener('resize', () => {
   if(!localStorage.getItem(MODE_KEY)) applyMode();
-  fitLyrics();
 });
-
-/* 電腦版：預設 23px，只在該首有歌詞行折行時逐步縮小字級（下限 16px） */
-function fitLyrics(){
-  const box = document.querySelector('.dmain');
-  if(!box) return;
-  if(!document.body.classList.contains('desktop')){ box.style.removeProperty('--lyr'); return; }
-  const wrapped = () => [...box.querySelectorAll('.vt, .chorus p')].some(p => {
-    const lh = parseFloat(getComputedStyle(p).lineHeight);
-    return Math.round(p.getBoundingClientRect().height / lh) > p.innerHTML.split('<br>').length;
-  });
-  box.style.removeProperty('--lyr');
-  if(!wrapped()) return;
-  for(let s = 22; s >= 16; s--){
-    box.style.setProperty('--lyr', s + 'px');
-    if(!wrapped()) break;
-  }
-}
 let HYMNS = [], BY_NO = new Map();
 let ui = { q:'', cat:'全部' };   // list state kept across renders
 
@@ -373,7 +355,6 @@ function renderDetail(no){
     </section>`;
 
   if(audio.length) wireAudio(audio[0].file_url);
-  fitLyrics();
 }
 
 /* ---------- changes page ---------- */
