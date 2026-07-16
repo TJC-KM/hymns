@@ -64,7 +64,11 @@
   .badge{display:inline-flex;align-items:center;gap:5px;font-size:12px;padding:3px 11px;
     border-radius:20px;background:var(--accent-soft);color:var(--accent)}
   .badge.vari{background:#F5E3D7;color:#A8542B}
-  @media (prefers-color-scheme: dark){ .badge.vari{background:#33261E;color:#D89A6E} }
+  .badge.pol{background:#F1ECD9;color:#8A7B2E}
+  @media (prefers-color-scheme: dark){
+    .badge.vari{background:#33261E;color:#D89A6E}
+    .badge.pol{background:#2E2B1E;color:#C9B96A}
+  }
   .rico{color:var(--muted);display:inline-flex}
   .empty{color:var(--muted);text-align:center;padding:60px 0}
 
@@ -229,9 +233,10 @@ const esc = s => (s||'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&
 const hasAudio = h => (h.audio_files||[]).length > 0;
 const hasFour  = h => (h.audio_files||[]).some(a => (a.audio_category?.name||'').startsWith('四部合唱'));
 /* 曲調狀態：有四部合唱(6)一律正調(自動判定贏)，否則看人工註記，沒有就是未註記('') */
+const TUNE_VALS = ['正調', '潤飾', '變奏'];
 const hasSATB  = h => (h.audio_files||[]).some(a => a.audio_category_id === 6);
 const tuneOf   = h => hasSATB(h) ? '正調'
-  : (TUNE[String(h.no)] === '正調' || TUNE[String(h.no)] === '變奏' ? TUNE[String(h.no)] : '');
+  : (TUNE_VALS.includes(TUNE[String(h.no)]) ? TUNE[String(h.no)] : '');
 const dispNo   = no => String(no).replace(/_a$/,'甲').replace(/_b$/,'乙');
 const catOf    = h => h.category?.name || '';
 const lines    = t => esc(t).split(/\r?\n/).join('<br>');
@@ -339,10 +344,11 @@ function paintRows(){
     const no = dispNo(h.no);
     const num = /甲|乙$/.test(no) ? `${no.slice(0,-1)}<small>${no.slice(-1)}</small>` : no;
     const tune = tuneOf(h);
+    const tcls = {'變奏':' vari','潤飾':' pol'}[tune] || '';
     return `<div class="row" data-no="${esc(h.no)}">
       <span class="rnum">${num}</span>
       <span class="rname">${esc(h.name)}</span>
-      ${tune?`<span class="badge${tune==='變奏'?' vari':''}">${tune}</span>`:''}
+      ${tune?`<span class="badge${tcls}">${tune}</span>`:''}
       ${hasAudio(h)?`<span class="rico">${SVG.music}</span>`:''}
     </div>`;
   }).join('');
@@ -422,7 +428,7 @@ function tuneRow(h){
     return `<div class="tune">曲調：<span class="tstate ok">正調</span><span>（有四部合唱，自動判定）</span></div>`;
   const t = tuneOf(h);
   const btn = v => `<button class="tbtn" data-val="${v}" data-on="${(t||'')===v?1:0}">${v||'未註記'}</button>`;
-  return `<div class="tune">曲調：${btn('正調')}${btn('變奏')}${btn('')}</div>`;
+  return `<div class="tune">曲調：${TUNE_VALS.map(btn).join('')}${btn('')}</div>`;
 }
 function wireTune(h){
   document.querySelectorAll('.tune .tbtn').forEach(b => b.addEventListener('click', () => {
