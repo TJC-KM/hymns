@@ -23,6 +23,22 @@
       }
     ]
   },
+  "341": {
+    "audio_files": [
+      {
+        "id": 698,
+        "file_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/audio/e842f9cd641af7f5bd862e187b49dd11.m4a",
+        "audio_category_id": 3,
+        "audio_category": { "id": 3, "name": "鋼琴" }
+      },
+      {
+        "id": "custom-341-vocal",
+        "file_url": "assets/audio/341-vocal.mp3",
+        "audio_category_id": 4,
+        "audio_category": { "id": 4, "name": "人聲" }
+      }
+    ]
+  },
   "345": {
     "lyrics": [
       {
