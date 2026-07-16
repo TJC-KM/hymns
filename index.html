@@ -14,10 +14,12 @@
     --sans:"Noto Sans TC",system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;
     --serif:"Noto Serif TC",Georgia,"Songti TC",serif;
     --wrap:720px;
+    --btn-line:#C6C0B2;
   }
   @media (prefers-color-scheme: dark){
     :root{ --paper:#171719; --surface:#1F2022; --ink:#ECEAE3; --ink-soft:#B7B4AB;
-      --muted:#807D75; --line:#2D2E31; --accent:#83B6A8; --accent-soft:#21302C; }
+      --muted:#807D75; --line:#2D2E31; --accent:#83B6A8; --accent-soft:#21302C;
+      --btn-line:#4A4C52; }
   }
   *{box-sizing:border-box}
   html,body{margin:0}
@@ -168,6 +170,10 @@
   body.desktop .vn{font-size:34px}
   body.desktop .chorus .lbl{text-align:center}
   body.desktop .chorus p{font-size:40px;text-align:center}
+  /* 按鈕統一：實色底＋清楚邊框，疊在背景圖上不會糊掉（選取狀態的規則權重較高，不受影響） */
+  .chip,.ver,.tbtn,.modebtn,.auxbtn{background:var(--surface);
+    border-color:var(--btn-line);box-shadow:0 1px 2px rgba(0,0,0,.06)}
+
   @media (prefers-reduced-motion:no-preference){
     .detail,.list{animation:fade .3s ease}
     @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1}}
