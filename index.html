@@ -54,6 +54,12 @@
   .chip[data-on="1"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
   .chip.four{border-color:var(--accent);color:var(--accent)}
   .chip.four[data-on="1"]{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .chip.vari{border-color:#A8542B;color:#A8542B}
+  .chip.vari[data-on="1"]{background:#A8542B;color:#fff;border-color:#A8542B}
+  @media (prefers-color-scheme: dark){
+    .chip.vari{border-color:#D89A6E;color:#D89A6E}
+    .chip.vari[data-on="1"]{background:#8A4423;color:#fff;border-color:#8A4423}
+  }
   .count{color:var(--muted);font-size:13px;margin:2px 0 6px}
 
   /* list */
@@ -313,7 +319,7 @@ function categories(){
 function filtered(){
   const q = ui.q.trim().toLowerCase();
   return HYMNS.filter(h => {
-    if(ui.cat === '四部合唱'){ if(!hasFour(h)) return false; }
+    if(ui.cat === '正調' || ui.cat === '變奏'){ if(tuneOf(h) !== ui.cat) return false; }
     else if(ui.cat !== '全部'){ if(catOf(h) !== ui.cat) return false; }
     if(!q) return true;
     if(String(h.no).toLowerCase().includes(q)) return true;
@@ -325,13 +331,14 @@ function filtered(){
 function renderList(){
   const cats = categories();
   const chip = (label, cls='') =>
-    `<button class="chip ${cls}" data-cat="${esc(label)}" data-on="${ui.cat===label?1:0}">${label==='四部合唱'?SVG.users:''}${esc(label)}</button>`;
+    `<button class="chip ${cls}" data-cat="${esc(label)}" data-on="${ui.cat===label?1:0}">${esc(label)}</button>`;
   app.innerHTML = `
     <div class="list">
       <div class="search">${SVG.search}<input id="q" placeholder="輸入編號、詩歌名或歌詞…" value="${esc(ui.q)}" autocomplete="off"></div>
       <div class="chips">
         ${chip('全部')}
-        ${chip('四部合唱','four')}
+        ${chip('正調','four')}
+        ${chip('變奏','vari')}
         ${cats.map(c=>chip(c)).join('')}
       </div>
       <div class="count" id="count"></div>
