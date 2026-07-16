@@ -440,7 +440,7 @@ function toast(msg){
 const b64utf8 = s => btoa(String.fromCharCode(...new TextEncoder().encode(s)));
 /* Cloudflare Worker 網址（workers/tune-status-worker.js 部署後填入）。
    留空則退回舊的「輸入 GitHub Token」方式。 */
-const TUNE_API = '';
+const TUNE_API = 'https://hymns-tune.c3012312.workers.dev';
 async function saveTune(no, val){
   if(TUNE_API){
     try{
