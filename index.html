@@ -103,6 +103,8 @@
   .fill{position:absolute;left:0;top:0;height:5px;width:0;background:var(--accent);border-radius:3px}
   .time{font-size:12px;color:var(--muted);min-width:82px;text-align:right;font-variant-numeric:tabular-nums}
   .vers{display:flex;flex-wrap:wrap;gap:7px}
+  .rates{margin-top:8px}
+  .rates .ver{font-variant-numeric:tabular-nums}
   .ver{cursor:pointer;font-size:13px;padding:6px 13px;border-radius:8px;border:1px solid var(--line);
     background:none;color:var(--ink-soft)}
   .ver[data-on="1"]{background:var(--accent-soft);color:var(--accent);border-color:transparent}
@@ -390,6 +392,9 @@ function renderDetail(no){
       <div class="vers" id="vers">
         ${audio.map((a,i)=>`<button class="ver" data-src="${esc(a.file_url)}" data-on="${i===0?1:0}">${esc(a.audio_category?.name||'音檔')}</button>`).join('')}
       </div>
+      <div class="vers rates" id="rates">
+        ${[0.5,0.75,1,1.25,1.5].map(r=>`<button class="ver" data-rate="${r}" data-on="${r===1?1:0}">${r}×</button>`).join('')}
+      </div>
     </div>` : '';
 
   const scores = [];
@@ -553,14 +558,24 @@ function wireAudio(src){
     if(AUDIO.duration) AUDIO.currentTime = (e.clientX - r.left)/r.width * AUDIO.duration;
   });
 
+  let rate = 1;
   document.querySelectorAll('#vers .ver').forEach(btn =>
     btn.addEventListener('click', () => {
       document.querySelectorAll('#vers .ver').forEach(b => b.dataset.on = '0');
       btn.dataset.on = '1';
       const wasPlaying = !AUDIO.paused;
       AUDIO.src = btn.dataset.src; AUDIO.currentTime = 0;
+      AUDIO.playbackRate = rate;   // 換 src 會重置速度，補回目前選的速度
       if(wasPlaying) AUDIO.play();
       setIcon();
+    }));
+
+  document.querySelectorAll('#rates .ver').forEach(btn =>
+    btn.addEventListener('click', () => {
+      rate = parseFloat(btn.dataset.rate);
+      AUDIO.playbackRate = rate;
+      AUDIO.defaultPlaybackRate = rate;
+      document.querySelectorAll('#rates .ver').forEach(b => b.dataset.on = b === btn ? '1' : '0');
     }));
 }
 
