@@ -150,7 +150,7 @@
   /* flex 直排時 margin:auto 會讓區塊縮成內容寬，補回滿寬 */
   .tune,.verses,.chorus,.aux,.history,.nav{width:100%}
 
-  /* tune annotation (正調/變奏) */
+  /* tune annotation (標準版/有間奏/特別版) */
   .tune{max-width:520px;margin:0 auto 30px;display:flex;align-items:center;
     justify-content:center;flex-wrap:wrap;gap:8px;font-size:13px;color:var(--muted)}
   .tbtn{cursor:pointer;font-size:13px;padding:5px 13px;border-radius:8px;
@@ -246,10 +246,10 @@ let ui = { q:'', cat:'全部' };   // list state kept across renders
 const esc = s => (s||'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const hasAudio = h => (h.audio_files||[]).length > 0;
 const hasFour  = h => (h.audio_files||[]).some(a => (a.audio_category?.name||'').startsWith('四部合唱'));
-/* 曲調狀態：有四部合唱(6)一律正調(自動判定贏)，否則看人工註記，沒有就是未註記('') */
-const TUNE_VALS = ['正調', '潤飾', '變奏'];
+/* 曲調狀態：有四部合唱(6)一律標準版(自動判定贏)，否則看人工註記，沒有就是未註記('') */
+const TUNE_VALS = ['標準版', '有間奏', '特別版'];
 const hasSATB  = h => (h.audio_files||[]).some(a => a.audio_category_id === 6);
-const tuneOf   = h => hasSATB(h) ? '正調'
+const tuneOf   = h => hasSATB(h) ? '標準版'
   : (TUNE_VALS.includes(TUNE[String(h.no)]) ? TUNE[String(h.no)] : '');
 const dispNo   = no => String(no).replace(/_a$/,'甲').replace(/_b$/,'乙');
 const catOf    = h => h.category?.name || '';
@@ -319,7 +319,7 @@ function categories(){
 function filtered(){
   const q = ui.q.trim().toLowerCase();
   return HYMNS.filter(h => {
-    if(ui.cat === '正調' || ui.cat === '變奏'){ if(tuneOf(h) !== ui.cat) return false; }
+    if(ui.cat === '標準版' || ui.cat === '特別版'){ if(tuneOf(h) !== ui.cat) return false; }
     else if(ui.cat !== '全部'){ if(catOf(h) !== ui.cat) return false; }
     if(!q) return true;
     if(String(h.no).toLowerCase().includes(q)) return true;
@@ -337,8 +337,8 @@ function renderList(){
       <div class="search">${SVG.search}<input id="q" placeholder="輸入編號、詩歌名或歌詞…" value="${esc(ui.q)}" autocomplete="off"></div>
       <div class="chips">
         ${chip('全部')}
-        ${chip('正調','four')}
-        ${chip('變奏','vari')}
+        ${chip('標準版','four')}
+        ${chip('特別版','vari')}
         ${cats.map(c=>chip(c)).join('')}
       </div>
       <div class="count" id="count"></div>
@@ -359,7 +359,7 @@ function paintRows(){
     const no = dispNo(h.no);
     const num = /甲|乙$/.test(no) ? `${no.slice(0,-1)}<small>${no.slice(-1)}</small>` : no;
     const tune = tuneOf(h);
-    const tcls = {'變奏':' vari','潤飾':' pol'}[tune] || '';
+    const tcls = {'特別版':' vari','有間奏':' pol'}[tune] || '';
     return `<div class="row" data-no="${esc(h.no)}">
       <span class="rnum">${num}</span>
       <span class="rname">${esc(h.name)}</span>
@@ -440,10 +440,10 @@ function renderDetail(no){
   wireTune(h);
 }
 
-/* ---------- tune annotation (正調/變奏) ---------- */
+/* ---------- tune annotation (標準版/有間奏/特別版) ---------- */
 function tuneRow(h){
   if(hasSATB(h))
-    return `<div class="tune">曲調：<span class="tstate ok">正調</span><span>（有四部合唱，自動判定）</span></div>`;
+    return `<div class="tune">曲調：<span class="tstate ok">標準版</span><span>（有四部合唱，自動判定）</span></div>`;
   const t = tuneOf(h);
   const btn = v => `<button class="tbtn" data-val="${v}" data-on="${(t||'')===v?1:0}">${v||'未註記'}</button>`;
   return `<div class="tune">曲調：${TUNE_VALS.map(btn).join('')}${btn('')}</div>`;

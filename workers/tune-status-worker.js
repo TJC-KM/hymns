@@ -37,7 +37,7 @@ export default {
     const no = String(body.no ?? '');
     const val = String(body.val ?? '');
     if (!/^[0-9]{1,3}(_[ab])?$/.test(no)) return json({ error: 'bad no' }, 400);
-    if (!['正調', '潤飾', '變奏', ''].includes(val)) return json({ error: 'bad val' }, 400);
+    if (!['標準版', '有間奏', '特別版', ''].includes(val)) return json({ error: 'bad val' }, 400);
 
     const gh = {
       authorization: 'Bearer ' + env.GITHUB_TOKEN,
