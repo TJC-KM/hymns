@@ -91,7 +91,7 @@
   .verse{display:flex;gap:18px;margin-bottom:26px}
   .vn{font-family:var(--serif);color:var(--muted);font-size:22px;line-height:1.1;flex:none}
   .vt{margin:0;font-size:clamp(19px,2.5vw,23px);line-height:2;color:var(--ink)}
-  .chorus{max-width:520px;margin:6px auto 0;padding:14px 0 14px 20px;
+  .chorus{max-width:520px;margin:0 auto 26px;padding:14px 0 14px 20px;
     border-left:2px solid var(--accent)}
   .chorus .lbl{color:var(--accent);font-size:13px;letter-spacing:.1em;margin-bottom:6px}
   .chorus p{margin:0;font-size:clamp(18px,2.4vw,22px);line-height:2;color:var(--ink-soft)}
@@ -145,7 +145,7 @@
   /* detail: side/main wrappers flatten on mobile, keep original order */
   .dside,.dmain{display:contents}
   .detail{display:flex;flex-direction:column}
-  .dhead{order:1}.player{order:2}.tune{order:3}.verses{order:4}.chorus{order:5}
+  .dhead{order:1}.player{order:2}.tune{order:3}.verses{order:4}
   .aux{order:6}.history{order:7}.nav{order:8}
   /* flex 直排時 margin:auto 會讓區塊縮成內容寬，補回滿寬 */
   .tune,.verses,.chorus,.aux,.history,.nav{width:100%}
@@ -168,16 +168,16 @@
   body.desktop .detail{display:grid;grid-template-columns:1fr 1fr;column-gap:56px;align-items:center}
   body.desktop .dhead{grid-column:1;margin:18px 0}
   body.desktop .player{grid-column:2;margin:0 auto}
-  body.desktop .tune,body.desktop .verses,body.desktop .chorus,body.desktop .aux,
+  body.desktop .tune,body.desktop .verses,body.desktop .aux,
   body.desktop .history,body.desktop .nav{grid-column:1 / -1}
   body.desktop .dno{font-size:24px}
   body.desktop .verses{display:grid;grid-template-columns:1fr 1fr;gap:6px 56px;max-width:none}
   body.desktop .verse{margin-bottom:20px;min-width:0;justify-content:center}
   body.desktop .chorus{max-width:none}
-  body.desktop .vt{font-size:40px;text-align:center}
-  body.desktop .vn{font-size:34px}
+  body.desktop .vt{font-size:36px;text-align:center}
+  body.desktop .vn{font-size:30px}
   body.desktop .chorus .lbl{text-align:center}
-  body.desktop .chorus p{font-size:40px;text-align:center}
+  body.desktop .chorus p{font-size:36px;text-align:center}
   /* 按鈕統一：實色底＋清楚邊框，疊在背景圖上不會糊掉（選取狀態的規則權重較高，不受影響） */
   .chip,.ver,.tbtn,.modebtn,.auxbtn{background:var(--surface);
     border-color:var(--btn-line);box-shadow:0 1px 2px rgba(0,0,0,.06)}
@@ -382,10 +382,11 @@ function renderDetail(no){
     (h.composers||[]).map(x=>x.name).filter(Boolean).map(n=>'曲 '+n).join('、')
   ].filter(Boolean).join('　·　');
 
-  const verses = (h.lyrics||[]).map((v,i) =>
-    `<div class="verse"><span class="vn">${i+1}</span><p class="vt">${lines(v.text)}</p></div>`).join('');
   const chorus = (h.lyrics_chorus||'').trim()
     ? `<div class="chorus"><div class="lbl">副歌</div><p>${lines(h.lyrics_chorus)}</p></div>` : '';
+  /* 有副歌時，每一節後面都接一次副歌：節→副歌→節→副歌…（桌面雙欄下即左節右副歌） */
+  const verses = (h.lyrics||[]).map((v,i) =>
+    `<div class="verse"><span class="vn">${i+1}</span><p class="vt">${lines(v.text)}</p></div>` + chorus).join('');
 
   const rank = x => x.audio_category_id === 6 ? -2 : x.audio_category_id === 4 ? -1 : (x.audio_category_id||0);  // 四部合唱(6)第一、人聲(4)第二
   const audio = (h.audio_files||[]).slice().sort((a,b)=>rank(a)-rank(b));
@@ -432,7 +433,6 @@ function renderDetail(no){
       </div>
       <div class="dmain">
         <div class="verses">${verses}</div>
-        ${chorus}
       </div>
     </section>`;
 
