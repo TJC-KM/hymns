@@ -34,8 +34,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/1.pdf",
     "num_score_xml_url": null,
-    "prev_no": null,
-    "next_no": "2",
     "category": {
       "id": 1,
       "name": "讚美天父",
@@ -155,8 +153,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/2.pdf",
     "num_score_xml_url": null,
-    "prev_no": "1",
-    "next_no": "3",
     "category": {
       "id": 1,
       "name": "讚美天父",
@@ -251,8 +247,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/3.pdf",
     "num_score_xml_url": null,
-    "prev_no": "2",
-    "next_no": "4",
     "category": {
       "id": 1,
       "name": "讚美天父",
@@ -366,8 +360,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/4.pdf",
     "num_score_xml_url": null,
-    "prev_no": "3",
-    "next_no": "5",
     "category": {
       "id": 1,
       "name": "讚美天父",
@@ -472,8 +464,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/5.pdf",
     "num_score_xml_url": null,
-    "prev_no": "4",
-    "next_no": "6",
     "category": {
       "id": 1,
       "name": "讚美天父",
@@ -582,8 +572,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/6.pdf",
     "num_score_xml_url": null,
-    "prev_no": "5",
-    "next_no": "7",
     "category": {
       "id": 1,
       "name": "讚美天父",
@@ -761,8 +749,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/7.pdf",
     "num_score_xml_url": null,
-    "prev_no": "6",
-    "next_no": "8",
     "category": {
       "id": 1,
       "name": "讚美天父",
@@ -868,8 +854,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/8.pdf",
     "num_score_xml_url": null,
-    "prev_no": "7",
-    "next_no": "9",
     "category": {
       "id": 1,
       "name": "讚美天父",
@@ -1044,8 +1028,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/9.pdf",
     "num_score_xml_url": null,
-    "prev_no": "8",
-    "next_no": "10",
     "category": {
       "id": 1,
       "name": "讚美天父",
@@ -1150,8 +1132,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/10.pdf",
     "num_score_xml_url": null,
-    "prev_no": "9",
-    "next_no": "11",
     "category": {
       "id": 2,
       "name": "讚美耶穌",
@@ -1259,8 +1239,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/11.pdf",
     "num_score_xml_url": null,
-    "prev_no": "10",
-    "next_no": "12",
     "category": {
       "id": 2,
       "name": "讚美耶穌",
@@ -1354,8 +1332,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/12.pdf",
     "num_score_xml_url": null,
-    "prev_no": "11",
-    "next_no": "13",
     "category": {
       "id": 2,
       "name": "讚美耶穌",
@@ -1463,8 +1439,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/13.pdf",
     "num_score_xml_url": null,
-    "prev_no": "12",
-    "next_no": "14",
     "category": {
       "id": 2,
       "name": "讚美耶穌",
@@ -1572,8 +1546,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/14.pdf",
     "num_score_xml_url": null,
-    "prev_no": "13",
-    "next_no": "15",
     "category": {
       "id": 2,
       "name": "讚美耶穌",
@@ -1681,8 +1653,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/15.pdf",
     "num_score_xml_url": null,
-    "prev_no": "14",
-    "next_no": "16",
     "category": {
       "id": 2,
       "name": "讚美耶穌",
@@ -1790,8 +1760,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/16.pdf",
     "num_score_xml_url": null,
-    "prev_no": "15",
-    "next_no": "17",
     "category": {
       "id": 2,
       "name": "讚美耶穌",
@@ -1896,8 +1864,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/17.pdf",
     "num_score_xml_url": null,
-    "prev_no": "16",
-    "next_no": "18",
     "category": {
       "id": 2,
       "name": "讚美耶穌",
@@ -2006,8 +1972,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/18.pdf",
     "num_score_xml_url": null,
-    "prev_no": "17",
-    "next_no": "19",
     "category": {
       "id": 2,
       "name": "讚美耶穌",
@@ -2126,8 +2090,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/19.pdf",
     "num_score_xml_url": null,
-    "prev_no": "18",
-    "next_no": "20",
     "category": {
       "id": 2,
       "name": "讚美耶穌",
@@ -2236,8 +2198,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/20.pdf",
     "num_score_xml_url": null,
-    "prev_no": "19",
-    "next_no": "21",
     "category": {
       "id": 2,
       "name": "讚美耶穌",
@@ -2359,8 +2319,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/21.pdf",
     "num_score_xml_url": null,
-    "prev_no": "20",
-    "next_no": "22",
     "category": {
       "id": 2,
       "name": "讚美耶穌",
@@ -2443,8 +2401,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/22.pdf",
     "num_score_xml_url": null,
-    "prev_no": "21",
-    "next_no": "23",
     "category": {
       "id": 3,
       "name": "讚美聖言",
@@ -2545,8 +2501,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/23.pdf",
     "num_score_xml_url": null,
-    "prev_no": "22",
-    "next_no": "24",
     "category": {
       "id": 3,
       "name": "讚美聖言",
@@ -2668,8 +2622,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/24.pdf",
     "num_score_xml_url": null,
-    "prev_no": "23",
-    "next_no": "25",
     "category": {
       "id": 3,
       "name": "讚美聖言",
@@ -2778,8 +2730,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/25.pdf",
     "num_score_xml_url": null,
-    "prev_no": "24",
-    "next_no": "26",
     "category": {
       "id": 3,
       "name": "讚美聖言",
@@ -2940,8 +2890,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/26.pdf",
     "num_score_xml_url": null,
-    "prev_no": "25",
-    "next_no": "27",
     "category": {
       "id": 3,
       "name": "讚美聖言",
@@ -3049,8 +2997,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/27.pdf",
     "num_score_xml_url": null,
-    "prev_no": "26",
-    "next_no": "28",
     "category": {
       "id": 4,
       "name": "耶穌仁慈",
@@ -3162,8 +3108,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/28.pdf",
     "num_score_xml_url": null,
-    "prev_no": "27",
-    "next_no": "29",
     "category": {
       "id": 4,
       "name": "耶穌仁慈",
@@ -3288,8 +3232,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/29.pdf",
     "num_score_xml_url": null,
-    "prev_no": "28",
-    "next_no": "30",
     "category": {
       "id": 4,
       "name": "耶穌仁慈",
@@ -3397,8 +3339,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/30.pdf",
     "num_score_xml_url": null,
-    "prev_no": "29",
-    "next_no": "31",
     "category": {
       "id": 4,
       "name": "耶穌仁慈",
@@ -3510,8 +3450,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/31.pdf",
     "num_score_xml_url": null,
-    "prev_no": "30",
-    "next_no": "32",
     "category": {
       "id": 4,
       "name": "耶穌仁慈",
@@ -3623,8 +3561,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/32.pdf",
     "num_score_xml_url": null,
-    "prev_no": "31",
-    "next_no": "33",
     "category": {
       "id": 4,
       "name": "耶穌仁慈",
@@ -3746,8 +3682,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/33.pdf",
     "num_score_xml_url": null,
-    "prev_no": "32",
-    "next_no": "34",
     "category": {
       "id": 5,
       "name": "耶穌呼召",
@@ -3855,8 +3789,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/34.pdf",
     "num_score_xml_url": null,
-    "prev_no": "33",
-    "next_no": "35",
     "category": {
       "id": 5,
       "name": "耶穌呼召",
@@ -3956,8 +3888,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/35.pdf",
     "num_score_xml_url": null,
-    "prev_no": "34",
-    "next_no": "36",
     "category": {
       "id": 5,
       "name": "耶穌呼召",
@@ -4059,8 +3989,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/36.pdf",
     "num_score_xml_url": null,
-    "prev_no": "35",
-    "next_no": "37",
     "category": {
       "id": 5,
       "name": "耶穌呼召",
@@ -4165,8 +4093,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/37.pdf",
     "num_score_xml_url": null,
-    "prev_no": "36",
-    "next_no": "38",
     "category": {
       "id": 5,
       "name": "耶穌呼召",
@@ -4271,8 +4197,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/38.pdf",
     "num_score_xml_url": null,
-    "prev_no": "37",
-    "next_no": "39",
     "category": {
       "id": 5,
       "name": "耶穌呼召",
@@ -4380,8 +4304,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/39.pdf",
     "num_score_xml_url": null,
-    "prev_no": "38",
-    "next_no": "40",
     "category": {
       "id": 6,
       "name": "耶穌寶血",
@@ -4486,8 +4408,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/40.pdf",
     "num_score_xml_url": null,
-    "prev_no": "39",
-    "next_no": "41",
     "category": {
       "id": 6,
       "name": "耶穌寶血",
@@ -4595,8 +4515,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/41.pdf",
     "num_score_xml_url": null,
-    "prev_no": "40",
-    "next_no": "42",
     "category": {
       "id": 6,
       "name": "耶穌寶血",
@@ -4701,8 +4619,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/42.pdf",
     "num_score_xml_url": null,
-    "prev_no": "41",
-    "next_no": "43",
     "category": {
       "id": 6,
       "name": "耶穌寶血",
@@ -4810,8 +4726,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/43.pdf",
     "num_score_xml_url": null,
-    "prev_no": "42",
-    "next_no": "44",
     "category": {
       "id": 6,
       "name": "耶穌寶血",
@@ -4919,8 +4833,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/44.pdf",
     "num_score_xml_url": null,
-    "prev_no": "43",
-    "next_no": "45",
     "category": {
       "id": 7,
       "name": "耶穌救恩",
@@ -5028,8 +4940,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/45.pdf",
     "num_score_xml_url": null,
-    "prev_no": "44",
-    "next_no": "46",
     "category": {
       "id": 7,
       "name": "耶穌救恩",
@@ -5138,8 +5048,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/46.pdf",
     "num_score_xml_url": null,
-    "prev_no": "45",
-    "next_no": "47",
     "category": {
       "id": 7,
       "name": "耶穌救恩",
@@ -5244,8 +5152,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/47.pdf",
     "num_score_xml_url": null,
-    "prev_no": "46",
-    "next_no": "48",
     "category": {
       "id": 7,
       "name": "耶穌救恩",
@@ -5353,8 +5259,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/48.pdf",
     "num_score_xml_url": null,
-    "prev_no": "47",
-    "next_no": "49",
     "category": {
       "id": 7,
       "name": "耶穌救恩",
@@ -5459,8 +5363,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/49.pdf",
     "num_score_xml_url": null,
-    "prev_no": "48",
-    "next_no": "50",
     "category": {
       "id": 7,
       "name": "耶穌救恩",
@@ -5572,8 +5474,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/50.pdf",
     "num_score_xml_url": null,
-    "prev_no": "49",
-    "next_no": "51_a",
     "category": {
       "id": 7,
       "name": "耶穌救恩",
@@ -5696,8 +5596,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/51_a.pdf",
     "num_score_xml_url": null,
-    "prev_no": "50",
-    "next_no": "51_b",
     "category": {
       "id": 7,
       "name": "耶穌救恩",
@@ -5816,8 +5714,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/51_b.pdf",
     "num_score_xml_url": null,
-    "prev_no": "51_a",
-    "next_no": "52",
     "category": {
       "id": 7,
       "name": "耶穌救恩",
@@ -5938,8 +5834,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/52.pdf",
     "num_score_xml_url": null,
-    "prev_no": "51_b",
-    "next_no": "53",
     "category": {
       "id": 7,
       "name": "耶穌救恩",
@@ -6057,8 +5951,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/53.pdf",
     "num_score_xml_url": null,
-    "prev_no": "52",
-    "next_no": "54",
     "category": {
       "id": 7,
       "name": "耶穌救恩",
@@ -6163,8 +6055,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/54.pdf",
     "num_score_xml_url": null,
-    "prev_no": "53",
-    "next_no": "55",
     "category": {
       "id": 8,
       "name": "耶穌釋放",
@@ -6255,8 +6145,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/55.pdf",
     "num_score_xml_url": null,
-    "prev_no": "54",
-    "next_no": "56",
     "category": {
       "id": 8,
       "name": "耶穌釋放",
@@ -6364,8 +6252,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/56.pdf",
     "num_score_xml_url": null,
-    "prev_no": "55",
-    "next_no": "57",
     "category": {
       "id": 8,
       "name": "耶穌釋放",
@@ -6486,8 +6372,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/57.pdf",
     "num_score_xml_url": null,
-    "prev_no": "56",
-    "next_no": "58",
     "category": {
       "id": 8,
       "name": "耶穌釋放",
@@ -6608,8 +6492,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/58.pdf",
     "num_score_xml_url": null,
-    "prev_no": "57",
-    "next_no": "59",
     "category": {
       "id": 9,
       "name": "耶穌領導",
@@ -6727,8 +6609,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/59.pdf",
     "num_score_xml_url": null,
-    "prev_no": "58",
-    "next_no": "60",
     "category": {
       "id": 9,
       "name": "耶穌領導",
@@ -6836,8 +6716,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/60.pdf",
     "num_score_xml_url": null,
-    "prev_no": "59",
-    "next_no": "61",
     "category": {
       "id": 9,
       "name": "耶穌領導",
@@ -6928,8 +6806,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/61.pdf",
     "num_score_xml_url": null,
-    "prev_no": "60",
-    "next_no": "62",
     "category": {
       "id": 9,
       "name": "耶穌領導",
@@ -7037,8 +6913,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/62.pdf",
     "num_score_xml_url": null,
-    "prev_no": "61",
-    "next_no": "63",
     "category": {
       "id": 9,
       "name": "耶穌領導",
@@ -7143,8 +7017,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/63.pdf",
     "num_score_xml_url": null,
-    "prev_no": "62",
-    "next_no": "64",
     "category": {
       "id": 9,
       "name": "耶穌領導",
@@ -7249,8 +7121,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/64.pdf",
     "num_score_xml_url": null,
-    "prev_no": "63",
-    "next_no": "65",
     "category": {
       "id": 9,
       "name": "耶穌領導",
@@ -7355,8 +7225,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/65.pdf",
     "num_score_xml_url": null,
-    "prev_no": "64",
-    "next_no": "66",
     "category": {
       "id": 9,
       "name": "耶穌領導",
@@ -7464,8 +7332,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/66.pdf",
     "num_score_xml_url": null,
-    "prev_no": "65",
-    "next_no": "67",
     "category": {
       "id": 9,
       "name": "耶穌領導",
@@ -7556,8 +7422,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/67.pdf",
     "num_score_xml_url": null,
-    "prev_no": "66",
-    "next_no": "68",
     "category": {
       "id": 9,
       "name": "耶穌領導",
@@ -7665,8 +7529,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/68.pdf",
     "num_score_xml_url": null,
-    "prev_no": "67",
-    "next_no": "69",
     "category": {
       "id": 9,
       "name": "耶穌領導",
@@ -7766,8 +7628,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/69.pdf",
     "num_score_xml_url": null,
-    "prev_no": "68",
-    "next_no": "70",
     "category": {
       "id": 9,
       "name": "耶穌領導",
@@ -7875,8 +7735,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/70.pdf",
     "num_score_xml_url": null,
-    "prev_no": "69",
-    "next_no": "71",
     "category": {
       "id": 10,
       "name": "萬福根源",
@@ -7984,8 +7842,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/71.pdf",
     "num_score_xml_url": null,
-    "prev_no": "70",
-    "next_no": "72",
     "category": {
       "id": 10,
       "name": "萬福根源",
@@ -8079,8 +7935,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/72.pdf",
     "num_score_xml_url": null,
-    "prev_no": "71",
-    "next_no": "73",
     "category": {
       "id": 10,
       "name": "萬福根源",
@@ -8185,8 +8039,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/73.pdf",
     "num_score_xml_url": null,
-    "prev_no": "72",
-    "next_no": "74",
     "category": {
       "id": 10,
       "name": "萬福根源",
@@ -8291,8 +8143,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/74.pdf",
     "num_score_xml_url": null,
-    "prev_no": "73",
-    "next_no": "75",
     "category": {
       "id": 11,
       "name": "耶穌降生",
@@ -8397,8 +8247,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/75.pdf",
     "num_score_xml_url": null,
-    "prev_no": "74",
-    "next_no": "76",
     "category": {
       "id": 11,
       "name": "耶穌降生",
@@ -8506,8 +8354,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/76.pdf",
     "num_score_xml_url": null,
-    "prev_no": "75",
-    "next_no": "77",
     "category": {
       "id": 12,
       "name": "耶穌受難",
@@ -8609,8 +8455,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/77.pdf",
     "num_score_xml_url": null,
-    "prev_no": "76",
-    "next_no": "78",
     "category": {
       "id": 12,
       "name": "耶穌受難",
@@ -8715,8 +8559,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/78.pdf",
     "num_score_xml_url": null,
-    "prev_no": "77",
-    "next_no": "79",
     "category": {
       "id": 13,
       "name": "耶穌復活",
@@ -8824,8 +8666,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/79.pdf",
     "num_score_xml_url": null,
-    "prev_no": "78",
-    "next_no": "80",
     "category": {
       "id": 13,
       "name": "耶穌復活",
@@ -8933,8 +8773,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/80.pdf",
     "num_score_xml_url": null,
-    "prev_no": "79",
-    "next_no": "81",
     "category": {
       "id": 13,
       "name": "耶穌復活",
@@ -9042,8 +8880,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/81.pdf",
     "num_score_xml_url": null,
-    "prev_no": "80",
-    "next_no": "82",
     "category": {
       "id": 14,
       "name": "耶穌再臨",
@@ -9152,8 +8988,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/82.pdf",
     "num_score_xml_url": null,
-    "prev_no": "81",
-    "next_no": "83",
     "category": {
       "id": 14,
       "name": "耶穌再臨",
@@ -9275,8 +9109,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/83.pdf",
     "num_score_xml_url": null,
-    "prev_no": "82",
-    "next_no": "84",
     "category": {
       "id": 14,
       "name": "耶穌再臨",
@@ -9381,8 +9213,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/84.pdf",
     "num_score_xml_url": null,
-    "prev_no": "83",
-    "next_no": "85",
     "category": {
       "id": 14,
       "name": "耶穌再臨",
@@ -9490,8 +9320,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/85.pdf",
     "num_score_xml_url": null,
-    "prev_no": "84",
-    "next_no": "86",
     "category": {
       "id": 14,
       "name": "耶穌再臨",
@@ -9602,8 +9430,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/86.pdf",
     "num_score_xml_url": null,
-    "prev_no": "85",
-    "next_no": "87",
     "category": {
       "id": 15,
       "name": "耶穌審判",
@@ -9708,8 +9534,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/87.pdf",
     "num_score_xml_url": null,
-    "prev_no": "86",
-    "next_no": "88",
     "category": {
       "id": 15,
       "name": "耶穌審判",
@@ -9817,8 +9641,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/88.pdf",
     "num_score_xml_url": null,
-    "prev_no": "87",
-    "next_no": "89",
     "category": {
       "id": 15,
       "name": "耶穌審判",
@@ -9926,8 +9748,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/89.pdf",
     "num_score_xml_url": null,
-    "prev_no": "88",
-    "next_no": "90",
     "category": {
       "id": 16,
       "name": "感念主恩",
@@ -10035,8 +9855,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/90.pdf",
     "num_score_xml_url": null,
-    "prev_no": "89",
-    "next_no": "91",
     "category": {
       "id": 16,
       "name": "感念主恩",
@@ -10141,8 +9959,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/91.pdf",
     "num_score_xml_url": null,
-    "prev_no": "90",
-    "next_no": "92",
     "category": {
       "id": 16,
       "name": "感念主恩",
@@ -10253,8 +10069,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/92.pdf",
     "num_score_xml_url": null,
-    "prev_no": "91",
-    "next_no": "93",
     "category": {
       "id": 16,
       "name": "感念主恩",
@@ -10362,8 +10176,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/93.pdf",
     "num_score_xml_url": null,
-    "prev_no": "92",
-    "next_no": "94",
     "category": {
       "id": 16,
       "name": "感念主恩",
@@ -10465,8 +10277,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/94.pdf",
     "num_score_xml_url": null,
-    "prev_no": "93",
-    "next_no": "95",
     "category": {
       "id": 16,
       "name": "感念主恩",
@@ -10557,8 +10367,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/95.pdf",
     "num_score_xml_url": null,
-    "prev_no": "94",
-    "next_no": "96",
     "category": {
       "id": 16,
       "name": "感念主恩",
@@ -10669,8 +10477,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/96.pdf",
     "num_score_xml_url": null,
-    "prev_no": "95",
-    "next_no": "97",
     "category": {
       "id": 16,
       "name": "感念主恩",
@@ -10778,8 +10584,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/97.pdf",
     "num_score_xml_url": null,
-    "prev_no": "96",
-    "next_no": "98",
     "category": {
       "id": 16,
       "name": "感念主恩",
@@ -10887,8 +10691,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/98.pdf",
     "num_score_xml_url": null,
-    "prev_no": "97",
-    "next_no": "99",
     "category": {
       "id": 16,
       "name": "感念主恩",
@@ -10996,8 +10798,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/99.pdf",
     "num_score_xml_url": null,
-    "prev_no": "98",
-    "next_no": "100",
     "category": {
       "id": 17,
       "name": "深愛耶穌",
@@ -11105,8 +10905,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/100.pdf",
     "num_score_xml_url": null,
-    "prev_no": "99",
-    "next_no": "101",
     "category": {
       "id": 17,
       "name": "深愛耶穌",
@@ -11214,8 +11012,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/101.pdf",
     "num_score_xml_url": null,
-    "prev_no": "100",
-    "next_no": "102",
     "category": {
       "id": 17,
       "name": "深愛耶穌",
@@ -11323,8 +11119,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/102.pdf",
     "num_score_xml_url": null,
-    "prev_no": "101",
-    "next_no": "103",
     "category": {
       "id": 17,
       "name": "深愛耶穌",
@@ -11429,8 +11223,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/103.pdf",
     "num_score_xml_url": null,
-    "prev_no": "102",
-    "next_no": "104",
     "category": {
       "id": 17,
       "name": "深愛耶穌",
@@ -11524,8 +11316,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/104.pdf",
     "num_score_xml_url": null,
-    "prev_no": "103",
-    "next_no": "105",
     "category": {
       "id": 17,
       "name": "深愛耶穌",
@@ -11633,8 +11423,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/105.pdf",
     "num_score_xml_url": null,
-    "prev_no": "104",
-    "next_no": "106",
     "category": {
       "id": 17,
       "name": "深愛耶穌",
@@ -11742,8 +11530,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/106.pdf",
     "num_score_xml_url": null,
-    "prev_no": "105",
-    "next_no": "107",
     "category": {
       "id": 18,
       "name": "跟隨耶穌",
@@ -11837,8 +11623,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/107.pdf",
     "num_score_xml_url": null,
-    "prev_no": "106",
-    "next_no": "108",
     "category": {
       "id": 18,
       "name": "跟隨耶穌",
@@ -11932,8 +11716,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/108.pdf",
     "num_score_xml_url": null,
-    "prev_no": "107",
-    "next_no": "109",
     "category": {
       "id": 18,
       "name": "跟隨耶穌",
@@ -12041,8 +11823,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/109.pdf",
     "num_score_xml_url": null,
-    "prev_no": "108",
-    "next_no": "110",
     "category": {
       "id": 18,
       "name": "跟隨耶穌",
@@ -12150,8 +11930,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/110.pdf",
     "num_score_xml_url": null,
-    "prev_no": "109",
-    "next_no": "111",
     "category": {
       "id": 18,
       "name": "跟隨耶穌",
@@ -12256,8 +12034,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/111.pdf",
     "num_score_xml_url": null,
-    "prev_no": "110",
-    "next_no": "112",
     "category": {
       "id": 18,
       "name": "跟隨耶穌",
@@ -12362,8 +12138,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/112.pdf",
     "num_score_xml_url": null,
-    "prev_no": "111",
-    "next_no": "113",
     "category": {
       "id": 18,
       "name": "跟隨耶穌",
@@ -12468,8 +12242,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/113.pdf",
     "num_score_xml_url": null,
-    "prev_no": "112",
-    "next_no": "114",
     "category": {
       "id": 19,
       "name": "甘心奉獻",
@@ -12574,8 +12346,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/114.pdf",
     "num_score_xml_url": null,
-    "prev_no": "113",
-    "next_no": "115",
     "category": {
       "id": 19,
       "name": "甘心奉獻",
@@ -12686,8 +12456,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/115.pdf",
     "num_score_xml_url": null,
-    "prev_no": "114",
-    "next_no": "116",
     "category": {
       "id": 19,
       "name": "甘心奉獻",
@@ -12795,8 +12563,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/116.pdf",
     "num_score_xml_url": null,
-    "prev_no": "115",
-    "next_no": "117",
     "category": {
       "id": 19,
       "name": "甘心奉獻",
@@ -12898,8 +12664,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/117.pdf",
     "num_score_xml_url": null,
-    "prev_no": "116",
-    "next_no": "118",
     "category": {
       "id": 19,
       "name": "甘心奉獻",
@@ -12993,8 +12757,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/118.pdf",
     "num_score_xml_url": null,
-    "prev_no": "117",
-    "next_no": "119",
     "category": {
       "id": 19,
       "name": "甘心奉獻",
@@ -13099,8 +12861,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/119.pdf",
     "num_score_xml_url": null,
-    "prev_no": "118",
-    "next_no": "120",
     "category": {
       "id": 19,
       "name": "甘心奉獻",
@@ -13202,8 +12962,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/120.pdf",
     "num_score_xml_url": null,
-    "prev_no": "119",
-    "next_no": "121",
     "category": {
       "id": 19,
       "name": "甘心奉獻",
@@ -13308,8 +13066,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/121.pdf",
     "num_score_xml_url": null,
-    "prev_no": "120",
-    "next_no": "122",
     "category": {
       "id": 19,
       "name": "甘心奉獻",
@@ -13417,8 +13173,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/122.pdf",
     "num_score_xml_url": null,
-    "prev_no": "121",
-    "next_no": "123",
     "category": {
       "id": 20,
       "name": "彼此相愛",
@@ -13539,8 +13293,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/123.pdf",
     "num_score_xml_url": null,
-    "prev_no": "122",
-    "next_no": "124_a",
     "category": {
       "id": 20,
       "name": "彼此相愛",
@@ -13648,8 +13400,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/124_a.pdf",
     "num_score_xml_url": null,
-    "prev_no": "123",
-    "next_no": "124_b",
     "category": {
       "id": 20,
       "name": "彼此相愛",
@@ -13757,8 +13507,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/124_b.pdf",
     "num_score_xml_url": null,
-    "prev_no": "124_a",
-    "next_no": "125",
     "category": {
       "id": 20,
       "name": "彼此相愛",
@@ -13860,8 +13608,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/125.pdf",
     "num_score_xml_url": null,
-    "prev_no": "124_b",
-    "next_no": "126",
     "category": {
       "id": 20,
       "name": "彼此相愛",
@@ -13955,8 +13701,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/126.pdf",
     "num_score_xml_url": null,
-    "prev_no": "125",
-    "next_no": "127",
     "category": {
       "id": 20,
       "name": "彼此相愛",
@@ -14050,8 +13794,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/127.pdf",
     "num_score_xml_url": null,
-    "prev_no": "126",
-    "next_no": "128",
     "category": {
       "id": 20,
       "name": "彼此相愛",
@@ -14156,8 +13898,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/128.pdf",
     "num_score_xml_url": null,
-    "prev_no": "127",
-    "next_no": "129",
     "category": {
       "id": 21,
       "name": "紀念聖日",
@@ -14265,8 +14005,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/129.pdf",
     "num_score_xml_url": null,
-    "prev_no": "128",
-    "next_no": "130",
     "category": {
       "id": 21,
       "name": "紀念聖日",
@@ -14374,8 +14112,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/130.pdf",
     "num_score_xml_url": null,
-    "prev_no": "129",
-    "next_no": "131",
     "category": {
       "id": 21,
       "name": "紀念聖日",
@@ -14480,8 +14216,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/131.pdf",
     "num_score_xml_url": null,
-    "prev_no": "130",
-    "next_no": "132_a",
     "category": {
       "id": 21,
       "name": "紀念聖日",
@@ -14586,8 +14320,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/132_a.pdf",
     "num_score_xml_url": null,
-    "prev_no": "131",
-    "next_no": "132_b",
     "category": {
       "id": 22,
       "name": "信靠耶穌",
@@ -14692,8 +14424,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/132_b.pdf",
     "num_score_xml_url": null,
-    "prev_no": "132_a",
-    "next_no": "133",
     "category": {
       "id": 22,
       "name": "信靠耶穌",
@@ -14795,8 +14525,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/133.pdf",
     "num_score_xml_url": null,
-    "prev_no": "132_b",
-    "next_no": "134",
     "category": {
       "id": 22,
       "name": "信靠耶穌",
@@ -14904,8 +14632,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/134.pdf",
     "num_score_xml_url": null,
-    "prev_no": "133",
-    "next_no": "135",
     "category": {
       "id": 22,
       "name": "信靠耶穌",
@@ -15010,8 +14736,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/135.pdf",
     "num_score_xml_url": null,
-    "prev_no": "134",
-    "next_no": "136",
     "category": {
       "id": 22,
       "name": "信靠耶穌",
@@ -15119,8 +14843,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/136.pdf",
     "num_score_xml_url": null,
-    "prev_no": "135",
-    "next_no": "137",
     "category": {
       "id": 22,
       "name": "信靠耶穌",
@@ -15225,8 +14947,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/137.pdf",
     "num_score_xml_url": null,
-    "prev_no": "136",
-    "next_no": "138",
     "category": {
       "id": 22,
       "name": "信靠耶穌",
@@ -15334,8 +15054,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/138.pdf",
     "num_score_xml_url": null,
-    "prev_no": "137",
-    "next_no": "139",
     "category": {
       "id": 22,
       "name": "信靠耶穌",
@@ -15443,8 +15161,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/139.pdf",
     "num_score_xml_url": null,
-    "prev_no": "138",
-    "next_no": "140",
     "category": {
       "id": 22,
       "name": "信靠耶穌",
@@ -15549,8 +15265,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/140.pdf",
     "num_score_xml_url": null,
-    "prev_no": "139",
-    "next_no": "141",
     "category": {
       "id": 22,
       "name": "信靠耶穌",
@@ -15655,8 +15369,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/141.pdf",
     "num_score_xml_url": null,
-    "prev_no": "140",
-    "next_no": "142",
     "category": {
       "id": 22,
       "name": "信靠耶穌",
@@ -15761,8 +15473,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/142.pdf",
     "num_score_xml_url": null,
-    "prev_no": "141",
-    "next_no": "143",
     "category": {
       "id": 22,
       "name": "信靠耶穌",
@@ -15870,8 +15580,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/143.pdf",
     "num_score_xml_url": null,
-    "prev_no": "142",
-    "next_no": "144",
     "category": {
       "id": 22,
       "name": "信靠耶穌",
@@ -15976,8 +15684,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/144.pdf",
     "num_score_xml_url": null,
-    "prev_no": "143",
-    "next_no": "145",
     "category": {
       "id": 22,
       "name": "信靠耶穌",
@@ -16098,8 +15804,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/145.pdf",
     "num_score_xml_url": null,
-    "prev_no": "144",
-    "next_no": "146",
     "category": {
       "id": 23,
       "name": "交託恩主",
@@ -16204,8 +15908,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/146.pdf",
     "num_score_xml_url": null,
-    "prev_no": "145",
-    "next_no": "147",
     "category": {
       "id": 23,
       "name": "交託恩主",
@@ -16313,8 +16015,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/147.pdf",
     "num_score_xml_url": null,
-    "prev_no": "146",
-    "next_no": "148",
     "category": {
       "id": 23,
       "name": "交託恩主",
@@ -16419,8 +16119,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/148.pdf",
     "num_score_xml_url": null,
-    "prev_no": "147",
-    "next_no": "149",
     "category": {
       "id": 23,
       "name": "交託恩主",
@@ -16525,8 +16223,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/149.pdf",
     "num_score_xml_url": null,
-    "prev_no": "148",
-    "next_no": "150",
     "category": {
       "id": 23,
       "name": "交託恩主",
@@ -16637,8 +16333,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/150.pdf",
     "num_score_xml_url": null,
-    "prev_no": "149",
-    "next_no": "151",
     "category": {
       "id": 23,
       "name": "交託恩主",
@@ -16743,8 +16437,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/151.pdf",
     "num_score_xml_url": null,
-    "prev_no": "150",
-    "next_no": "152",
     "category": {
       "id": 23,
       "name": "交託恩主",
@@ -16849,8 +16541,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/152.pdf",
     "num_score_xml_url": null,
-    "prev_no": "151",
-    "next_no": "153",
     "category": {
       "id": 23,
       "name": "交託恩主",
@@ -16958,8 +16648,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/153.pdf",
     "num_score_xml_url": null,
-    "prev_no": "152",
-    "next_no": "154",
     "category": {
       "id": 23,
       "name": "交託恩主",
@@ -17064,8 +16752,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/154.pdf",
     "num_score_xml_url": null,
-    "prev_no": "153",
-    "next_no": "155",
     "category": {
       "id": 23,
       "name": "交託恩主",
@@ -17173,8 +16859,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/155.pdf",
     "num_score_xml_url": null,
-    "prev_no": "154",
-    "next_no": "156",
     "category": {
       "id": 23,
       "name": "交託恩主",
@@ -17279,8 +16963,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/156.pdf",
     "num_score_xml_url": null,
-    "prev_no": "155",
-    "next_no": "157",
     "category": {
       "id": 23,
       "name": "交託恩主",
@@ -17385,8 +17067,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/157.pdf",
     "num_score_xml_url": null,
-    "prev_no": "156",
-    "next_no": "158",
     "category": {
       "id": 24,
       "name": "屬靈平安",
@@ -17491,8 +17171,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/158.pdf",
     "num_score_xml_url": null,
-    "prev_no": "157",
-    "next_no": "159",
     "category": {
       "id": 24,
       "name": "屬靈平安",
@@ -17597,8 +17275,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/159.pdf",
     "num_score_xml_url": null,
-    "prev_no": "158",
-    "next_no": "160",
     "category": {
       "id": 24,
       "name": "屬靈平安",
@@ -17703,8 +17379,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/160.pdf",
     "num_score_xml_url": null,
-    "prev_no": "159",
-    "next_no": "161",
     "category": {
       "id": 24,
       "name": "屬靈平安",
@@ -17809,8 +17483,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/161.pdf",
     "num_score_xml_url": null,
-    "prev_no": "160",
-    "next_no": "162",
     "category": {
       "id": 24,
       "name": "屬靈平安",
@@ -17915,8 +17587,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/162.pdf",
     "num_score_xml_url": null,
-    "prev_no": "161",
-    "next_no": "163",
     "category": {
       "id": 24,
       "name": "屬靈平安",
@@ -17998,7 +17668,7 @@
         "text": "我一切罪愆，已交主寶血泉，\r\n因此我已經得安全；\r\n我心歌頌主，得此恩難言宣。\r\n靈魂啊！高聲唱，樂無邊！"
       },
       {
-        "text": "但願從今後，惟主做我生命，\r\n在世靠聖靈助成聖；\r\n肉體雖毀壞，我靈命永豊盛。\r\n到主來，成靈體，樂不盡。"
+        "text": "但願從今後，惟主做我生命，\r\n在世靠聖靈助成聖；\r\n肉體雖毀壞，我靈命永豐盛。\r\n到主來，成靈體，樂不盡。"
       },
       {
         "text": "主啊！眾聖徒日日等你再臨，\r\n我家非墳墓，乃天庭；\r\n那時號筒響，我耳中聽主聲，\r\n即復活，並改變被提升。"
@@ -18011,7 +17681,7 @@
     "num_score_xml": "",
     "category_id": 24,
     "created_at": "2022-07-09T16:00:00.000000Z",
-    "updated_at": "2023-04-07T05:49:16.000000Z",
+    "updated_at": "2026-08-01T15:42:24.000000Z",
     "status": "PUBLISHED",
     "history": "<p>施彼福（Horatio Gates Spafford, 1828-1888）出生於紐約，居住在芝加哥，他是長老會的信徒，平時熱心參與福音事工，和佈道家慕迪是至交。</p>\r\n\r\n<p>　</p>\r\n\r\n<p>1871年他在密西根湖畔大量投資房地產，幾個月後，當地的一場大火使他的資金損失殆盡，而不久前他才遭逢獨子的猝死。為了舒展疲憊的身心，他決定帶妻子和四個女兒赴英國渡假，並擬協助他的好友慕迪在英國的佈道大會。臨行前，因有緊急的業務要他處理，於是他安排家人按照原定的旅程搭船先去，誰知那法國郵船在威爾斯近海，被一英輪撞沉。當施彼福接到他妻子「僅我生還」的電報時，震驚之餘沒有任何埋怨，他告訴摯友說：「願神旨意成全&hellip;，在沉痛的犧牲中，我願意把萬事交託於主。」</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>之後他即刻搭船赴歐與妻子相會，當船臨近他四個女兒葬身的海峽時，椎心的哀痛如滾滾波濤洶湧而來，心中哀痛久久不能平復，當晚無法入睡。但主耶穌臨近了他，安慰他，使他心靈得安寧。信心勝過了疑慮，施彼福就在大西洋的海上，寫下了這首詩。</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>1881年施彼福多年的宿願終於得償，他和妻子帶了二個幼女與幾位朋友，離開芝加哥，遷居耶路撒冷聖地。他們成立了「美僑會館」，照顧貧困的人和病者，又創辦「施彼福兒童醫院」。八年後他去世，但這些慈善工作一直有人繼續經營著。多年後他的外孫女繼承其遺志，在耶路撒冷成立「施彼福兒童中心」。因其善行，施彼福在耶路撒冷被尊稱為「彌賽亞再世」（Second Messiah）。</p>\r\n\r\n<p>　</p>\r\n\r\n<p>作曲者布利斯（Philip P. Bliss, 1838-1876）是奮興詩歌的先驅者，是美國教會聖詩史上不可泯沒的功臣之一。一生寫作了許多感性的福音聖詩。2</p>",
     "youtube_urls": [
@@ -18024,8 +17694,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/163.pdf",
     "num_score_xml_url": null,
-    "prev_no": "162",
-    "next_no": "164",
     "category": {
       "id": 24,
       "name": "屬靈平安",
@@ -18136,8 +17804,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/164.pdf",
     "num_score_xml_url": null,
-    "prev_no": "163",
-    "next_no": "165",
     "category": {
       "id": 24,
       "name": "屬靈平安",
@@ -18242,8 +17908,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/165.pdf",
     "num_score_xml_url": null,
-    "prev_no": "164",
-    "next_no": "166",
     "category": {
       "id": 24,
       "name": "屬靈平安",
@@ -18351,8 +18015,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/166.pdf",
     "num_score_xml_url": null,
-    "prev_no": "165",
-    "next_no": "167",
     "category": {
       "id": 24,
       "name": "屬靈平安",
@@ -18457,8 +18119,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/167.pdf",
     "num_score_xml_url": null,
-    "prev_no": "166",
-    "next_no": "168",
     "category": {
       "id": 25,
       "name": "我必得勝",
@@ -18563,8 +18223,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/168.pdf",
     "num_score_xml_url": null,
-    "prev_no": "167",
-    "next_no": "169",
     "category": {
       "id": 25,
       "name": "我必得勝",
@@ -18672,8 +18330,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/169.pdf",
     "num_score_xml_url": null,
-    "prev_no": "168",
-    "next_no": "170",
     "category": {
       "id": 25,
       "name": "我必得勝",
@@ -18781,8 +18437,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/170.pdf",
     "num_score_xml_url": null,
-    "prev_no": "169",
-    "next_no": "171",
     "category": {
       "id": 25,
       "name": "我必得勝",
@@ -18890,8 +18544,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/171.pdf",
     "num_score_xml_url": null,
-    "prev_no": "170",
-    "next_no": "172",
     "category": {
       "id": 25,
       "name": "我必得勝",
@@ -18996,8 +18648,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/172.pdf",
     "num_score_xml_url": null,
-    "prev_no": "171",
-    "next_no": "173",
     "category": {
       "id": 25,
       "name": "我必得勝",
@@ -19091,8 +18741,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/173.pdf",
     "num_score_xml_url": null,
-    "prev_no": "172",
-    "next_no": "174",
     "category": {
       "id": 25,
       "name": "我必得勝",
@@ -19194,8 +18842,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/174.pdf",
     "num_score_xml_url": null,
-    "prev_no": "173",
-    "next_no": "175",
     "category": {
       "id": 25,
       "name": "我必得勝",
@@ -19286,8 +18932,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/175.pdf",
     "num_score_xml_url": null,
-    "prev_no": "174",
-    "next_no": "176",
     "category": {
       "id": 25,
       "name": "我必得勝",
@@ -19392,8 +19036,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/176.pdf",
     "num_score_xml_url": null,
-    "prev_no": "175",
-    "next_no": "177",
     "category": {
       "id": 25,
       "name": "我必得勝",
@@ -19484,8 +19126,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/177.pdf",
     "num_score_xml_url": null,
-    "prev_no": "176",
-    "next_no": "178",
     "category": {
       "id": 25,
       "name": "我必得勝",
@@ -19590,8 +19230,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/178.pdf",
     "num_score_xml_url": null,
-    "prev_no": "177",
-    "next_no": "179",
     "category": {
       "id": 26,
       "name": "直奔天路",
@@ -19696,8 +19334,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/179.pdf",
     "num_score_xml_url": null,
-    "prev_no": "178",
-    "next_no": "180",
     "category": {
       "id": 26,
       "name": "直奔天路",
@@ -19802,8 +19438,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/180.pdf",
     "num_score_xml_url": null,
-    "prev_no": "179",
-    "next_no": "181",
     "category": {
       "id": 26,
       "name": "直奔天路",
@@ -19908,8 +19542,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/181.pdf",
     "num_score_xml_url": null,
-    "prev_no": "180",
-    "next_no": "182",
     "category": {
       "id": 26,
       "name": "直奔天路",
@@ -20003,8 +19635,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/182.pdf",
     "num_score_xml_url": null,
-    "prev_no": "181",
-    "next_no": "183",
     "category": {
       "id": 26,
       "name": "直奔天路",
@@ -20109,8 +19739,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/183.pdf",
     "num_score_xml_url": null,
-    "prev_no": "182",
-    "next_no": "184",
     "category": {
       "id": 26,
       "name": "直奔天路",
@@ -20215,8 +19843,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/184.pdf",
     "num_score_xml_url": null,
-    "prev_no": "183",
-    "next_no": "185",
     "category": {
       "id": 26,
       "name": "直奔天路",
@@ -20321,8 +19947,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/185.pdf",
     "num_score_xml_url": null,
-    "prev_no": "184",
-    "next_no": "186",
     "category": {
       "id": 27,
       "name": "思慕天家",
@@ -20413,8 +20037,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/186.pdf",
     "num_score_xml_url": null,
-    "prev_no": "185",
-    "next_no": "187",
     "category": {
       "id": 27,
       "name": "思慕天家",
@@ -20505,8 +20127,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/187.pdf",
     "num_score_xml_url": null,
-    "prev_no": "186",
-    "next_no": "188",
     "category": {
       "id": 27,
       "name": "思慕天家",
@@ -20614,8 +20234,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/188.pdf",
     "num_score_xml_url": null,
-    "prev_no": "187",
-    "next_no": "189",
     "category": {
       "id": 27,
       "name": "思慕天家",
@@ -20733,8 +20351,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/189.pdf",
     "num_score_xml_url": null,
-    "prev_no": "188",
-    "next_no": "190",
     "category": {
       "id": 27,
       "name": "思慕天家",
@@ -20842,8 +20458,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/190.pdf",
     "num_score_xml_url": null,
-    "prev_no": "189",
-    "next_no": "191",
     "category": {
       "id": 27,
       "name": "思慕天家",
@@ -20951,8 +20565,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/191.pdf",
     "num_score_xml_url": null,
-    "prev_no": "190",
-    "next_no": "192",
     "category": {
       "id": 27,
       "name": "思慕天家",
@@ -21057,8 +20669,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/192.pdf",
     "num_score_xml_url": null,
-    "prev_no": "191",
-    "next_no": "193",
     "category": {
       "id": 27,
       "name": "思慕天家",
@@ -21163,8 +20773,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/193.pdf",
     "num_score_xml_url": null,
-    "prev_no": "192",
-    "next_no": "194",
     "category": {
       "id": 27,
       "name": "思慕天家",
@@ -21269,8 +20877,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/194.pdf",
     "num_score_xml_url": null,
-    "prev_no": "193",
-    "next_no": "195",
     "category": {
       "id": 27,
       "name": "思慕天家",
@@ -21375,8 +20981,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/195.pdf",
     "num_score_xml_url": null,
-    "prev_no": "194",
-    "next_no": "196",
     "category": {
       "id": 27,
       "name": "思慕天家",
@@ -21467,8 +21071,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/196.pdf",
     "num_score_xml_url": null,
-    "prev_no": "195",
-    "next_no": "197",
     "category": {
       "id": 27,
       "name": "思慕天家",
@@ -21576,8 +21178,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/197.pdf",
     "num_score_xml_url": null,
-    "prev_no": "196",
-    "next_no": "198",
     "category": {
       "id": 27,
       "name": "思慕天家",
@@ -21682,8 +21282,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/198.pdf",
     "num_score_xml_url": null,
-    "prev_no": "197",
-    "next_no": "199",
     "category": {
       "id": 27,
       "name": "思慕天家",
@@ -21788,8 +21386,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/199.pdf",
     "num_score_xml_url": null,
-    "prev_no": "198",
-    "next_no": "200",
     "category": {
       "id": 27,
       "name": "思慕天家",
@@ -21897,8 +21493,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/200.pdf",
     "num_score_xml_url": null,
-    "prev_no": "199",
-    "next_no": "201",
     "category": {
       "id": 27,
       "name": "思慕天家",
@@ -22003,8 +21597,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/201.pdf",
     "num_score_xml_url": null,
-    "prev_no": "200",
-    "next_no": "202",
     "category": {
       "id": 27,
       "name": "思慕天家",
@@ -22109,8 +21701,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/202.pdf",
     "num_score_xml_url": null,
-    "prev_no": "201",
-    "next_no": "203",
     "category": {
       "id": 27,
       "name": "思慕天家",
@@ -22215,8 +21805,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/203.pdf",
     "num_score_xml_url": null,
-    "prev_no": "202",
-    "next_no": "204",
     "category": {
       "id": 28,
       "name": "身體復活",
@@ -22321,8 +21909,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/204.pdf",
     "num_score_xml_url": null,
-    "prev_no": "203",
-    "next_no": "205",
     "category": {
       "id": 28,
       "name": "身體復活",
@@ -22430,8 +22016,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/205.pdf",
     "num_score_xml_url": null,
-    "prev_no": "204",
-    "next_no": "206",
     "category": {
       "id": 28,
       "name": "身體復活",
@@ -22539,8 +22123,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/206.pdf",
     "num_score_xml_url": null,
-    "prev_no": "205",
-    "next_no": "207",
     "category": {
       "id": 29,
       "name": "聖徒被提",
@@ -22645,8 +22227,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/207.pdf",
     "num_score_xml_url": null,
-    "prev_no": "206",
-    "next_no": "208",
     "category": {
       "id": 29,
       "name": "聖徒被提",
@@ -22751,8 +22331,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/208.pdf",
     "num_score_xml_url": null,
-    "prev_no": "207",
-    "next_no": "209",
     "category": {
       "id": 29,
       "name": "聖徒被提",
@@ -22860,8 +22438,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/209.pdf",
     "num_score_xml_url": null,
-    "prev_no": "208",
-    "next_no": "210",
     "category": {
       "id": 29,
       "name": "聖徒被提",
@@ -22966,8 +22542,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/210.pdf",
     "num_score_xml_url": null,
-    "prev_no": "209",
-    "next_no": "211",
     "category": {
       "id": 29,
       "name": "聖徒被提",
@@ -23075,8 +22649,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/211.pdf",
     "num_score_xml_url": null,
-    "prev_no": "210",
-    "next_no": "212",
     "category": {
       "id": 30,
       "name": "發出光",
@@ -23251,8 +22823,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/212.pdf",
     "num_score_xml_url": null,
-    "prev_no": "211",
-    "next_no": "213",
     "category": {
       "id": 30,
       "name": "發出光",
@@ -23360,8 +22930,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/213.pdf",
     "num_score_xml_url": null,
-    "prev_no": "212",
-    "next_no": "214",
     "category": {
       "id": 30,
       "name": "發出光",
@@ -23469,8 +23037,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/214.pdf",
     "num_score_xml_url": null,
-    "prev_no": "213",
-    "next_no": "215",
     "category": {
       "id": 30,
       "name": "發出光",
@@ -23578,8 +23144,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/215.pdf",
     "num_score_xml_url": null,
-    "prev_no": "214",
-    "next_no": "216",
     "category": {
       "id": 30,
       "name": "發出光",
@@ -23687,8 +23251,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/216.pdf",
     "num_score_xml_url": null,
-    "prev_no": "215",
-    "next_no": "217",
     "category": {
       "id": 30,
       "name": "發出光",
@@ -23793,8 +23355,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/217.pdf",
     "num_score_xml_url": null,
-    "prev_no": "216",
-    "next_no": "218",
     "category": {
       "id": 30,
       "name": "發出光",
@@ -23899,8 +23459,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/218.pdf",
     "num_score_xml_url": null,
-    "prev_no": "217",
-    "next_no": "219",
     "category": {
       "id": 30,
       "name": "發出光",
@@ -24005,8 +23563,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/219.pdf",
     "num_score_xml_url": null,
-    "prev_no": "218",
-    "next_no": "220",
     "category": {
       "id": 30,
       "name": "發出光",
@@ -24114,8 +23670,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/220.pdf",
     "num_score_xml_url": null,
-    "prev_no": "219",
-    "next_no": "221",
     "category": {
       "id": 31,
       "name": "追求聖潔",
@@ -24223,8 +23777,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/221.pdf",
     "num_score_xml_url": null,
-    "prev_no": "220",
-    "next_no": "222",
     "category": {
       "id": 31,
       "name": "追求聖潔",
@@ -24332,8 +23884,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/222.pdf",
     "num_score_xml_url": null,
-    "prev_no": "221",
-    "next_no": "223",
     "category": {
       "id": 31,
       "name": "追求聖潔",
@@ -24438,8 +23988,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/223.pdf",
     "num_score_xml_url": null,
-    "prev_no": "222",
-    "next_no": "224",
     "category": {
       "id": 31,
       "name": "追求聖潔",
@@ -24530,8 +24078,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/224.pdf",
     "num_score_xml_url": null,
-    "prev_no": "223",
-    "next_no": "225",
     "category": {
       "id": 31,
       "name": "追求聖潔",
@@ -24709,8 +24255,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/225.pdf",
     "num_score_xml_url": null,
-    "prev_no": "224",
-    "next_no": "226",
     "category": {
       "id": 32,
       "name": "完全順服",
@@ -24818,8 +24362,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/226.pdf",
     "num_score_xml_url": null,
-    "prev_no": "225",
-    "next_no": "227",
     "category": {
       "id": 32,
       "name": "完全順服",
@@ -24927,8 +24469,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/227.pdf",
     "num_score_xml_url": null,
-    "prev_no": "226",
-    "next_no": "228",
     "category": {
       "id": 32,
       "name": "完全順服",
@@ -25033,8 +24573,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/228.pdf",
     "num_score_xml_url": null,
-    "prev_no": "227",
-    "next_no": "229",
     "category": {
       "id": 32,
       "name": "完全順服",
@@ -25145,8 +24683,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/229.pdf",
     "num_score_xml_url": null,
-    "prev_no": "228",
-    "next_no": "230",
     "category": {
       "id": 32,
       "name": "完全順服",
@@ -25251,8 +24787,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/230.pdf",
     "num_score_xml_url": null,
-    "prev_no": "229",
-    "next_no": "231",
     "category": {
       "id": 32,
       "name": "完全順服",
@@ -25343,8 +24877,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/231.pdf",
     "num_score_xml_url": null,
-    "prev_no": "230",
-    "next_no": "232",
     "category": {
       "id": 32,
       "name": "完全順服",
@@ -25519,8 +25051,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/232.pdf",
     "num_score_xml_url": null,
-    "prev_no": "231",
-    "next_no": "233",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -25634,8 +25164,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/233.pdf",
     "num_score_xml_url": null,
-    "prev_no": "232",
-    "next_no": "234",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -25743,8 +25271,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/234.pdf",
     "num_score_xml_url": null,
-    "prev_no": "233",
-    "next_no": "235",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -25919,8 +25445,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/235.pdf",
     "num_score_xml_url": null,
-    "prev_no": "234",
-    "next_no": "236",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -26025,8 +25549,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/236.pdf",
     "num_score_xml_url": null,
-    "prev_no": "235",
-    "next_no": "237",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -26204,8 +25726,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/237.pdf",
     "num_score_xml_url": null,
-    "prev_no": "236",
-    "next_no": "238",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -26313,8 +25833,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/238.pdf",
     "num_score_xml_url": null,
-    "prev_no": "237",
-    "next_no": "239",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -26422,8 +25940,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/239.pdf",
     "num_score_xml_url": null,
-    "prev_no": "238",
-    "next_no": "240",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -26528,8 +26044,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/240.pdf",
     "num_score_xml_url": null,
-    "prev_no": "239",
-    "next_no": "241",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -26634,8 +26148,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/241.pdf",
     "num_score_xml_url": null,
-    "prev_no": "240",
-    "next_no": "242",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -26740,8 +26252,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/242.pdf",
     "num_score_xml_url": null,
-    "prev_no": "241",
-    "next_no": "243",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -26849,8 +26359,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/243.pdf",
     "num_score_xml_url": null,
-    "prev_no": "242",
-    "next_no": "244",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -27022,8 +26530,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/244.pdf",
     "num_score_xml_url": null,
-    "prev_no": "243",
-    "next_no": "245",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -27201,8 +26707,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/245.pdf",
     "num_score_xml_url": null,
-    "prev_no": "244",
-    "next_no": "246",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -27313,8 +26817,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/246.pdf",
     "num_score_xml_url": null,
-    "prev_no": "245",
-    "next_no": "247",
     "category": {
       "id": 34,
       "name": "祈求靈恩",
@@ -27422,8 +26924,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/247.pdf",
     "num_score_xml_url": null,
-    "prev_no": "246",
-    "next_no": "248",
     "category": {
       "id": 34,
       "name": "祈求靈恩",
@@ -27531,8 +27031,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/248.pdf",
     "num_score_xml_url": null,
-    "prev_no": "247",
-    "next_no": "249",
     "category": {
       "id": 34,
       "name": "祈求靈恩",
@@ -27637,8 +27135,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/249.pdf",
     "num_score_xml_url": null,
-    "prev_no": "248",
-    "next_no": "250",
     "category": {
       "id": 34,
       "name": "祈求靈恩",
@@ -27746,8 +27242,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/250.pdf",
     "num_score_xml_url": null,
-    "prev_no": "249",
-    "next_no": "251",
     "category": {
       "id": 34,
       "name": "祈求靈恩",
@@ -27849,8 +27343,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/251.pdf",
     "num_score_xml_url": null,
-    "prev_no": "250",
-    "next_no": "252",
     "category": {
       "id": 34,
       "name": "祈求靈恩",
@@ -27958,8 +27450,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/252.pdf",
     "num_score_xml_url": null,
-    "prev_no": "251",
-    "next_no": "253",
     "category": {
       "id": 34,
       "name": "祈求靈恩",
@@ -28050,8 +27540,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/253.pdf",
     "num_score_xml_url": null,
-    "prev_no": "252",
-    "next_no": "254",
     "category": {
       "id": 34,
       "name": "祈求靈恩",
@@ -28145,8 +27633,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/254.pdf",
     "num_score_xml_url": null,
-    "prev_no": "253",
-    "next_no": "255",
     "category": {
       "id": 34,
       "name": "祈求靈恩",
@@ -28267,8 +27753,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/255.pdf",
     "num_score_xml_url": null,
-    "prev_no": "254",
-    "next_no": "256",
     "category": {
       "id": 34,
       "name": "祈求靈恩",
@@ -28376,8 +27860,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/256.pdf",
     "num_score_xml_url": null,
-    "prev_no": "255",
-    "next_no": "257",
     "category": {
       "id": 34,
       "name": "祈求靈恩",
@@ -28485,8 +27967,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/257.pdf",
     "num_score_xml_url": null,
-    "prev_no": "256",
-    "next_no": "258",
     "category": {
       "id": 35,
       "name": "禱告",
@@ -28591,8 +28071,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/258.pdf",
     "num_score_xml_url": null,
-    "prev_no": "257",
-    "next_no": "259",
     "category": {
       "id": 35,
       "name": "禱告",
@@ -28697,8 +28175,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/259.pdf",
     "num_score_xml_url": null,
-    "prev_no": "258",
-    "next_no": "260",
     "category": {
       "id": 35,
       "name": "禱告",
@@ -28803,8 +28279,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/260.pdf",
     "num_score_xml_url": null,
-    "prev_no": "259",
-    "next_no": "261",
     "category": {
       "id": 35,
       "name": "禱告",
@@ -28895,8 +28369,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/261.pdf",
     "num_score_xml_url": null,
-    "prev_no": "260",
-    "next_no": "262",
     "category": {
       "id": 35,
       "name": "禱告",
@@ -29004,8 +28476,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/262.pdf",
     "num_score_xml_url": null,
-    "prev_no": "261",
-    "next_no": "263",
     "category": {
       "id": 35,
       "name": "禱告",
@@ -29110,8 +28580,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/263.pdf",
     "num_score_xml_url": null,
-    "prev_no": "262",
-    "next_no": "264",
     "category": {
       "id": 35,
       "name": "禱告",
@@ -29219,8 +28687,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/264.pdf",
     "num_score_xml_url": null,
-    "prev_no": "263",
-    "next_no": "265",
     "category": {
       "id": 35,
       "name": "禱告",
@@ -29325,8 +28791,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/265.pdf",
     "num_score_xml_url": null,
-    "prev_no": "264",
-    "next_no": "266",
     "category": {
       "id": 35,
       "name": "禱告",
@@ -29434,8 +28898,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/266.pdf",
     "num_score_xml_url": null,
-    "prev_no": "265",
-    "next_no": "267",
     "category": {
       "id": 36,
       "name": "差遣工人",
@@ -29540,8 +29002,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/267.pdf",
     "num_score_xml_url": null,
-    "prev_no": "266",
-    "next_no": "268",
     "category": {
       "id": 36,
       "name": "差遣工人",
@@ -29646,8 +29106,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/268.pdf",
     "num_score_xml_url": null,
-    "prev_no": "267",
-    "next_no": "269",
     "category": {
       "id": 36,
       "name": "差遣工人",
@@ -29752,8 +29210,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/269.pdf",
     "num_score_xml_url": null,
-    "prev_no": "268",
-    "next_no": "270",
     "category": {
       "id": 36,
       "name": "差遣工人",
@@ -29861,8 +29317,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/270.pdf",
     "num_score_xml_url": null,
-    "prev_no": "269",
-    "next_no": "271",
     "category": {
       "id": 36,
       "name": "差遣工人",
@@ -29970,8 +29424,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/271.pdf",
     "num_score_xml_url": null,
-    "prev_no": "270",
-    "next_no": "272",
     "category": {
       "id": 37,
       "name": "傳揚福音",
@@ -30146,8 +29598,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/272.pdf",
     "num_score_xml_url": null,
-    "prev_no": "271",
-    "next_no": "273",
     "category": {
       "id": 37,
       "name": "傳揚福音",
@@ -30249,8 +29699,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/273.pdf",
     "num_score_xml_url": null,
-    "prev_no": "272",
-    "next_no": "274_a",
     "category": {
       "id": 37,
       "name": "傳揚福音",
@@ -30344,8 +29792,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/274_a.pdf",
     "num_score_xml_url": null,
-    "prev_no": "273",
-    "next_no": "274_b",
     "category": {
       "id": 37,
       "name": "傳揚福音",
@@ -30453,8 +29899,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/274_b.pdf",
     "num_score_xml_url": null,
-    "prev_no": "274_a",
-    "next_no": "275",
     "category": {
       "id": 37,
       "name": "傳揚福音",
@@ -30565,8 +30009,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/275.pdf",
     "num_score_xml_url": null,
-    "prev_no": "274_b",
-    "next_no": "276",
     "category": {
       "id": 37,
       "name": "傳揚福音",
@@ -30674,8 +30116,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/276.pdf",
     "num_score_xml_url": null,
-    "prev_no": "275",
-    "next_no": "277",
     "category": {
       "id": 37,
       "name": "傳揚福音",
@@ -30766,8 +30206,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/277.pdf",
     "num_score_xml_url": null,
-    "prev_no": "276",
-    "next_no": "278",
     "category": {
       "id": 37,
       "name": "傳揚福音",
@@ -30945,8 +30383,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/278.pdf",
     "num_score_xml_url": null,
-    "prev_no": "277",
-    "next_no": "279",
     "category": {
       "id": 37,
       "name": "傳揚福音",
@@ -31124,8 +30560,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/279.pdf",
     "num_score_xml_url": null,
-    "prev_no": "278",
-    "next_no": "280",
     "category": {
       "id": 37,
       "name": "傳揚福音",
@@ -31230,8 +30664,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/280.pdf",
     "num_score_xml_url": null,
-    "prev_no": "279",
-    "next_no": "281",
     "category": {
       "id": 37,
       "name": "傳揚福音",
@@ -31336,8 +30768,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/281.pdf",
     "num_score_xml_url": null,
-    "prev_no": "280",
-    "next_no": "282",
     "category": {
       "id": 37,
       "name": "傳揚福音",
@@ -31442,8 +30872,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/282.pdf",
     "num_score_xml_url": null,
-    "prev_no": "281",
-    "next_no": "283",
     "category": {
       "id": 37,
       "name": "傳揚福音",
@@ -31548,8 +30976,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/283.pdf",
     "num_score_xml_url": null,
-    "prev_no": "282",
-    "next_no": "284",
     "category": {
       "id": 37,
       "name": "傳揚福音",
@@ -31654,8 +31080,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/284.pdf",
     "num_score_xml_url": null,
-    "prev_no": "283",
-    "next_no": "285",
     "category": {
       "id": 37,
       "name": "傳揚福音",
@@ -31763,8 +31187,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/285.pdf",
     "num_score_xml_url": null,
-    "prev_no": "284",
-    "next_no": "286",
     "category": {
       "id": 37,
       "name": "傳揚福音",
@@ -31869,8 +31291,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/286.pdf",
     "num_score_xml_url": null,
-    "prev_no": "285",
-    "next_no": "287",
     "category": {
       "id": 37,
       "name": "傳揚福音",
@@ -31975,8 +31395,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/287.pdf",
     "num_score_xml_url": null,
-    "prev_no": "286",
-    "next_no": "288",
     "category": {
       "id": 37,
       "name": "傳揚福音",
@@ -32067,8 +31485,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/288.pdf",
     "num_score_xml_url": null,
-    "prev_no": "287",
-    "next_no": "289",
     "category": {
       "id": 37,
       "name": "傳揚福音",
@@ -32179,8 +31595,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/289.pdf",
     "num_score_xml_url": null,
-    "prev_no": "288",
-    "next_no": "290",
     "category": {
       "id": 38,
       "name": "按立聖職",
@@ -32288,8 +31702,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/290.pdf",
     "num_score_xml_url": null,
-    "prev_no": "289",
-    "next_no": "291",
     "category": {
       "id": 38,
       "name": "按立聖職",
@@ -32394,8 +31806,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/291.pdf",
     "num_score_xml_url": null,
-    "prev_no": "290",
-    "next_no": "292",
     "category": {
       "id": 39,
       "name": "浸禮",
@@ -32503,8 +31913,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/292.pdf",
     "num_score_xml_url": null,
-    "prev_no": "291",
-    "next_no": "293",
     "category": {
       "id": 39,
       "name": "浸禮",
@@ -32612,8 +32020,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/293.pdf",
     "num_score_xml_url": null,
-    "prev_no": "292",
-    "next_no": "294",
     "category": {
       "id": 39,
       "name": "浸禮",
@@ -32721,8 +32127,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/294.pdf",
     "num_score_xml_url": null,
-    "prev_no": "293",
-    "next_no": "295",
     "category": {
       "id": 39,
       "name": "浸禮",
@@ -32830,8 +32234,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/295.pdf",
     "num_score_xml_url": null,
-    "prev_no": "294",
-    "next_no": "296_a",
     "category": {
       "id": 40,
       "name": "洗腳禮",
@@ -32942,8 +32344,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/296_a.pdf",
     "num_score_xml_url": null,
-    "prev_no": "295",
-    "next_no": "296_b",
     "category": {
       "id": 41,
       "name": "聖餐禮",
@@ -33057,8 +32457,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/296_b.pdf",
     "num_score_xml_url": null,
-    "prev_no": "296_a",
-    "next_no": "297",
     "category": {
       "id": 41,
       "name": "聖餐禮",
@@ -33166,8 +32564,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/297.pdf",
     "num_score_xml_url": null,
-    "prev_no": "296_b",
-    "next_no": "298",
     "category": {
       "id": 41,
       "name": "聖餐禮",
@@ -33275,8 +32671,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/298.pdf",
     "num_score_xml_url": null,
-    "prev_no": "297",
-    "next_no": "299",
     "category": {
       "id": 42,
       "name": "婚儀",
@@ -33384,8 +32778,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/299.pdf",
     "num_score_xml_url": null,
-    "prev_no": "298",
-    "next_no": "300",
     "category": {
       "id": 42,
       "name": "婚儀",
@@ -33476,8 +32868,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/300.pdf",
     "num_score_xml_url": null,
-    "prev_no": "299",
-    "next_no": "301",
     "category": {
       "id": 42,
       "name": "婚儀",
@@ -33585,8 +32975,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/301.pdf",
     "num_score_xml_url": null,
-    "prev_no": "300",
-    "next_no": "302",
     "category": {
       "id": 43,
       "name": "喪儀",
@@ -33694,8 +33082,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/302.pdf",
     "num_score_xml_url": null,
-    "prev_no": "301",
-    "next_no": "303",
     "category": {
       "id": 43,
       "name": "喪儀",
@@ -33803,8 +33189,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/303.pdf",
     "num_score_xml_url": null,
-    "prev_no": "302",
-    "next_no": "304",
     "category": {
       "id": 44,
       "name": "切實悔改",
@@ -33912,8 +33296,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/304.pdf",
     "num_score_xml_url": null,
-    "prev_no": "303",
-    "next_no": "305",
     "category": {
       "id": 44,
       "name": "切實悔改",
@@ -34021,8 +33403,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/305.pdf",
     "num_score_xml_url": null,
-    "prev_no": "304",
-    "next_no": "306",
     "category": {
       "id": 44,
       "name": "切實悔改",
@@ -34130,8 +33510,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/306.pdf",
     "num_score_xml_url": null,
-    "prev_no": "305",
-    "next_no": "307",
     "category": {
       "id": 44,
       "name": "切實悔改",
@@ -34239,8 +33617,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/307.pdf",
     "num_score_xml_url": null,
-    "prev_no": "306",
-    "next_no": "308",
     "category": {
       "id": 44,
       "name": "切實悔改",
@@ -34345,8 +33721,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/308.pdf",
     "num_score_xml_url": null,
-    "prev_no": "307",
-    "next_no": "309",
     "category": {
       "id": 44,
       "name": "切實悔改",
@@ -34454,8 +33828,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/309.pdf",
     "num_score_xml_url": null,
-    "prev_no": "308",
-    "next_no": "310",
     "category": {
       "id": 45,
       "name": "歲首",
@@ -34560,8 +33932,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/310.pdf",
     "num_score_xml_url": null,
-    "prev_no": "309",
-    "next_no": "311",
     "category": {
       "id": 46,
       "name": "歲末",
@@ -34669,8 +34039,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/311.pdf",
     "num_score_xml_url": null,
-    "prev_no": "310",
-    "next_no": "312",
     "category": {
       "id": 1,
       "name": "讚美天父",
@@ -34778,8 +34146,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/312.pdf",
     "num_score_xml_url": null,
-    "prev_no": "311",
-    "next_no": "313",
     "category": {
       "id": 1,
       "name": "讚美天父",
@@ -34887,8 +34253,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/313.pdf",
     "num_score_xml_url": null,
-    "prev_no": "312",
-    "next_no": "314",
     "category": {
       "id": 1,
       "name": "讚美天父",
@@ -34996,8 +34360,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/314.pdf",
     "num_score_xml_url": null,
-    "prev_no": "313",
-    "next_no": "315",
     "category": {
       "id": 5,
       "name": "耶穌呼召",
@@ -35105,8 +34467,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/315.pdf",
     "num_score_xml_url": null,
-    "prev_no": "314",
-    "next_no": "316",
     "category": {
       "id": 1,
       "name": "讚美天父",
@@ -35214,8 +34574,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/316.pdf",
     "num_score_xml_url": null,
-    "prev_no": "315",
-    "next_no": "317",
     "category": {
       "id": 2,
       "name": "讚美耶穌",
@@ -35320,8 +34678,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/317.pdf",
     "num_score_xml_url": null,
-    "prev_no": "316",
-    "next_no": "318",
     "category": {
       "id": 5,
       "name": "耶穌呼召",
@@ -35429,8 +34785,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/318.pdf",
     "num_score_xml_url": null,
-    "prev_no": "317",
-    "next_no": "319",
     "category": {
       "id": 24,
       "name": "屬靈平安",
@@ -35538,8 +34892,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/319.pdf",
     "num_score_xml_url": null,
-    "prev_no": "318",
-    "next_no": "320",
     "category": {
       "id": 11,
       "name": "耶穌降生",
@@ -35647,8 +34999,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/320.pdf",
     "num_score_xml_url": null,
-    "prev_no": "319",
-    "next_no": "321",
     "category": {
       "id": 11,
       "name": "耶穌降生",
@@ -35753,8 +35103,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/321.pdf",
     "num_score_xml_url": null,
-    "prev_no": "320",
-    "next_no": "322",
     "category": {
       "id": 2,
       "name": "讚美耶穌",
@@ -35859,8 +35207,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/322.pdf",
     "num_score_xml_url": null,
-    "prev_no": "321",
-    "next_no": "323",
     "category": {
       "id": 2,
       "name": "讚美耶穌",
@@ -35968,8 +35314,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/323.pdf",
     "num_score_xml_url": null,
-    "prev_no": "322",
-    "next_no": "324",
     "category": {
       "id": 2,
       "name": "讚美耶穌",
@@ -36074,8 +35418,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/324.pdf",
     "num_score_xml_url": null,
-    "prev_no": "323",
-    "next_no": "325",
     "category": {
       "id": 12,
       "name": "耶穌受難",
@@ -36183,8 +35525,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/325.pdf",
     "num_score_xml_url": null,
-    "prev_no": "324",
-    "next_no": "326",
     "category": {
       "id": 2,
       "name": "讚美耶穌",
@@ -36295,8 +35635,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/326.pdf",
     "num_score_xml_url": null,
-    "prev_no": "325",
-    "next_no": "327",
     "category": {
       "id": 9,
       "name": "耶穌領導",
@@ -36404,8 +35742,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/327.pdf",
     "num_score_xml_url": null,
-    "prev_no": "326",
-    "next_no": "328",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -36513,8 +35849,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/328.pdf",
     "num_score_xml_url": null,
-    "prev_no": "327",
-    "next_no": "329",
     "category": {
       "id": 1,
       "name": "讚美天父",
@@ -36622,8 +35956,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/329.pdf",
     "num_score_xml_url": null,
-    "prev_no": "328",
-    "next_no": "330",
     "category": {
       "id": 9,
       "name": "耶穌領導",
@@ -36728,8 +36060,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/330.pdf",
     "num_score_xml_url": null,
-    "prev_no": "329",
-    "next_no": "331",
     "category": {
       "id": 24,
       "name": "屬靈平安",
@@ -36904,8 +36234,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/331.pdf",
     "num_score_xml_url": null,
-    "prev_no": "330",
-    "next_no": "332",
     "category": {
       "id": 34,
       "name": "祈求靈恩",
@@ -37010,8 +36338,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/332.pdf",
     "num_score_xml_url": null,
-    "prev_no": "331",
-    "next_no": "333",
     "category": {
       "id": 1,
       "name": "讚美天父",
@@ -37119,8 +36445,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/333.pdf",
     "num_score_xml_url": null,
-    "prev_no": "332",
-    "next_no": "334",
     "category": {
       "id": 21,
       "name": "紀念聖日",
@@ -37228,8 +36552,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/334.pdf",
     "num_score_xml_url": null,
-    "prev_no": "333",
-    "next_no": "335",
     "category": {
       "id": 2,
       "name": "讚美耶穌",
@@ -37340,8 +36662,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/335.pdf",
     "num_score_xml_url": null,
-    "prev_no": "334",
-    "next_no": "336",
     "category": {
       "id": 16,
       "name": "感念主恩",
@@ -37449,8 +36769,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/336.pdf",
     "num_score_xml_url": null,
-    "prev_no": "335",
-    "next_no": "337",
     "category": {
       "id": 23,
       "name": "交託恩主",
@@ -37558,8 +36876,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/337.pdf",
     "num_score_xml_url": null,
-    "prev_no": "336",
-    "next_no": "338",
     "category": {
       "id": 16,
       "name": "感念主恩",
@@ -37667,8 +36983,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/338.pdf",
     "num_score_xml_url": null,
-    "prev_no": "337",
-    "next_no": "339",
     "category": {
       "id": 7,
       "name": "耶穌救恩",
@@ -37776,8 +37090,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/339.pdf",
     "num_score_xml_url": null,
-    "prev_no": "338",
-    "next_no": "340",
     "category": {
       "id": 10,
       "name": "萬福根源",
@@ -37888,8 +37200,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/340.pdf",
     "num_score_xml_url": null,
-    "prev_no": "339",
-    "next_no": "341",
     "category": {
       "id": 4,
       "name": "耶穌仁慈",
@@ -37997,8 +37307,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/341.pdf",
     "num_score_xml_url": null,
-    "prev_no": "340",
-    "next_no": "342",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -38103,8 +37411,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/342.pdf",
     "num_score_xml_url": null,
-    "prev_no": "341",
-    "next_no": "343",
     "category": {
       "id": 30,
       "name": "發出光",
@@ -38209,8 +37515,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/343.pdf",
     "num_score_xml_url": null,
-    "prev_no": "342",
-    "next_no": "344",
     "category": {
       "id": 8,
       "name": "耶穌釋放",
@@ -38388,8 +37692,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/344.pdf",
     "num_score_xml_url": null,
-    "prev_no": "343",
-    "next_no": "345",
     "category": {
       "id": 23,
       "name": "交託恩主",
@@ -38494,8 +37796,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/345.pdf",
     "num_score_xml_url": null,
-    "prev_no": "344",
-    "next_no": "346",
     "category": {
       "id": 4,
       "name": "耶穌仁慈",
@@ -38603,8 +37903,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/346.pdf",
     "num_score_xml_url": null,
-    "prev_no": "345",
-    "next_no": "347",
     "category": {
       "id": 5,
       "name": "耶穌呼召",
@@ -38709,8 +38007,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/347.pdf",
     "num_score_xml_url": null,
-    "prev_no": "346",
-    "next_no": "348",
     "category": {
       "id": 24,
       "name": "屬靈平安",
@@ -38818,8 +38114,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/348.pdf",
     "num_score_xml_url": null,
-    "prev_no": "347",
-    "next_no": "349",
     "category": {
       "id": 16,
       "name": "感念主恩",
@@ -38921,8 +38215,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/349.pdf",
     "num_score_xml_url": null,
-    "prev_no": "348",
-    "next_no": "350",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -39041,8 +38333,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/350.pdf",
     "num_score_xml_url": null,
-    "prev_no": "349",
-    "next_no": "351",
     "category": {
       "id": 17,
       "name": "深愛耶穌",
@@ -39147,8 +38437,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/351.pdf",
     "num_score_xml_url": null,
-    "prev_no": "350",
-    "next_no": "352",
     "category": {
       "id": 24,
       "name": "屬靈平安",
@@ -39326,8 +38614,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/352.pdf",
     "num_score_xml_url": null,
-    "prev_no": "351",
-    "next_no": "353",
     "category": {
       "id": 24,
       "name": "屬靈平安",
@@ -39432,8 +38718,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/353.pdf",
     "num_score_xml_url": null,
-    "prev_no": "352",
-    "next_no": "354",
     "category": {
       "id": 25,
       "name": "我必得勝",
@@ -39541,8 +38825,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/354.pdf",
     "num_score_xml_url": null,
-    "prev_no": "353",
-    "next_no": "355",
     "category": {
       "id": 23,
       "name": "交託恩主",
@@ -39647,8 +38929,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/355.pdf",
     "num_score_xml_url": null,
-    "prev_no": "354",
-    "next_no": "356",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -39753,8 +39033,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/356.pdf",
     "num_score_xml_url": null,
-    "prev_no": "355",
-    "next_no": "357",
     "category": {
       "id": 25,
       "name": "我必得勝",
@@ -39865,8 +39143,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/357.pdf",
     "num_score_xml_url": null,
-    "prev_no": "356",
-    "next_no": "358",
     "category": {
       "id": 23,
       "name": "交託恩主",
@@ -39971,8 +39247,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/358.pdf",
     "num_score_xml_url": null,
-    "prev_no": "357",
-    "next_no": "359",
     "category": {
       "id": 31,
       "name": "追求聖潔",
@@ -40080,8 +39354,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/359.pdf",
     "num_score_xml_url": null,
-    "prev_no": "358",
-    "next_no": "360",
     "category": {
       "id": 26,
       "name": "直奔天路",
@@ -40189,8 +39461,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/360.pdf",
     "num_score_xml_url": null,
-    "prev_no": "359",
-    "next_no": "361",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -40295,8 +39565,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/361.pdf",
     "num_score_xml_url": null,
-    "prev_no": "360",
-    "next_no": "362",
     "category": {
       "id": 12,
       "name": "耶穌受難",
@@ -40404,8 +39672,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/362.pdf",
     "num_score_xml_url": null,
-    "prev_no": "361",
-    "next_no": "363",
     "category": {
       "id": 3,
       "name": "讚美聖言",
@@ -40526,8 +39792,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/363.pdf",
     "num_score_xml_url": null,
-    "prev_no": "362",
-    "next_no": "364",
     "category": {
       "id": 25,
       "name": "我必得勝",
@@ -40635,8 +39899,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/364.pdf",
     "num_score_xml_url": null,
-    "prev_no": "363",
-    "next_no": "365",
     "category": {
       "id": 3,
       "name": "讚美聖言",
@@ -40741,8 +40003,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/365.pdf",
     "num_score_xml_url": null,
-    "prev_no": "364",
-    "next_no": "366",
     "category": {
       "id": 12,
       "name": "耶穌受難",
@@ -40873,8 +40133,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/366.pdf",
     "num_score_xml_url": null,
-    "prev_no": "365",
-    "next_no": "367",
     "category": {
       "id": 32,
       "name": "完全順服",
@@ -40979,8 +40237,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/367.pdf",
     "num_score_xml_url": null,
-    "prev_no": "366",
-    "next_no": "368",
     "category": {
       "id": 22,
       "name": "信靠耶穌",
@@ -41088,8 +40344,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/368.pdf",
     "num_score_xml_url": null,
-    "prev_no": "367",
-    "next_no": "369",
     "category": {
       "id": 37,
       "name": "傳揚福音",
@@ -41197,8 +40451,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/369.pdf",
     "num_score_xml_url": null,
-    "prev_no": "368",
-    "next_no": "370",
     "category": {
       "id": 12,
       "name": "耶穌受難",
@@ -41306,8 +40558,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/370.pdf",
     "num_score_xml_url": null,
-    "prev_no": "369",
-    "next_no": "371",
     "category": {
       "id": 25,
       "name": "我必得勝",
@@ -41415,8 +40665,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/371.pdf",
     "num_score_xml_url": null,
-    "prev_no": "370",
-    "next_no": "372",
     "category": {
       "id": 23,
       "name": "交託恩主",
@@ -41521,8 +40769,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/372.pdf",
     "num_score_xml_url": null,
-    "prev_no": "371",
-    "next_no": "373",
     "category": {
       "id": 34,
       "name": "祈求靈恩",
@@ -41627,8 +40873,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/373.pdf",
     "num_score_xml_url": null,
-    "prev_no": "372",
-    "next_no": "374",
     "category": {
       "id": 23,
       "name": "交託恩主",
@@ -41733,8 +40977,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/374.pdf",
     "num_score_xml_url": null,
-    "prev_no": "373",
-    "next_no": "375",
     "category": {
       "id": 25,
       "name": "我必得勝",
@@ -41839,8 +41081,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/375.pdf",
     "num_score_xml_url": null,
-    "prev_no": "374",
-    "next_no": "376",
     "category": {
       "id": 5,
       "name": "耶穌呼召",
@@ -41948,8 +41188,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/376.pdf",
     "num_score_xml_url": null,
-    "prev_no": "375",
-    "next_no": "377",
     "category": {
       "id": 23,
       "name": "交託恩主",
@@ -42054,8 +41292,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/377.pdf",
     "num_score_xml_url": null,
-    "prev_no": "376",
-    "next_no": "378",
     "category": {
       "id": 23,
       "name": "交託恩主",
@@ -42163,8 +41399,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/378.pdf",
     "num_score_xml_url": null,
-    "prev_no": "377",
-    "next_no": "379",
     "category": {
       "id": 32,
       "name": "完全順服",
@@ -42269,8 +41503,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/379.pdf",
     "num_score_xml_url": null,
-    "prev_no": "378",
-    "next_no": "380",
     "category": {
       "id": 22,
       "name": "信靠耶穌",
@@ -42378,8 +41610,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/380.pdf",
     "num_score_xml_url": null,
-    "prev_no": "379",
-    "next_no": "381",
     "category": {
       "id": 10,
       "name": "萬福根源",
@@ -42487,8 +41717,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/381.pdf",
     "num_score_xml_url": null,
-    "prev_no": "380",
-    "next_no": "382",
     "category": {
       "id": 17,
       "name": "深愛耶穌",
@@ -42593,8 +41821,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/382.pdf",
     "num_score_xml_url": null,
-    "prev_no": "381",
-    "next_no": "383",
     "category": {
       "id": 24,
       "name": "屬靈平安",
@@ -42699,8 +41925,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/383.pdf",
     "num_score_xml_url": null,
-    "prev_no": "382",
-    "next_no": "384",
     "category": {
       "id": 27,
       "name": "思慕天家",
@@ -42808,8 +42032,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/384.pdf",
     "num_score_xml_url": null,
-    "prev_no": "383",
-    "next_no": "385",
     "category": {
       "id": 30,
       "name": "發出光",
@@ -42917,8 +42139,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/385.pdf",
     "num_score_xml_url": null,
-    "prev_no": "384",
-    "next_no": "386",
     "category": {
       "id": 6,
       "name": "耶穌寶血",
@@ -43096,8 +42316,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/386.pdf",
     "num_score_xml_url": null,
-    "prev_no": "385",
-    "next_no": "387",
     "category": {
       "id": 22,
       "name": "信靠耶穌",
@@ -43208,8 +42426,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/387.pdf",
     "num_score_xml_url": null,
-    "prev_no": "386",
-    "next_no": "388",
     "category": {
       "id": 9,
       "name": "耶穌領導",
@@ -43314,8 +42530,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/388.pdf",
     "num_score_xml_url": null,
-    "prev_no": "387",
-    "next_no": "389",
     "category": {
       "id": 23,
       "name": "交託恩主",
@@ -43423,8 +42637,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/389.pdf",
     "num_score_xml_url": null,
-    "prev_no": "388",
-    "next_no": "390",
     "category": {
       "id": 23,
       "name": "交託恩主",
@@ -43599,8 +42811,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/390.pdf",
     "num_score_xml_url": null,
-    "prev_no": "389",
-    "next_no": "391",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -43705,8 +42915,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/391.pdf",
     "num_score_xml_url": null,
-    "prev_no": "390",
-    "next_no": "392",
     "category": {
       "id": 24,
       "name": "屬靈平安",
@@ -43811,8 +43019,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/392.pdf",
     "num_score_xml_url": null,
-    "prev_no": "391",
-    "next_no": "393",
     "category": {
       "id": 36,
       "name": "差遣工人",
@@ -43930,8 +43136,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/393.pdf",
     "num_score_xml_url": null,
-    "prev_no": "392",
-    "next_no": "394",
     "category": {
       "id": 4,
       "name": "耶穌仁慈",
@@ -44036,8 +43240,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/394.pdf",
     "num_score_xml_url": null,
-    "prev_no": "393",
-    "next_no": "395",
     "category": {
       "id": 16,
       "name": "感念主恩",
@@ -44215,8 +43417,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/395.pdf",
     "num_score_xml_url": null,
-    "prev_no": "394",
-    "next_no": "396",
     "category": {
       "id": 31,
       "name": "追求聖潔",
@@ -44321,8 +43521,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/396.pdf",
     "num_score_xml_url": null,
-    "prev_no": "395",
-    "next_no": "397",
     "category": {
       "id": 30,
       "name": "發出光",
@@ -44430,8 +43628,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/397.pdf",
     "num_score_xml_url": null,
-    "prev_no": "396",
-    "next_no": "398",
     "category": {
       "id": 26,
       "name": "直奔天路",
@@ -44536,8 +43732,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/398.pdf",
     "num_score_xml_url": null,
-    "prev_no": "397",
-    "next_no": "399",
     "category": {
       "id": 30,
       "name": "發出光",
@@ -44654,8 +43848,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/399.pdf",
     "num_score_xml_url": null,
-    "prev_no": "398",
-    "next_no": "400",
     "category": {
       "id": 30,
       "name": "發出光",
@@ -44760,8 +43952,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/400.pdf",
     "num_score_xml_url": null,
-    "prev_no": "399",
-    "next_no": "401",
     "category": {
       "id": 30,
       "name": "發出光",
@@ -44869,8 +44059,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/401.pdf",
     "num_score_xml_url": null,
-    "prev_no": "400",
-    "next_no": "402",
     "category": {
       "id": 31,
       "name": "追求聖潔",
@@ -45042,8 +44230,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/402.pdf",
     "num_score_xml_url": null,
-    "prev_no": "401",
-    "next_no": "403",
     "category": {
       "id": 9,
       "name": "耶穌領導",
@@ -45221,8 +44407,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/403.pdf",
     "num_score_xml_url": null,
-    "prev_no": "402",
-    "next_no": "404",
     "category": {
       "id": 9,
       "name": "耶穌領導",
@@ -45397,8 +44581,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/404.pdf",
     "num_score_xml_url": null,
-    "prev_no": "403",
-    "next_no": "405",
     "category": {
       "id": 7,
       "name": "耶穌救恩",
@@ -45576,8 +44758,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/405.pdf",
     "num_score_xml_url": null,
-    "prev_no": "404",
-    "next_no": "406",
     "category": {
       "id": 35,
       "name": "禱告",
@@ -45755,8 +44935,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/406.pdf",
     "num_score_xml_url": null,
-    "prev_no": "405",
-    "next_no": "407",
     "category": {
       "id": 35,
       "name": "禱告",
@@ -45931,8 +45109,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/407.pdf",
     "num_score_xml_url": null,
-    "prev_no": "406",
-    "next_no": "408",
     "category": {
       "id": 35,
       "name": "禱告",
@@ -46037,8 +45213,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/408.pdf",
     "num_score_xml_url": null,
-    "prev_no": "407",
-    "next_no": "409",
     "category": {
       "id": 14,
       "name": "耶穌再臨",
@@ -46216,8 +45390,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/409.pdf",
     "num_score_xml_url": null,
-    "prev_no": "408",
-    "next_no": "410",
     "category": {
       "id": 25,
       "name": "我必得勝",
@@ -46325,8 +45497,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/410.pdf",
     "num_score_xml_url": null,
-    "prev_no": "409",
-    "next_no": "411",
     "category": {
       "id": 14,
       "name": "耶穌再臨",
@@ -46431,8 +45601,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/411.pdf",
     "num_score_xml_url": null,
-    "prev_no": "410",
-    "next_no": "412",
     "category": {
       "id": 35,
       "name": "禱告",
@@ -46610,8 +45778,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/412.pdf",
     "num_score_xml_url": null,
-    "prev_no": "411",
-    "next_no": "413",
     "category": {
       "id": 35,
       "name": "禱告",
@@ -46716,8 +45882,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/413.pdf",
     "num_score_xml_url": null,
-    "prev_no": "412",
-    "next_no": "414",
     "category": {
       "id": 18,
       "name": "跟隨耶穌",
@@ -46825,8 +45989,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/414.pdf",
     "num_score_xml_url": null,
-    "prev_no": "413",
-    "next_no": "415",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -46931,8 +46093,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/415.pdf",
     "num_score_xml_url": null,
-    "prev_no": "414",
-    "next_no": "416",
     "category": {
       "id": 19,
       "name": "甘心奉獻",
@@ -47034,8 +46194,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/416.pdf",
     "num_score_xml_url": null,
-    "prev_no": "415",
-    "next_no": "417",
     "category": {
       "id": 5,
       "name": "耶穌呼召",
@@ -47140,8 +46298,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/417.pdf",
     "num_score_xml_url": null,
-    "prev_no": "416",
-    "next_no": "418",
     "category": {
       "id": 9,
       "name": "耶穌領導",
@@ -47249,8 +46405,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/418.pdf",
     "num_score_xml_url": null,
-    "prev_no": "417",
-    "next_no": "419",
     "category": {
       "id": 19,
       "name": "甘心奉獻",
@@ -47358,8 +46512,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/419.pdf",
     "num_score_xml_url": null,
-    "prev_no": "418",
-    "next_no": "420",
     "category": {
       "id": 19,
       "name": "甘心奉獻",
@@ -47467,8 +46619,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/420.pdf",
     "num_score_xml_url": null,
-    "prev_no": "419",
-    "next_no": "421",
     "category": {
       "id": 19,
       "name": "甘心奉獻",
@@ -47646,8 +46796,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/421.pdf",
     "num_score_xml_url": null,
-    "prev_no": "420",
-    "next_no": "422",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -47825,8 +46973,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/422.pdf",
     "num_score_xml_url": null,
-    "prev_no": "421",
-    "next_no": "423",
     "category": {
       "id": 23,
       "name": "交託恩主",
@@ -48001,8 +47147,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/423.pdf",
     "num_score_xml_url": null,
-    "prev_no": "422",
-    "next_no": "424",
     "category": {
       "id": 37,
       "name": "傳揚福音",
@@ -48177,8 +47321,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/424.pdf",
     "num_score_xml_url": null,
-    "prev_no": "423",
-    "next_no": "425",
     "category": {
       "id": 37,
       "name": "傳揚福音",
@@ -48353,8 +47495,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/425.pdf",
     "num_score_xml_url": null,
-    "prev_no": "424",
-    "next_no": "426",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -48532,8 +47672,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/426.pdf",
     "num_score_xml_url": null,
-    "prev_no": "425",
-    "next_no": "427",
     "category": {
       "id": 2,
       "name": "讚美耶穌",
@@ -48711,8 +47849,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/427.pdf",
     "num_score_xml_url": null,
-    "prev_no": "426",
-    "next_no": "428",
     "category": {
       "id": 37,
       "name": "傳揚福音",
@@ -48820,8 +47956,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/428.pdf",
     "num_score_xml_url": null,
-    "prev_no": "427",
-    "next_no": "429",
     "category": {
       "id": 18,
       "name": "跟隨耶穌",
@@ -48929,8 +48063,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/429.pdf",
     "num_score_xml_url": null,
-    "prev_no": "428",
-    "next_no": "430",
     "category": {
       "id": 29,
       "name": "聖徒被提",
@@ -49108,8 +48240,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/430.pdf",
     "num_score_xml_url": null,
-    "prev_no": "429",
-    "next_no": "431",
     "category": {
       "id": 27,
       "name": "思慕天家",
@@ -49214,8 +48344,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/431.pdf",
     "num_score_xml_url": null,
-    "prev_no": "430",
-    "next_no": "432",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -49323,8 +48451,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/432.pdf",
     "num_score_xml_url": null,
-    "prev_no": "431",
-    "next_no": "433",
     "category": {
       "id": 9,
       "name": "耶穌領導",
@@ -49432,8 +48558,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/433.pdf",
     "num_score_xml_url": null,
-    "prev_no": "432",
-    "next_no": "434",
     "category": {
       "id": 24,
       "name": "屬靈平安",
@@ -49541,8 +48665,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/434.pdf",
     "num_score_xml_url": null,
-    "prev_no": "433",
-    "next_no": "435",
     "category": {
       "id": 27,
       "name": "思慕天家",
@@ -49650,8 +48772,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/435.pdf",
     "num_score_xml_url": null,
-    "prev_no": "434",
-    "next_no": "436",
     "category": {
       "id": 1,
       "name": "讚美天父",
@@ -49756,8 +48876,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/436.pdf",
     "num_score_xml_url": null,
-    "prev_no": "435",
-    "next_no": "437",
     "category": {
       "id": 9,
       "name": "耶穌領導",
@@ -49865,8 +48983,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/437.pdf",
     "num_score_xml_url": null,
-    "prev_no": "436",
-    "next_no": "438",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -49980,8 +49096,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/438.pdf",
     "num_score_xml_url": null,
-    "prev_no": "437",
-    "next_no": "439",
     "category": {
       "id": 1,
       "name": "讚美天父",
@@ -50089,8 +49203,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/439.pdf",
     "num_score_xml_url": null,
-    "prev_no": "438",
-    "next_no": "440",
     "category": {
       "id": 23,
       "name": "交託恩主",
@@ -50198,8 +49310,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/440.pdf",
     "num_score_xml_url": null,
-    "prev_no": "439",
-    "next_no": "441",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -50310,8 +49420,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/441.pdf",
     "num_score_xml_url": null,
-    "prev_no": "440",
-    "next_no": "442",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -50419,8 +49527,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/442.pdf",
     "num_score_xml_url": null,
-    "prev_no": "441",
-    "next_no": "443",
     "category": {
       "id": 9,
       "name": "耶穌領導",
@@ -50525,8 +49631,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/443.pdf",
     "num_score_xml_url": null,
-    "prev_no": "442",
-    "next_no": "444",
     "category": {
       "id": 2,
       "name": "讚美耶穌",
@@ -50631,8 +49735,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/444.pdf",
     "num_score_xml_url": null,
-    "prev_no": "443",
-    "next_no": "445",
     "category": {
       "id": 2,
       "name": "讚美耶穌",
@@ -50740,8 +49842,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/445.pdf",
     "num_score_xml_url": null,
-    "prev_no": "444",
-    "next_no": "446",
     "category": {
       "id": 16,
       "name": "感念主恩",
@@ -50849,8 +49949,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/446.pdf",
     "num_score_xml_url": null,
-    "prev_no": "445",
-    "next_no": "447",
     "category": {
       "id": 2,
       "name": "讚美耶穌",
@@ -50968,8 +50066,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/447.pdf",
     "num_score_xml_url": null,
-    "prev_no": "446",
-    "next_no": "448",
     "category": {
       "id": 2,
       "name": "讚美耶穌",
@@ -51077,8 +50173,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/448.pdf",
     "num_score_xml_url": null,
-    "prev_no": "447",
-    "next_no": "449",
     "category": {
       "id": 32,
       "name": "完全順服",
@@ -51186,8 +50280,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/449.pdf",
     "num_score_xml_url": null,
-    "prev_no": "448",
-    "next_no": "450",
     "category": {
       "id": 4,
       "name": "耶穌仁慈",
@@ -51292,8 +50384,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/450.pdf",
     "num_score_xml_url": null,
-    "prev_no": "449",
-    "next_no": "451",
     "category": {
       "id": 25,
       "name": "我必得勝",
@@ -51398,8 +50488,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/451.pdf",
     "num_score_xml_url": null,
-    "prev_no": "450",
-    "next_no": "452",
     "category": {
       "id": 23,
       "name": "交託恩主",
@@ -51507,8 +50595,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/452.pdf",
     "num_score_xml_url": null,
-    "prev_no": "451",
-    "next_no": "453",
     "category": {
       "id": 18,
       "name": "跟隨耶穌",
@@ -51616,8 +50702,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/453.pdf",
     "num_score_xml_url": null,
-    "prev_no": "452",
-    "next_no": "454",
     "category": {
       "id": 33,
       "name": "與主聯合",
@@ -51725,8 +50809,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/454.pdf",
     "num_score_xml_url": null,
-    "prev_no": "453",
-    "next_no": "455",
     "category": {
       "id": 7,
       "name": "耶穌救恩",
@@ -51834,8 +50916,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/455.pdf",
     "num_score_xml_url": null,
-    "prev_no": "454",
-    "next_no": "456",
     "category": {
       "id": 2,
       "name": "讚美耶穌",
@@ -51940,8 +51020,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/456.pdf",
     "num_score_xml_url": null,
-    "prev_no": "455",
-    "next_no": "457",
     "category": {
       "id": 47,
       "name": "附錄",
@@ -52046,8 +51124,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/457.pdf",
     "num_score_xml_url": null,
-    "prev_no": "456",
-    "next_no": "458",
     "category": {
       "id": 47,
       "name": "附錄",
@@ -52152,8 +51228,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/458.pdf",
     "num_score_xml_url": null,
-    "prev_no": "457",
-    "next_no": "459",
     "category": {
       "id": 47,
       "name": "附錄",
@@ -52261,8 +51335,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/459.pdf",
     "num_score_xml_url": null,
-    "prev_no": "458",
-    "next_no": "460",
     "category": {
       "id": 47,
       "name": "附錄",
@@ -52361,8 +51433,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/460.pdf",
     "num_score_xml_url": null,
-    "prev_no": "459",
-    "next_no": "461",
     "category": {
       "id": 47,
       "name": "附錄",
@@ -52470,8 +51540,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/461.pdf",
     "num_score_xml_url": null,
-    "prev_no": "460",
-    "next_no": "462",
     "category": {
       "id": 47,
       "name": "附錄",
@@ -52579,8 +51647,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/462.pdf",
     "num_score_xml_url": null,
-    "prev_no": "461",
-    "next_no": "463",
     "category": {
       "id": 47,
       "name": "附錄",
@@ -52700,8 +51766,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/463.pdf",
     "num_score_xml_url": null,
-    "prev_no": "462",
-    "next_no": "464",
     "category": {
       "id": 47,
       "name": "附錄",
@@ -52806,8 +51870,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/464.pdf",
     "num_score_xml_url": null,
-    "prev_no": "463",
-    "next_no": "465",
     "category": {
       "id": 47,
       "name": "附錄",
@@ -52909,8 +51971,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/465.pdf",
     "num_score_xml_url": null,
-    "prev_no": "464",
-    "next_no": "466",
     "category": {
       "id": 47,
       "name": "附錄",
@@ -53018,8 +52078,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/466.pdf",
     "num_score_xml_url": null,
-    "prev_no": "465",
-    "next_no": "467",
     "category": {
       "id": 47,
       "name": "附錄",
@@ -53124,8 +52182,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/467.pdf",
     "num_score_xml_url": null,
-    "prev_no": "466",
-    "next_no": "468",
     "category": {
       "id": 47,
       "name": "附錄",
@@ -53233,8 +52289,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/468.pdf",
     "num_score_xml_url": null,
-    "prev_no": "467",
-    "next_no": "469",
     "category": {
       "id": 47,
       "name": "附錄",
@@ -53339,8 +52393,6 @@
     "sheet_score_images_url": [],
     "num_score_pdf_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/score/num/469.pdf",
     "num_score_xml_url": null,
-    "prev_no": "468",
-    "next_no": null,
     "category": {
       "id": 47,
       "name": "附錄",
