@@ -202,7 +202,7 @@
       詩歌列表
     </a>
     <span class="spacer"></span>
-    <span class="perf" id="perf" title="FPS／卡頓次數／頁面記憶體／連線品質／本頁累計下載"></span>
+    <span class="perf" id="perf" title="FPS／卡頓次數／最差幀時間／CPU忙碌倍率／頁面記憶體／連線品質／本頁累計下載"></span>
     <a class="hlink" href="#/changes">最近更新</a>
     <button class="modebtn" id="modeBtn" title="切換手機／電腦版面"></button>
   </div></header>
@@ -596,16 +596,43 @@ function wireAudio(src){
 /* ---------- perf monitor（診斷卡頓：FPS/長任務/記憶體/網路） ---------- */
 (function(){
   const el = document.getElementById('perf');
-  let frames = 0, jank = 0;
-  (function raf(){ frames++; requestAnimationFrame(raf); })();
-  try{  /* 長任務 = 主執行緒被卡超過 50ms，就是「卡頓」的直接證據（僅 Chrome/Edge） */
+  let frames = 0, jank = 0, worst = 0, last = performance.now();
+  (function raf(now){
+    frames++;
+    const d = now - last; last = now;
+    if(d > worst) worst = d;
+    requestAnimationFrame(raf);
+  })(last);
+  /* 切走再回來會累積巨大間隔，重置避免誤報 */
+  document.addEventListener('visibilitychange', () => { last = performance.now(); worst = 0; });
+  try{  /* 長任務 = 主執行緒被卡超過 50ms，卡頓的直接證據（僅 Chrome/Edge） */
     new PerformanceObserver(list => { jank += list.getEntries().length; })
       .observe({type:'longtask', buffered:false});
   }catch(e){}
   try{ performance.setResourceTimingBufferSize(1000); }catch(e){}
+
+  /* CPU 負載代理：跑一段固定運算，和歷來最快一次相比慢了幾倍。
+     其他程式（如 Meet 編碼視訊）吃滿 CPU 時，同樣的運算會明顯變慢。 */
+  let fastest = Infinity, ratio = 1, recent = [];
+  function probe(){
+    const t0 = performance.now();
+    let x = 0;
+    for(let i = 0; i < 300000; i++) x += Math.sqrt(i);
+    const dt = performance.now() - t0;
+    if(dt < fastest && dt > 0) fastest = dt;
+    recent.push(dt); if(recent.length > 3) recent.shift();
+    /* 取近三次中位數，濾掉單次量測雜訊（GC、計時器精度）造成的假警報 */
+    ratio = [...recent].sort((a, b) => a - b)[Math.floor(recent.length / 2)] / fastest;
+    return x;
+  }
+  probe();
+
   setInterval(() => {
+    probe();
     const parts = [frames + 'fps'];
     if(jank) parts.push('<b>卡' + jank + '</b>');
+    if(worst > 33) parts.push((worst > 100 ? '<b>' : '') + '掉' + Math.round(worst) + 'ms' + (worst > 100 ? '</b>' : ''));
+    if(ratio >= 1.5) parts.push((ratio >= 3 ? '<b>' : '') + '忙×' + ratio.toFixed(1) + (ratio >= 3 ? '</b>' : ''));
     if(performance.memory)
       parts.push(Math.round(performance.memory.usedJSHeapSize / 1048576) + 'MB');
     const c = navigator.connection;
@@ -613,7 +640,7 @@ function wireAudio(src){
     const dl = performance.getEntriesByType('resource').reduce((a, r) => a + (r.transferSize || 0), 0);
     parts.push('↓' + (dl / 1048576).toFixed(1) + 'MB');
     el.innerHTML = parts.join('　');
-    frames = 0; jank = 0;
+    frames = 0; jank = 0; worst = 0;
   }, 1000);
 })();
 
