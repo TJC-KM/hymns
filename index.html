@@ -126,6 +126,12 @@
   .nav a{display:inline-flex;align-items:center;gap:8px}
   .nav .muted{color:var(--muted)}
 
+  /* perf monitor */
+  .perf{color:var(--muted);font-size:12px;white-space:nowrap;
+    font-variant-numeric:tabular-nums}
+  .perf b{color:#A8542B;font-weight:600}
+  @media (max-width:700px){ .perf{display:none} }
+
   /* changes page */
   .hlink{color:var(--muted);font-size:14px;white-space:nowrap}
   .hlink:hover{color:var(--ink)}
@@ -196,6 +202,7 @@
       詩歌列表
     </a>
     <span class="spacer"></span>
+    <span class="perf" id="perf" title="FPS／卡頓次數／頁面記憶體／連線品質／本頁累計下載"></span>
     <a class="hlink" href="#/changes">最近更新</a>
     <button class="modebtn" id="modeBtn" title="切換手機／電腦版面"></button>
   </div></header>
@@ -585,6 +592,30 @@ function wireAudio(src){
       document.querySelectorAll('#rates .ver').forEach(b => b.dataset.on = b === btn ? '1' : '0');
     }));
 }
+
+/* ---------- perf monitor（診斷卡頓：FPS/長任務/記憶體/網路） ---------- */
+(function(){
+  const el = document.getElementById('perf');
+  let frames = 0, jank = 0;
+  (function raf(){ frames++; requestAnimationFrame(raf); })();
+  try{  /* 長任務 = 主執行緒被卡超過 50ms，就是「卡頓」的直接證據（僅 Chrome/Edge） */
+    new PerformanceObserver(list => { jank += list.getEntries().length; })
+      .observe({type:'longtask', buffered:false});
+  }catch(e){}
+  try{ performance.setResourceTimingBufferSize(1000); }catch(e){}
+  setInterval(() => {
+    const parts = [frames + 'fps'];
+    if(jank) parts.push('<b>卡' + jank + '</b>');
+    if(performance.memory)
+      parts.push(Math.round(performance.memory.usedJSHeapSize / 1048576) + 'MB');
+    const c = navigator.connection;
+    if(c && c.downlink != null) parts.push((c.effectiveType || '') + ' ' + c.downlink + 'M');
+    const dl = performance.getEntriesByType('resource').reduce((a, r) => a + (r.transferSize || 0), 0);
+    parts.push('↓' + (dl / 1048576).toFixed(1) + 'MB');
+    el.innerHTML = parts.join('　');
+    frames = 0; jank = 0;
+  }, 1000);
+})();
 
 applyMode();
 boot();
