@@ -90,11 +90,11 @@
   .verses{max-width:520px;margin:0 auto}
   .verse{display:flex;gap:18px;margin-bottom:26px}
   .vn{font-family:var(--serif);color:var(--muted);font-size:22px;line-height:1.1;flex:none}
-  .vt{margin:0;font-size:clamp(19px,2.5vw,23px);line-height:2;color:var(--ink)}
+  .vt{margin:0;font-size:calc(clamp(19px,2.5vw,23px) + var(--lyr-adj,0px));line-height:2;color:var(--ink)}
   .chorus{max-width:520px;margin:0 auto 26px;padding:14px 0 14px 20px;
     border-left:2px solid var(--accent)}
   .chorus .lbl{color:var(--accent);font-size:13px;letter-spacing:.1em;margin-bottom:6px}
-  .chorus p{margin:0;font-size:clamp(18px,2.4vw,22px);line-height:2;color:var(--ink-soft)}
+  .chorus p{margin:0;font-size:calc(clamp(18px,2.4vw,22px) + var(--lyr-adj,0px));line-height:2;color:var(--ink-soft)}
   /* 半透明底色，讓歌詞在背景圖上保持清晰 */
   .verses,.chorus{background:color-mix(in srgb,var(--paper) 50%,transparent);border-radius:12px}
   .verses{padding:16px 18px}
@@ -151,10 +151,10 @@
   /* detail: side/main wrappers flatten on mobile, keep original order */
   .dside,.dmain{display:contents}
   .detail{display:flex;flex-direction:column}
-  .dhead{order:1}.player{order:2}.tune{order:3}.verses{order:4}
+  .dhead{order:1}.player{order:2}.tune{order:3}.fsize{order:4}.verses{order:5}
   .aux{order:6}.history{order:7}.nav{order:8}
   /* flex 直排時 margin:auto 會讓區塊縮成內容寬，補回滿寬 */
-  .tune,.verses,.chorus,.aux,.history,.nav{width:100%}
+  .tune,.fsize,.verses,.chorus,.aux,.history,.nav{width:100%}
 
   /* tune annotation (標準版/有間奏/特別版) */
   .tune{max-width:520px;margin:0 auto 30px;display:flex;align-items:center;
@@ -163,6 +163,11 @@
     border:1px solid var(--line);background:none;color:var(--ink-soft)}
   .tbtn[data-on="1"]{background:var(--accent-soft);color:var(--accent);border-color:transparent}
   .tstate.ok{color:var(--accent)}
+  .tnote{flex-basis:100%;text-align:center;font-size:12px;line-height:1.6;margin-top:4px}
+
+  /* lyric font size */
+  .fsize{max-width:520px;margin:0 auto 24px;display:flex;align-items:center;
+    justify-content:center;flex-wrap:wrap;gap:8px;font-size:13px;color:var(--muted)}
   .toast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:99;
     background:var(--ink);color:var(--paper);font-size:14px;padding:9px 16px;border-radius:10px}
 
@@ -174,16 +179,16 @@
   body.desktop .detail{display:grid;grid-template-columns:1fr 1fr;column-gap:56px;align-items:center}
   body.desktop .dhead{grid-column:1;margin:18px 0}
   body.desktop .player{grid-column:2;margin:0 auto}
-  body.desktop .tune,body.desktop .verses,body.desktop .aux,
+  body.desktop .tune,body.desktop .fsize,body.desktop .verses,body.desktop .aux,
   body.desktop .history,body.desktop .nav{grid-column:1 / -1}
   body.desktop .dno{font-size:24px}
   body.desktop .verses{display:grid;grid-template-columns:1fr 1fr;gap:6px 56px;max-width:none}
   body.desktop .verse{margin-bottom:20px;min-width:0;justify-content:center}
   body.desktop .chorus{max-width:none}
-  body.desktop .vt{font-size:32px;text-align:center}
+  body.desktop .vt{font-size:calc(32px + var(--lyr-adj,0px));text-align:center}
   body.desktop .vn{font-size:26px}
   body.desktop .chorus .lbl{text-align:center}
-  body.desktop .chorus p{font-size:32px;text-align:center}
+  body.desktop .chorus p{font-size:calc(32px + var(--lyr-adj,0px));text-align:center}
   /* 按鈕統一：實色底＋清楚邊框，疊在背景圖上不會糊掉（選取狀態的規則權重較高，不受影響） */
   .chip,.ver,.tbtn,.modebtn,.auxbtn{background:var(--surface);
     border-color:var(--btn-line);box-shadow:0 1px 2px rgba(0,0,0,.06)}
@@ -434,6 +439,7 @@ function renderDetail(no){
         </div>
         ${player}
         ${tuneRow(h)}
+        ${fsizeRow()}
         ${scores.length?`<div class="aux">${scores.join('')}</div>`:''}
         ${history}
         <nav class="nav">${navLink(prev,'p')}${navLink(next,'n')}</nav>
@@ -445,6 +451,28 @@ function renderDetail(no){
 
   if(audio.length) wireAudio(audio[0].file_url);
   wireTune(h);
+  wireFsize();
+}
+
+/* ---------- lyric font size ---------- */
+const FS_KEY = 'hymn_lyr';
+const FS_STEPS = [{l:'最小',v:-8},{l:'小',v:-4},{l:'中',v:0},{l:'大',v:4},{l:'最大',v:8}];
+function lyrAdj(){
+  const v = parseInt(localStorage.getItem(FS_KEY), 10);
+  return FS_STEPS.some(s => s.v === v) ? v : 0;
+}
+function applyLyrSize(){ document.body.style.setProperty('--lyr-adj', lyrAdj() + 'px'); }
+function fsizeRow(){
+  const cur = lyrAdj();
+  return `<div class="fsize">歌詞字級：${FS_STEPS.map(s =>
+    `<button class="tbtn" data-fs="${s.v}" data-on="${cur===s.v?1:0}">${s.l}</button>`).join('')}</div>`;
+}
+function wireFsize(){
+  document.querySelectorAll('.fsize .tbtn').forEach(b => b.addEventListener('click', () => {
+    localStorage.setItem(FS_KEY, b.dataset.fs);
+    applyLyrSize();
+    document.querySelectorAll('.fsize .tbtn').forEach(x => x.dataset.on = x === b ? '1' : '0');
+  }));
 }
 
 /* ---------- tune annotation (標準版/有間奏/特別版) ---------- */
@@ -453,7 +481,9 @@ function tuneRow(h){
     return `<div class="tune">曲調：<span class="tstate ok">標準版</span><span>（有四部合唱，自動判定）</span></div>`;
   const t = tuneOf(h);
   const btn = v => `<button class="tbtn" data-val="${v}" data-on="${(t||'')===v?1:0}">${v||'未註記'}</button>`;
-  return `<div class="tune">曲調：${TUNE_VALS.map(btn).join('')}${btn('')}</div>`;
+  return `<div class="tune">曲調：${TUNE_VALS.map(btn).join('')}${btn('')}
+    <span class="tnote">此處為記錄用，不是切換不同版本的音檔。<br>
+    若您熟悉這首詩歌，歡迎順手記錄目前人聲音檔的曲調版本。</span></div>`;
 }
 function wireTune(h){
   document.querySelectorAll('.tune .tbtn').forEach(b => b.addEventListener('click', () => {
@@ -644,6 +674,7 @@ function wireAudio(src){
   }, 1000);
 })();
 
+applyLyrSize();
 applyMode();
 boot();
 </script>
