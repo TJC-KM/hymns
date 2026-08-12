@@ -8,7 +8,7 @@
     "改完可先在本機開網頁確認，若 JSON 語法錯誤頁面會跳紅色提示且整份忽略。"
   ],
   "108": {
-  "audio_files+": [{
+  "audio_files": [{
     "id": "custom-108-vocal",
     "file_url": "assets/audio/108-vocal.mp3",
     "audio_category_id": 4,
