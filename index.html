@@ -400,7 +400,10 @@ function renderDetail(no){
   const verses = (h.lyrics||[]).map((v,i) =>
     `<div class="verse"><span class="vn">${i+1}</span><p class="vt">${lines(v.text)}</p></div>` + chorus).join('');
 
-  const rank = x => x.audio_category_id === 6 ? -2 : x.audio_category_id === 4 ? -1 : (x.audio_category_id||0);  // 四部合唱(6)第一、人聲(4)第二
+  /* 播放器順序：四部合唱(6) → 自訂(id≥90) → 人聲(4) → 其餘依 id 升冪。
+     第一個即預設播放的版本。同層級之間仍依 id 排序。 */
+  const tier = c => c === 6 ? 0 : c >= 90 ? 1 : c === 4 ? 2 : 3;
+  const rank = x => { const c = x.audio_category_id || 0; return tier(c) * 1000 + c; };
   const audio = (h.audio_files||[]).slice().sort((a,b)=>rank(a)-rank(b));
   const player = audio.length ? `
     <div class="player">
