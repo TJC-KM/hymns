@@ -22,6 +22,8 @@
       --btn-line:#4A4C52; }
   }
   *{box-sizing:border-box}
+  /* 元素自身的 display 會蓋過瀏覽器預設的 [hidden]，這條把 hidden 補回強制生效 */
+  [hidden]{display:none !important}
   html,body{margin:0}
   body{background:var(--paper);color:var(--ink);font-family:var(--sans);
     line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
@@ -35,7 +37,8 @@
   /* top bar */
   .top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper) 88%,transparent);
     backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-  .top .wrap{display:flex;align-items:center;gap:14px;height:60px}
+  .top .wrap{display:flex;align-items:center;gap:14px;min-height:60px;
+    flex-wrap:wrap;padding-top:9px;padding-bottom:9px}
   .brand{font-family:var(--serif);font-size:20px;letter-spacing:.06em}
   .back{display:inline-flex;align-items:center;gap:6px;color:var(--muted);font-size:15px}
   .spacer{flex:1}
@@ -43,6 +46,17 @@
   /* search + chips */
   .search{display:flex;align-items:center;gap:12px;border:1px solid var(--line);
     background:var(--surface);border-radius:12px;padding:14px 18px;margin:26px 0 16px}
+  /* 搜尋框改放在固定頁首：吃掉中間的彈性空間，窄螢幕時自動換到第二列 */
+  .top .search{flex:1 1 240px;min-width:0;margin:0;padding:7px 14px;border-radius:10px;
+    border-color:var(--btn-line)}
+  .top .search input{font-size:16px}   /* 16px 以下 iOS 聚焦時會自動放大頁面 */
+  /* 窄螢幕：order 排到最後，獨佔第二列，頁首維持兩列 */
+  @media (max-width:700px){
+    .top .search{order:10;flex-basis:100%}
+    /* 詩歌頁已有「詩歌列表」返回鍵（同樣連回首頁），窄螢幕就不重複顯示站名 */
+    body.detailview .brand{display:none}
+  }
+  .list{padding-top:20px}
   .search svg{flex:none;color:var(--muted)}
   .search input{border:0;background:none;outline:none;font-family:var(--sans);
     font-size:18px;color:var(--ink);width:100%}
@@ -206,6 +220,7 @@
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
       詩歌列表
     </a>
+    <div class="search" id="searchBox" hidden></div>
     <span class="spacer"></span>
     <span class="perf" id="perf" title="FPS／卡頓次數／最差幀時間／CPU忙碌倍率／頁面記憶體／連線品質／本頁累計下載"></span>
     <a class="hlink" href="#/changes">最近更新</a>
@@ -229,6 +244,15 @@ const SVG = {
 const app = document.getElementById('app');
 const backBtn = document.getElementById('backBtn');
 const modeBtn = document.getElementById('modeBtn');
+
+/* 搜尋框常駐於頁首，不隨列表重繪而消失（打字時不會失焦） */
+const searchBox = document.getElementById('searchBox');
+searchBox.innerHTML = SVG.search +
+  '<input id="q" placeholder="輸入編號、詩歌名或歌詞…" autocomplete="off">';
+document.getElementById('q').addEventListener('input', e => {
+  ui.q = e.target.value;
+  paintRows();
+});
 
 /* ---------- mobile / desktop mode ---------- */
 const MODE_KEY = 'hymn_mode';
@@ -316,6 +340,9 @@ window.addEventListener('hashchange', route);
 function route(){
   stopAudio();
   const m = location.hash.match(/^#\/hymn\/(.+)$/);
+  const onList = !m && location.hash !== '#/changes';
+  searchBox.hidden = !onList;              /* 搜尋框只在列表頁出現 */
+  document.body.classList.toggle('detailview', !onList);
   if(m){ renderDetail(decodeURIComponent(m[1])); backBtn.hidden = false; }
   else if(location.hash === '#/changes'){ renderChanges(); backBtn.hidden = false; }
   else { renderList(); backBtn.hidden = true; }
@@ -346,7 +373,6 @@ function renderList(){
     `<button class="chip ${cls}" data-cat="${esc(label)}" data-on="${ui.cat===label?1:0}">${esc(label)}</button>`;
   app.innerHTML = `
     <div class="list">
-      <div class="search">${SVG.search}<input id="q" placeholder="輸入編號、詩歌名或歌詞…" value="${esc(ui.q)}" autocomplete="off"></div>
       <div class="chips">
         ${chip('全部')}
         ${chip('標準版','four')}
@@ -356,10 +382,8 @@ function renderList(){
       <div class="count" id="count"></div>
       <div id="rows"></div>
     </div>`;
-  const q = document.getElementById('q');
-  q.addEventListener('input', () => { ui.q = q.value; paintRows(); });
   app.querySelectorAll('.chip').forEach(b =>
-    b.addEventListener('click', () => { ui.cat = b.dataset.cat; renderList(); q.focus({preventScroll:true}); }));
+    b.addEventListener('click', () => { ui.cat = b.dataset.cat; renderList(); }));
   paintRows();
 }
 function paintRows(){
