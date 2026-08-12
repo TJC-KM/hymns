@@ -7,6 +7,16 @@
     "自製音檔請放 assets/audio/ 資料夾一起 commit；自訂音檔 id 用字串(custom-1)避免與官方相撞；audio_category_id 99 會排在切換按鈕最後。",
     "改完可先在本機開網頁確認，若 JSON 語法錯誤頁面會跳紅色提示且整份忽略。"
   ],
+  "108": {
+  "audio_files": [
+    {
+      "id": "custom-108-vocal",
+      "file_url": "assets/audio/108-vocal.mp3",
+      "audio_category_id": 4,
+      "audio_category": { "id": 4, "name": "人聲" }
+    }
+  ]
+},
   "62": {
     "audio_files": [
       {
