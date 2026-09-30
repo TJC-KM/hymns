@@ -109,9 +109,10 @@ flowchart TD
     API["官方 API<br/>sacredmusic.tjc.org.tw"]
     WF["GitHub Actions<br/>每月 1 號 04:00"]
     HJ["data/hymns.json<br/>官方資料（會被覆寫）"]
+    PN["data/pinned.json<br/>鎖定舊版（整首）"]
     OV["data/overrides.json<br/>手動修正（永久保留）"]
     TS["data/tune-status.json<br/>曲調註記"]
-    WEB["index.html<br/>載入時三者合併"]
+    WEB["index.html<br/>載入時依序合併"]
     USER["使用者瀏覽器"]
     BTN["註記按鈕"]
     CF["Cloudflare Worker<br/>持有 GitHub Token"]
@@ -120,6 +121,7 @@ flowchart TD
     WF -->|有變動才 commit| HJ
     WF -->|產生變更紀錄| CHG["data/changes/<br/>CHANGELOG.md"]
     HJ --> WEB
+    PN --> WEB
     OV --> WEB
     TS --> WEB
     WEB --> USER
@@ -128,17 +130,18 @@ flowchart TD
     CF -->|commit| TS
 ```
 
-### 三層資料合併
+### 資料合併順序
 
-網站載入時依序做三件事：
+網站載入時依序做四件事：
 
 1. 讀 `data/hymns.json`（474 首官方資料）
-2. 套用 `data/overrides.json`：
+2. 套用 `data/pinned.json`：列在裡面的詩歌**整首**換成保存的舊版（見維護說明「鎖定舊版」）
+3. 套用 `data/overrides.json`：
    - 欄位名稱**照原樣** → **整欄取代**（例：`lyrics` 換成重新斷行的版本）
    - 欄位名稱**加 `+`** → **附加**在官方清單後（例：`audio_files+` 加入自製錄音）
-3. 讀 `data/tune-status.json` 決定各首的曲調註記
+4. 讀 `data/tune-status.json` 決定各首的曲調註記
 
-因為覆蓋是在**瀏覽器端**合併，同步腳本完全不需要知道 overrides 的存在，兩者互不干擾。
+因為這些都是在**瀏覽器端**合併，同步腳本完全不需要知道 pinned／overrides 的存在，官方資料照常每月更新，互不干擾。
 
 ### 曲調註記的判定順序
 
@@ -185,6 +188,7 @@ Token 只存在 Cloudflare，前端完全接觸不到。
 |------|------|---------|
 | `index.html` | **整個網站**（HTML／CSS／JS 全在這一個檔） | 維護者手動 |
 | `data/hymns.json` | 官方資料 2.7MB，474 首 | **只有自動同步**，不要手改 |
+| `data/pinned.json` | 鎖定舊版的詩歌（整首保存） | 維護者手動 |
 | `data/overrides.json` | 手動修正的歌詞／音檔 | 維護者手動 |
 | `data/tune-status.json` | 曲調註記 | 網站按鈕自動寫入，也可手改 |
 | `data/meta.json` | 最後同步時間、總數 | 自動同步 |
@@ -272,7 +276,19 @@ Token 只存在 Cloudflare，前端完全接觸不到。
 - 程式判斷一律用 `audio_category_id`，不要比對中文名稱
 - 排序邏輯在 `index.html` 的 `tier()` / `rank()`（詩歌內頁渲染處）
 
-#### 5. 手動觸發同步
+#### 5. 鎖定舊版（總會改版、地方教會尚未統一）
+
+總會有時會把某個編號**整首換成另一首詩歌**（例如 2026-09-14 把 349「救主正在等候」改成「奇妙的耶穌」）。地方教會還沒統一前，可以把該首鎖在舊版，網站繼續顯示舊版：
+
+1. **趁同步前**，從 `data/hymns.json` 把該首的完整資料複製到 `data/pinned.json`，以編號為 key，並加一個 `_note` 寫明原因。已經同步過也沒關係，舊版可從 git 歷史取回（`git show <舊commit>:data/hymns.json`）
+2. 檢查舊版的音檔與樂譜網址是否還能開啟。**總會改版時常會刪掉舊版的樂譜 PDF**，失效的網址請清空（網站就不會顯示那顆按鈕），或把檔案放進 repo 後改填自己的路徑
+3. 地方教會統一後，把該首從 `pinned.json` **整段刪除**，網站即恢復官方最新版
+
+> 同步仍會照常抓進官方新版，「最近更新」頁也會列出這次改版，只是網站畫面維持鎖定的舊版。
+
+> 目前鎖定：349、383、439（2026-09-14 總會改版）。
+
+#### 6. 手動觸發同步
 
 GitHub → Actions → `sync-hymns` → Run workflow。若 push 失敗，檢查 Settings → Actions → General → Workflow permissions 是否為 **Read and write**。
 

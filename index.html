@@ -297,12 +297,33 @@ async function boot(){
     if(!res.ok) throw new Error(res.status);
     HYMNS = await res.json();
     BY_NO = new Map(HYMNS.map(h => [String(h.no), h]));
+    await applyPins();
     await applyOverrides();
     try{ const r = await fetch('data/tune-status.json', {cache:'no-cache'}); if(r.ok) TUNE = await r.json(); }
     catch(e){ console.warn('tune-status.json 讀取失敗', e); }
     route();
   }catch(e){
     app.innerHTML = '<p class="empty">找不到 data/hymns.json。<br>請把同步產生的詩歌資料放到 data/hymns.json 後重新整理。</p>';
+  }
+}
+
+/* ---------- version pins (data/pinned.json) ----------
+   總會改版但地方教會尚未統一時，整首改用這裡保存的舊版。
+   在 overrides 之前套用，所以 overrides 仍可在鎖定版本上做欄位修正。 */
+async function applyPins(){
+  let pins;
+  try{
+    const r = await fetch('data/pinned.json', {cache:'no-cache'});
+    if(!r.ok) return;
+    pins = await r.json();
+  }catch(e){ console.error('pinned.json 讀取失敗，已忽略:', e); return; }
+  for(const [no, rec] of Object.entries(pins)){
+    if(no.startsWith('_')) continue;
+    const i = HYMNS.findIndex(h => String(h.no) === String(no));
+    if(i < 0){ console.warn(`pinned: 找不到編號 ${no}，略過`); continue; }
+    const h = Object.fromEntries(Object.entries(rec).filter(([k]) => !k.startsWith('_')));
+    HYMNS[i] = h;
+    BY_NO.set(String(no), h);
   }
 }
 
