@@ -1,6 +1,6 @@
 {
   "349": {
-    "_note": "總會 2026-09-14 改為「奇妙的耶穌」，地方教會尚未統一，沿用舊版「救主正在等候」。舊版樂譜 PDF 已被官方刪除，找到檔案後可放 assets/score/ 並填回 *_pdf_url。",
+    "_note": "總會 2026-09-14 改為「奇妙的耶穌」，地方教會尚未統一，沿用舊版「救主正在等候」。舊版音檔已於 2026-10-01 備份至 assets/audio/pinned/（官方路徑保留在各音檔的 file 欄位）。舊版樂譜 PDF 已被官方刪除，找到檔案後可放 assets/score/ 並填回 *_pdf_url。",
     "id": 354,
     "no": "349",
     "name": "救主正在等候",
@@ -78,7 +78,7 @@
         "audio_category_id": 3,
         "created_at": "2022-10-20T02:01:39.000000Z",
         "updated_at": "2023-03-07T03:56:20.000000Z",
-        "file_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/audio/2fbccdb49b2c5b24821603b5bfa51139.m4a",
+        "file_url": "assets/audio/pinned/349-piano.m4a",
         "audio_category": {
           "id": 3,
           "name": "鋼琴",
@@ -92,7 +92,7 @@
         "audio_category_id": 4,
         "created_at": "2022-10-20T02:01:39.000000Z",
         "updated_at": "2022-10-20T02:01:39.000000Z",
-        "file_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/audio/a8a2a8c8e4509d1c54c2f10f978c1b20.mp3",
+        "file_url": "assets/audio/pinned/349-vocal.mp3",
         "audio_category": {
           "id": 4,
           "name": "人聲",
@@ -106,7 +106,7 @@
         "audio_category_id": 6,
         "created_at": "2025-09-24T03:06:57.000000Z",
         "updated_at": "2025-09-24T03:06:57.000000Z",
-        "file_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/audio/f7719ea6ad0cd8410755ab7a29e398c5.m4a",
+        "file_url": "assets/audio/pinned/349-satb.m4a",
         "audio_category": {
           "id": 6,
           "name": "四部合唱",
@@ -116,7 +116,7 @@
     ]
   },
   "383": {
-    "_note": "總會 2026-09-14 改為「決心跟隨耶穌」，地方教會尚未統一，沿用舊版「將有一天」。舊版樂譜 PDF 已被官方刪除，找到檔案後可放 assets/score/ 並填回 *_pdf_url。",
+    "_note": "總會 2026-09-14 改為「決心跟隨耶穌」，地方教會尚未統一，沿用舊版「將有一天」。舊版音檔已於 2026-10-01 備份至 assets/audio/pinned/（官方路徑保留在各音檔的 file 欄位）。舊版樂譜 PDF 已被官方刪除，找到檔案後可放 assets/score/ 並填回 *_pdf_url。",
     "id": 388,
     "no": "383",
     "name": "將有一天",
@@ -197,7 +197,7 @@
         "audio_category_id": 3,
         "created_at": "2022-10-20T02:40:39.000000Z",
         "updated_at": "2023-03-08T00:57:58.000000Z",
-        "file_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/audio/45e6846ef605f5e71a4577ebaf946c22.m4a",
+        "file_url": "assets/audio/pinned/383-piano.m4a",
         "audio_category": {
           "id": 3,
           "name": "鋼琴",
@@ -211,7 +211,7 @@
         "audio_category_id": 4,
         "created_at": "2022-10-20T02:40:39.000000Z",
         "updated_at": "2022-10-20T02:40:39.000000Z",
-        "file_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/audio/2303957174a47e236262202de43446d2.mp3",
+        "file_url": "assets/audio/pinned/383-vocal.mp3",
         "audio_category": {
           "id": 4,
           "name": "人聲",
@@ -221,7 +221,7 @@
     ]
   },
   "439": {
-    "_note": "總會 2026-09-14 改為「時刻蒙恩」，地方教會尚未統一，沿用舊版「時刻交託主」。舊版樂譜 PDF 已被官方刪除，找到檔案後可放 assets/score/ 並填回 *_pdf_url。",
+    "_note": "總會 2026-09-14 改為「時刻蒙恩」，地方教會尚未統一，沿用舊版「時刻交託主」。舊版音檔已於 2026-10-01 備份至 assets/audio/pinned/（官方路徑保留在各音檔的 file 欄位）。舊版樂譜 PDF 已被官方刪除，找到檔案後可放 assets/score/ 並填回 *_pdf_url。",
     "id": 444,
     "no": "439",
     "name": "時刻交託主",
@@ -305,7 +305,7 @@
         "audio_category_id": 3,
         "created_at": "2022-10-21T01:10:00.000000Z",
         "updated_at": "2023-04-20T03:15:10.000000Z",
-        "file_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/audio/b13fb91e5511513dcb4206a0272ed922.m4a",
+        "file_url": "assets/audio/pinned/439-piano.m4a",
         "audio_category": {
           "id": 3,
           "name": "鋼琴",
@@ -319,7 +319,7 @@
         "audio_category_id": 4,
         "created_at": "2022-10-21T01:10:00.000000Z",
         "updated_at": "2022-10-21T01:10:00.000000Z",
-        "file_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/audio/271cffcd977197ef9ccc13e0e675a586.mp3",
+        "file_url": "assets/audio/pinned/439-vocal.mp3",
         "audio_category": {
           "id": 4,
           "name": "人聲",
@@ -332,6 +332,7 @@
     "版本鎖定：列在這裡的詩歌，網站會「整首」改用這裡保存的版本，不採用官方最新資料。每月同步不會覆寫此檔。",
     "用途：總會已改版、但地方教會尚未統一時，暫時沿用舊版。地方教會統一後，把該首整段刪除即恢復官方最新版。",
     "套用順序：官方資料 → 版本鎖定（整首替換）→ overrides.json（欄位修正）。",
-    "每首的 _note 記錄鎖定原因；_ 開頭的欄位網站不會使用。"
+    "每首的 _note 記錄鎖定原因；_ 開頭的欄位網站不會使用。",
+    "鎖定詩歌的舊版音檔已備份在 assets/audio/pinned/，避免官方刪除後無法播放；這些是官方錄音，保留官方分類（3 鋼琴、4 人聲、6 四部合唱）。"
   ]
 }
