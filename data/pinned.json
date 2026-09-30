@@ -1,4 +1,112 @@
 {
+  "320": {
+    "_note": "總會 2026-09-14 重新編曲（換樂譜與鋼琴、移除人聲），地方教會仍用舊編曲，沿用舊版。舊版音檔已於 2026-10-01 備份至 assets/audio/pinned/（官方路徑保留在各音檔的 file 欄位）。舊版樂譜 PDF 已被官方刪除，找到檔案後可放 assets/score/ 並填回 *_pdf_url。",
+    "id": 325,
+    "no": "320",
+    "name": "天使歌唱",
+    "lyrics": [
+      {
+        "text": "天使歌唱在高天，美妙歌聲遍平原；\r\n四周山嶺共迴響，清歌高唱多嘹亮！"
+      },
+      {
+        "text": "牧人有何大喜悅，快樂歌聲不停歇；\r\n有何喜訊感心弦，齊發歌聲，同感謝。"
+      },
+      {
+        "text": "請君同往伯利恆，天使所頌救主生，\r\n前來跪拜同仰望：基督救主已降生。"
+      },
+      {
+        "text": "和平君王臥馬槽，天兵頌讚聲圍繞，\r\n眾人歌頌神大愛，讚美天地大主宰。"
+      }
+    ],
+    "lyrics_chorus": "榮耀，榮耀歸於真神；\r\n榮耀，榮耀歸於真神。",
+    "sheet_score_pdf": "",
+    "sheet_score_images": "[]",
+    "num_score_pdf": "",
+    "num_score_xml": "",
+    "category_id": 11,
+    "created_at": "2022-07-09T16:00:00.000000Z",
+    "updated_at": "2023-07-25T07:37:06.000000Z",
+    "status": "PUBLISHED",
+    "history": "<p>「天使佳音」是一首法國傳統讚美詩，由查德維克（James Chadwick, 1813-1882）將其由法文譯為英文歌詞，收錄於 &ldquo;<em>Crown of Je&shy;sus</em>, 1862. &rdquo; 詩歌集。</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>詩歌源自《路加福音》2章14節：「在至高之處榮耀歸與　神，在地上平安歸與他所喜悅的人。〔有古卷作喜悅歸與人〕」正如這經節的出現是耶穌降生時，天上地下歡欣喜悅的情景，所以當在慶祝耶穌誕生時，這首詩歌恰如其分地表現如經上所描繪，也恰如其時地表達了人類因主耶穌所帶來的歡欣與希望。</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>這首旋律曾有由豎琴和鐵琴架構而成主要的伴奏形式，這樣的表現，增添了「天使」與眾不同的特質與樂曲形式。</p>",
+    "youtube_urls": [
+      {
+        "label": "320 - 天使歌唱",
+        "url": "https://www.youtube.com/watch?v=L28fwP-A3fk&list=PLye9rkov_g8CA_oaevJ0TasPUos5L3p_e&index=325&ab_channel=%E7%9C%9F%E8%80%B6%E7%A9%8C%E6%95%99%E6%9C%83"
+      }
+    ],
+    "sheet_score_pdf_url": "",
+    "sheet_score_images_url": [],
+    "num_score_pdf_url": "",
+    "num_score_xml_url": null,
+    "category": {
+      "id": 11,
+      "name": "耶穌降生",
+      "slug": null,
+      "created_at": "2022-07-05T12:00:00.000000Z",
+      "updated_at": "2022-07-05T12:00:00.000000Z"
+    },
+    "tags": [],
+    "composers": [
+      {
+        "id": 458,
+        "name": "Traditional French Melody",
+        "image": null,
+        "introduction": "",
+        "created_at": "2022-07-05T12:00:00.000000Z",
+        "updated_at": "2022-07-05T12:00:00.000000Z",
+        "image_url": null,
+        "pivot": {
+          "hymn_song_id": 325,
+          "artist_id": 458
+        }
+      }
+    ],
+    "lyricists": [
+      {
+        "id": 457,
+        "name": "Traditional French Carol",
+        "image": null,
+        "introduction": "",
+        "created_at": "2022-07-05T12:00:00.000000Z",
+        "updated_at": "2022-07-05T12:00:00.000000Z",
+        "image_url": null,
+        "pivot": {
+          "hymn_song_id": 325,
+          "artist_id": 457
+        }
+      }
+    ],
+    "audio_files": [
+      {
+        "id": 656,
+        "song_id": 325,
+        "file": "uploads/hymn/audio/589f6703600d83dc1178fc140a4a33ff.m4a",
+        "audio_category_id": 3,
+        "created_at": "2022-10-20T01:33:33.000000Z",
+        "updated_at": "2023-02-15T02:51:07.000000Z",
+        "file_url": "assets/audio/pinned/320-piano.m4a",
+        "audio_category": {
+          "id": 3,
+          "name": "鋼琴",
+          "slug": null
+        }
+      },
+      {
+        "id": 657,
+        "song_id": 325,
+        "file": "uploads/hymn/audio/e5340dbff8d9a72c2114b10cad6af51a.mp3",
+        "audio_category_id": 4,
+        "created_at": "2022-10-20T01:33:33.000000Z",
+        "updated_at": "2022-10-20T01:33:33.000000Z",
+        "file_url": "assets/audio/pinned/320-vocal.mp3",
+        "audio_category": {
+          "id": 4,
+          "name": "人聲",
+          "slug": null
+        }
+      }
+    ]
+  },
   "349": {
     "_note": "總會 2026-09-14 改為「奇妙的耶穌」，地方教會尚未統一，沿用舊版「救主正在等候」。舊版音檔已於 2026-10-01 備份至 assets/audio/pinned/（官方路徑保留在各音檔的 file 欄位）。舊版樂譜 PDF 已被官方刪除，找到檔案後可放 assets/score/ 並填回 *_pdf_url。",
     "id": 354,

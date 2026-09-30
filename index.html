@@ -624,9 +624,12 @@ async function renderChanges(){
       for(const h of rec.added   || []) li.push(`<li>➕ 新增　<a href="#/hymn/${encodeURIComponent(h.no)}">${dispNo(h.no)}　${esc(h.name)}</a></li>`);
       for(const h of rec.removed || []) li.push(`<li>➖ 移除　${dispNo(h.no)}　${esc(h.name)}</li>`);
       /* 版本鎖定的詩歌：官方雖已改版，點進去看到的是本站保留的舊版，標示避免混淆 */
-      const pinTag = no => PINNED.has(String(no))
-        ? `<span class="pinnote">本站暫沿用舊版「${esc(PINNED.get(String(no)))}」</span>` : '';
-      for(const c of rec.changed || []) li.push(`<li>✏️ <a href="#/hymn/${encodeURIComponent(c.no)}">${dispNo(c.no)}　${esc(c.name)}</a>：${esc((c.changes||[]).join('；'))}${pinTag(c.no)}</li>`);
+      const pinTag = (no, newName) => {
+        if(!PINNED.has(String(no))) return '';
+        const shown = PINNED.get(String(no));   // 詩名沒變（如重新編曲）就不重複寫
+        return `<span class="pinnote">本站暫沿用舊版${shown !== newName ? `「${esc(shown)}」` : ''}</span>`;
+      };
+      for(const c of rec.changed || []) li.push(`<li>✏️ <a href="#/hymn/${encodeURIComponent(c.no)}">${dispNo(c.no)}　${esc(c.name)}</a>：${esc((c.changes||[]).join('；'))}${pinTag(c.no, c.name)}</li>`);
       body.innerHTML = li.length ? `<ul class="chglist">${li.join('')}</ul>` : '無明細';
     }catch(e){ body.textContent = '讀取明細失敗'; }
   }));
