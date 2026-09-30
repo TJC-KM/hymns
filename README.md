@@ -230,11 +230,13 @@ Token 只存在 Cloudflare，前端完全接觸不到。
 
 #### 3. 替換異常的音檔
 
-1. 音檔放進 `assets/audio/`，建議命名 `{編號}-vocal.mp3`
+> **自製音檔一律使用自訂分類（90–99），即使是拿來取代官方音檔也一樣。** 官方分類（3 鋼琴、4 人聲、6 四部合唱⋯）只留給官方音檔，這樣看按鈕就分得出哪些是官方、哪些是自己上傳的。
+
+1. 音檔放進 `assets/audio/`，檔名用「編號＋分類」，例如 `{編號}-meeting.mp3`（聚會錄音）
 
 > ⚠️ **副檔名一律用小寫**。手機錄音或部分程式匯出的檔案是大寫 `.MP3` / `.M4A`，Windows 不分大小寫所以本機測起來完全正常，**但 GitHub Pages 的伺服器區分大小寫**，線上會 404、按了沒聲音。放檔案後先確認 `git ls-files assets/audio/` 列出的檔名與 overrides 裡寫的完全一致（含大小寫）。
 
-2. 在 overrides 整欄取代 `audio_files`——**注意要保留的官方音檔也得一起寫進去**，否則會消失：
+2. 在 overrides 整欄取代 `audio_files`，把異常的官方音檔拿掉、換上自製音檔——**注意要保留的官方音檔也得一起寫進去**，否則會消失：
 
 ```json
 "62": {
@@ -246,16 +248,18 @@ Token 只存在 Cloudflare，前端完全接觸不到。
       "audio_category": { "id": 3, "name": "鋼琴" }
     },
     {
-      "id": "custom-62-vocal",
-      "file_url": "assets/audio/62-vocal.mp3",
-      "audio_category_id": 4,
-      "audio_category": { "id": 4, "name": "人聲" }
+      "id": "custom-62-meeting",
+      "file_url": "assets/audio/62-meeting.mp3",
+      "audio_category_id": 99,
+      "audio_category": { "id": 99, "name": "聚會" }
     }
   ]
 }
 ```
 
-官方音檔的 `file_url` 可從 `data/hymns.json` 查到。
+上例拿掉了官方異常的「人聲」、保留官方「鋼琴」，自製的「聚會」因為是自訂分類，會排在最前面成為預設播放。官方音檔的 `file_url` 可從 `data/hymns.json` 查到。
+
+若官方音檔沒有問題、只是想多加一個版本，用下一節的 `+` 附加即可，不必整欄取代。
 
 #### 4. 額外增加音檔（不取代官方的）
 
