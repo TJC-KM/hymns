@@ -2,10 +2,10 @@
   "_readme": [
     "手動修改集中在這個檔案，每月自動同步不會覆寫它。",
     "格式：以詩歌編號(no)為 key，例如 \"96\" 或甲乙版 \"51_a\"。",
-    "欄位名稱照官方資料 → 整欄取代，例如 \"lyrics\": [{\"text\":\"第一節…\"}, {\"text\":\"第二節…\"}]（每節一個元素，行與行之間用 \\r\\n）。",
-    "欄位名稱加 + → 附加在官方清單後面，例如 \"audio_files+\": [{\"id\":\"custom-1\",\"file_url\":\"assets/audio/檔名.m4a\",\"audio_category_id\":91,\"audio_category\":{\"id\":91,\"name\":\"詩班錄音\"}}]。",
-    "自製音檔請放 assets/audio/ 資料夾一起 commit（副檔名一律小寫，大寫在 GitHub Pages 會 404）；自訂音檔 id 用字串(custom-1)避免與官方相撞。",
-    "自製音檔一律用自訂分類 audio_category_id 90～99（即使是取代官方音檔也一樣；官方分類 3、4、6… 只留給官方音檔，才分得出來源）；建議從 91 起編，既有的 99（聚會）沿用即可；播放器順序為 四部合唱(6) → 自訂(≥90) → 人聲(4) → 其餘依 id，第一個即預設播放。",
+    "歌詞：欄位名稱照官方資料 → 整欄取代，例如 \"lyrics\": [{\"text\":\"第一節…\"}, {\"text\":\"第二節…\"}]（每節一個元素，行與行之間用 \\r\\n）；\"lyrics_chorus\": \"\" 可清空副歌。",
+    "音檔：一律用 \"audio_files+\" 附加在官方清單後面，例如 \"audio_files+\": [{\"id\":\"custom-96-choir\",\"file_url\":\"assets/audio/96-choir.mp3\",\"audio_category_id\":91,\"audio_category\":{\"id\":91,\"name\":\"詩班錄音\"}}]。不要用不帶 + 的 \"audio_files\"：它會把官方音檔整個換掉，連總會日後補上的四部合唱也一起藏起來。",
+    "自製音檔請放 assets/audio/ 資料夾一起 commit，檔名用「編號-分類」如 62-meeting.mp3（副檔名一律小寫，大寫在 GitHub Pages 會 404）；自訂音檔 id 用字串(custom-62-meeting)避免與官方相撞。",
+    "自製音檔一律用自訂分類 audio_category_id 90～99（官方分類 3、4、6… 只留給官方音檔，才分得出來源）；建議從 91 起編，既有的 99（聚會）沿用即可。播放器順序為 四部合唱(6) → 自訂(≥90) → 人聲(4) → 其餘依 id，第一個即預設播放，所以自製音檔會排在官方人聲前面。",
     "改完可先在本機開網頁確認，若 JSON 語法錯誤頁面會跳紅色提示且整份忽略。"
   ],
   "108": {
@@ -19,13 +19,7 @@
     ]
   },
   "62": {
-    "audio_files": [
-      {
-        "id": 63,
-        "file_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/audio/62.m4a",
-        "audio_category_id": 3,
-        "audio_category": { "id": 3, "name": "鋼琴" }
-      },
+    "audio_files+": [
       {
         "id": "custom-62-meeting",
         "file_url": "assets/audio/62-meeting.mp3",
@@ -35,13 +29,7 @@
     ]
   },
   "341": {
-    "audio_files": [
-      {
-        "id": 698,
-        "file_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/audio/e842f9cd641af7f5bd862e187b49dd11.m4a",
-        "audio_category_id": 3,
-        "audio_category": { "id": 3, "name": "鋼琴" }
-      },
+    "audio_files+": [
       {
         "id": "custom-341-meeting",
         "file_url": "assets/audio/341-meeting.mp3",

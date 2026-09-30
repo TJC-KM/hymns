@@ -228,25 +228,19 @@ Token 只存在 Cloudflare，前端完全接觸不到。
 
 空字串等於「沒有副歌」，網站就不會顯示副歌區塊。
 
-#### 3. 替換異常的音檔
+#### 3. 加入自製音檔（包含取代異常的官方音檔）
 
-> **自製音檔一律使用自訂分類（90–99），即使是拿來取代官方音檔也一樣。** 官方分類（3 鋼琴、4 人聲、6 四部合唱⋯）只留給官方音檔，這樣看按鈕就分得出哪些是官方、哪些是自己上傳的。
+音檔**一律用 `audio_files+` 附加**，不要用不帶 `+` 的 `audio_files`。
 
-1. 音檔放進 `assets/audio/`，檔名用「編號＋分類」，例如 `{編號}-meeting.mp3`（聚會錄音）
+1. 音檔放進 `assets/audio/`，檔名用「編號-分類」，例如 `62-meeting.mp3`（聚會錄音）、`96-choir.mp3`（詩班錄音）
 
 > ⚠️ **副檔名一律用小寫**。手機錄音或部分程式匯出的檔案是大寫 `.MP3` / `.M4A`，Windows 不分大小寫所以本機測起來完全正常，**但 GitHub Pages 的伺服器區分大小寫**，線上會 404、按了沒聲音。放檔案後先確認 `git ls-files assets/audio/` 列出的檔名與 overrides 裡寫的完全一致（含大小寫）。
 
-2. 在 overrides 整欄取代 `audio_files`，把異常的官方音檔拿掉、換上自製音檔——**注意要保留的官方音檔也得一起寫進去**，否則會消失：
+2. 在 overrides 用 `audio_files+` 加進去：
 
 ```json
 "62": {
-  "audio_files": [
-    {
-      "id": 63,
-      "file_url": "https://sacredmusic.tjc.org.tw/storage/uploads/hymn/audio/62.m4a",
-      "audio_category_id": 3,
-      "audio_category": { "id": 3, "name": "鋼琴" }
-    },
+  "audio_files+": [
     {
       "id": "custom-62-meeting",
       "file_url": "assets/audio/62-meeting.mp3",
@@ -257,28 +251,13 @@ Token 只存在 Cloudflare，前端完全接觸不到。
 }
 ```
 
-上例拿掉了官方異常的「人聲」、保留官方「鋼琴」，自製的「聚會」因為是自訂分類，會排在最前面成為預設播放。官方音檔的 `file_url` 可從 `data/hymns.json` 查到。
+- **`audio_category_id` 一律用自訂分類 90–99**，即使是用來取代異常的官方音檔也一樣。官方分類（3 鋼琴、4 人聲、6 四部合唱⋯）只留給官方音檔，看按鈕就分得出哪些是自己上傳的
+- 自訂音檔的 `id` 用字串（如 `custom-62-meeting`），避免與官方主鍵相撞
+- **官方音檔有問題時不需要拿掉它**：自訂分類排在官方人聲前面，加入後自動成為預設播放，異常的官方版本只剩後面一個備選按鈕
 
-若官方音檔沒有問題、只是想多加一個版本，用下一節的 `+` 附加即可，不必整欄取代。
+> **為什麼不用不帶 `+` 的 `audio_files`？** 它會把官方音檔清單整個換成你寫的內容，沒列到的全部消失——包括**總會日後才補上的四部合唱**。四部合唱被藏起來後不會出現在播放器，「有四部合唱就自動標為標準版」的判定也不會生效。用 `+` 附加就沒有這個問題。
 
-#### 4. 額外增加音檔（不取代官方的）
-
-欄位加 `+` 表示附加：
-
-```json
-"96": {
-  "audio_files+": [{
-    "id": "custom-1",
-    "file_url": "assets/audio/96-choir.mp3",
-    "audio_category_id": 91,
-    "audio_category": { "id": 91, "name": "詩班錄音" }
-  }]
-}
-```
-
-自訂音檔的 `id` 用字串避免與官方主鍵相撞；`audio_category_id` 請用 **90–99** 這個自訂區段（見下表）。
-
-#### 5. 音檔分類代碼與播放器順序
+#### 4. 音檔分類代碼與播放器順序
 
 | 順位 | id | 名稱 |
 |------|----|------|
@@ -293,7 +272,7 @@ Token 只存在 Cloudflare，前端完全接觸不到。
 - 程式判斷一律用 `audio_category_id`，不要比對中文名稱
 - 排序邏輯在 `index.html` 的 `tier()` / `rank()`（詩歌內頁渲染處）
 
-#### 6. 手動觸發同步
+#### 5. 手動觸發同步
 
 GitHub → Actions → `sync-hymns` → Run workflow。若 push 失敗，檢查 Settings → Actions → General → Workflow permissions 是否為 **Read and write**。
 
@@ -354,7 +333,7 @@ python -m http.server 8642
 | 畫面下方跳紅色「overrides.json 格式錯誤」 | JSON 語法錯誤（多半是多餘的逗號），用上面的指令驗證 |
 | 曲調註記按了沒反應／顯示儲存失敗 | ① Worker 未部署最新版（狀態名稱不符）② PAT 過期 ③ Cloudflare 服務異常 |
 | 手動改了歌詞但網站沒變 | 改到 `data/hymns.json` 了（會被同步覆寫且被 overrides 遮蔽），應改 `data/overrides.json` |
-| 官方更新了某首但網站看不到 | 該首被 overrides 整欄覆蓋了。查「最近更新」頁確認異動內容，再手動更新 overrides |
+| 官方更新了某首的歌詞但網站看不到 | 該首的歌詞被 overrides 整欄覆蓋了。查「最近更新」頁確認異動內容，再手動更新 overrides（音檔用 `+` 附加，官方新增的音檔一定會出現） |
 | 音檔播不出來 | 檢查 `file_url` 路徑；自製音檔要確認已 commit 進 repo |
 | 自製音檔本機正常但線上沒聲音 | **十之八九是檔名大小寫不符**（例如檔案是 `.MP3`、overrides 寫 `.mp3`）。GitHub Pages 區分大小寫，Windows 不會。用 `git ls-files assets/audio/` 核對 |
 | 推送 GitHub 被拒（403） | 帳號權限不足。多帳號環境需將帳號綁進 remote 網址：`git remote set-url origin https://<帳號>@github.com/TJC-KM/hymns.git` |
@@ -364,7 +343,7 @@ python -m http.server 8642
 ## 已知限制
 
 - **`data/hymns.json` 約 2.7MB 一次載入**：首次開啟需等待較久。若日後嫌慢，可在 `sync.mjs` 另產一份精簡索引給列表頁，或拆成每首一檔
-- **overrides 是整欄覆蓋**：被覆蓋的欄位不會反映官方後續更新，需靠「最近更新」頁人工察覺
+- **歌詞覆蓋是整欄取代**：被覆蓋的 `lyrics` / `lyrics_chorus` 不會反映官方後續更新，需靠「最近更新」頁人工察覺。音檔一律用 `+` 附加，沒有這個問題
 - **音檔與樂譜直連官方伺服器**：等於使用對方頻寬，流量大時應考慮鏡像
 - **曲調註記無權限控管**：任何訪客都能修改。防護是 Worker 只接受這一種操作、且 git 歷史可完整還原。若日後遭亂改，可加共用密碼
 - **效能監控只反映本網頁**：無法取得整台電腦的真實 CPU／記憶體用量
