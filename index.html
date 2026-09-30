@@ -156,6 +156,9 @@
   .chg summary b{color:var(--ink);font-weight:500}
   .chglist{margin:10px 0 4px;padding-left:20px;color:var(--ink-soft);font-size:14px;line-height:1.9}
   .chglist a{color:var(--accent)}
+  .pinnote{display:inline-block;margin-left:8px;font-size:12px;line-height:1.5;padding:1px 9px;
+    border-radius:20px;background:#F5E3D7;color:#A8542B;white-space:nowrap}
+  @media (prefers-color-scheme: dark){ .pinnote{background:#33261E;color:#D89A6E} }
 
   /* mode toggle */
   .modebtn{display:inline-flex;align-items:center;gap:6px;cursor:pointer;font-size:13px;
@@ -277,6 +280,7 @@ window.addEventListener('resize', () => {
   if(!localStorage.getItem(MODE_KEY)) applyMode();
 });
 let HYMNS = [], BY_NO = new Map(), TUNE = {};
+let PINNED = new Map();   // 版本鎖定的詩歌：編號 → 本站顯示的（舊版）詩名
 let ui = { q:'', cat:'全部' };   // list state kept across renders
 
 const esc = s => (s||'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -324,6 +328,7 @@ async function applyPins(){
     const h = Object.fromEntries(Object.entries(rec).filter(([k]) => !k.startsWith('_')));
     HYMNS[i] = h;
     BY_NO.set(String(no), h);
+    PINNED.set(String(no), h.name);
   }
 }
 
@@ -618,7 +623,10 @@ async function renderChanges(){
       const li = [];
       for(const h of rec.added   || []) li.push(`<li>➕ 新增　<a href="#/hymn/${encodeURIComponent(h.no)}">${dispNo(h.no)}　${esc(h.name)}</a></li>`);
       for(const h of rec.removed || []) li.push(`<li>➖ 移除　${dispNo(h.no)}　${esc(h.name)}</li>`);
-      for(const c of rec.changed || []) li.push(`<li>✏️ <a href="#/hymn/${encodeURIComponent(c.no)}">${dispNo(c.no)}　${esc(c.name)}</a>：${esc((c.changes||[]).join('；'))}</li>`);
+      /* 版本鎖定的詩歌：官方雖已改版，點進去看到的是本站保留的舊版，標示避免混淆 */
+      const pinTag = no => PINNED.has(String(no))
+        ? `<span class="pinnote">本站暫沿用舊版「${esc(PINNED.get(String(no)))}」</span>` : '';
+      for(const c of rec.changed || []) li.push(`<li>✏️ <a href="#/hymn/${encodeURIComponent(c.no)}">${dispNo(c.no)}　${esc(c.name)}</a>：${esc((c.changes||[]).join('；'))}${pinTag(c.no)}</li>`);
       body.innerHTML = li.length ? `<ul class="chglist">${li.join('')}</ul>` : '無明細';
     }catch(e){ body.textContent = '讀取明細失敗'; }
   }));
