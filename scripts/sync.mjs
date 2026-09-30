@@ -84,8 +84,9 @@ if (hasChanges) {
   for (const c of changed) block.push(`- ✏️ ${c.no}　${c.name}：${c.changes.join('；')}`);
   block.push('');
   const HEAD = '# 更新紀錄\n\n';
+  // 先統一成 LF：Windows 本機執行時 git 會把工作檔轉成 CRLF，不統一就認不出舊標題而重複
   const body = existsSync('CHANGELOG.md')
-    ? (await readFile('CHANGELOG.md', 'utf8')).replace(HEAD, '') : '';
+    ? (await readFile('CHANGELOG.md', 'utf8')).replace(/\r\n/g, '\n').replace(HEAD, '') : '';
   await writeFile('CHANGELOG.md', HEAD + block.join('\n') + '\n' + body);
 }
 
