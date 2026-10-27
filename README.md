@@ -107,7 +107,7 @@
 ```mermaid
 flowchart TD
     API["官方 API<br/>sacredmusic.tjc.org.tw"]
-    WF["GitHub Actions<br/>每月 1 號 04:00"]
+    WF["GitHub Actions<br/>每月 2 號 04:00（台灣）"]
     HJ["data/hymns.json<br/>官方資料（會被覆寫）"]
     PN["data/pinned.json<br/>鎖定舊版（整首）"]
     OV["data/overrides.json<br/>手動修正（永久保留）"]
@@ -165,10 +165,11 @@ Token 只存在 Cloudflare，前端完全接觸不到。
 
 ### 自動同步機制
 
-- 每月 1 號台灣時間 04:00 執行（`.github/workflows/sync-hymns.yml`），也可在 Actions 分頁手動觸發
+- 每月 **2 號**台灣時間 04:00 執行（`.github/workflows/sync-hymns.yml` 寫的是 UTC 每月 1 號 20:00，換算成台灣已是隔天），也可在 Actions 分頁手動觸發
 - `scripts/sync.mjs` 抓取官方列表端點一次取得全部 474 首，依 `id` 排序後覆寫 `data/hymns.json`
 - 與上一版逐欄比對，產生 `data/changes/{日期}.json`、`data/changes/index.json` 與 `CHANGELOG.md`
-- **有變動才 commit**；API 回傳空資料時中止，不會用空資料覆蓋
+- 官方資料**有變動才產生變更紀錄**（`data/changes/`、`CHANGELOG.md`）；API 回傳空資料時中止，不會用空資料覆蓋
+- 但 `data/meta.json` 的同步時間每次都會更新，所以**每次執行都會留下一筆 commit**（例如 `sync +0 ~0 -0`）。這也讓 repo 每月都有活動，排程不會被 GitHub 判定閒置
 
 ### 效能監控的原理
 
@@ -293,7 +294,7 @@ Token 只存在 Cloudflare，前端完全接觸不到。
 
 GitHub → Actions → `sync-hymns` → Run workflow。若 push 失敗，檢查 Settings → Actions → General → Workflow permissions 是否為 **Read and write**。
 
-> GitHub 會停用閒置超過 60 天的排程。若長期沒有任何 commit，需到 Actions 頁面重新啟用。
+> GitHub 會停用閒置超過 60 天的排程。正常情況下每月同步本身就會留一筆 commit，不會碰到；**同步連續失敗兩個月以上**才可能被停用，需到 Actions 頁面重新啟用。
 
 ### ⚠️ 編輯 JSON 的常見錯誤
 
