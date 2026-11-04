@@ -38,6 +38,16 @@
       }
     ]
   },
+  "228": {
+    "audio_files+": [
+      {
+        "id": "custom-228-meeting",
+        "file_url": "assets/audio/228-meeting.mp3",
+        "audio_category_id": 99,
+        "audio_category": { "id": 99, "name": "聚會" }
+      }
+    ]
+  },
   "345": {
     "lyrics": [
       {
