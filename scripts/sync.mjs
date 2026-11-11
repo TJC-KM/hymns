@@ -94,27 +94,53 @@ await finish(summary, hasChanges);
 console.log(`${summary} ${hasChanges ? '(有變動)' : '(無變動)'}`);
 
 // ---------------- helpers ----------------
-function audioCats(h) {
+function audioMap(h) {
   const m = new Map();
-  for (const a of h.audio_files || []) m.set(a.id, a.audio_category?.name ?? String(a.audio_category_id));
+  for (const a of h.audio_files || [])
+    m.set(a.id, { cat: a.audio_category?.name ?? String(a.audio_category_id), file: a.file });
   return m;
 }
-function scoreSig(h) {
-  return JSON.stringify([h.sheet_score_pdf, h.num_score_pdf, h.num_score_xml, h.sheet_score_images]);
+function sig(...vals) {
+  return JSON.stringify(vals.map(v => v ?? ''));
 }
+function names(list) {
+  return (list || []).map(a => a.name).join('、') || '（無）';
+}
+function catName(h) {
+  return h.category?.name ?? String(h.category_id ?? '（無）');
+}
+// 只比網站看得到的欄位；*_url 由路徑組成，不另外比
 function diffHymn(o, n) {
   const changes = [];
   if (o.name !== n.name) changes.push(`名稱:「${o.name}」→「${n.name}」`);
   if (o.status !== n.status) changes.push(`狀態:${o.status}→${n.status}`);
+  if (o.category_id !== n.category_id) changes.push(`分類:「${catName(o)}」→「${catName(n)}」`);
+  if (names(o.lyricists) !== names(n.lyricists))
+    changes.push(`作詞:「${names(o.lyricists)}」→「${names(n.lyricists)}」`);
+  if (names(o.composers) !== names(n.composers))
+    changes.push(`作曲:「${names(o.composers)}」→「${names(n.composers)}」`);
   if (JSON.stringify(o.lyrics) !== JSON.stringify(n.lyrics)) changes.push('歌詞變更');
   if ((o.lyrics_chorus || '') !== (n.lyrics_chorus || '')) changes.push('副歌變更');
-  if (scoreSig(o) !== scoreSig(n)) changes.push('樂譜變更');
+  if ((o.history || '') !== (n.history || '')) changes.push('背景介紹變更');
+  if (sig(o.num_score_pdf, o.num_score_xml) !== sig(n.num_score_pdf, n.num_score_xml))
+    changes.push('簡譜變更');
+  if (sig(o.sheet_score_pdf, o.sheet_score_images) !== sig(n.sheet_score_pdf, n.sheet_score_images))
+    changes.push('五線譜變更');
 
-  const om = audioCats(o), nm = audioCats(n);
-  const addA = [...nm].filter(([id]) => !om.has(id)).map(([, c]) => c);
-  const delA = [...om].filter(([id]) => !nm.has(id)).map(([, c]) => c);
+  // 音檔以 id 對應：id 不見是移除、多出來是新增；同一個 id 換了檔案是更換
+  const om = audioMap(o), nm = audioMap(n);
+  const addA = [], delA = [], repA = [], catA = [];
+  for (const [id, a] of nm) {
+    const old = om.get(id);
+    if (!old) { addA.push(a.cat); continue; }
+    if (old.file !== a.file) repA.push(a.cat);
+    if (old.cat !== a.cat) catA.push(`${old.cat}→${a.cat}`);
+  }
+  for (const [id, a] of om) if (!nm.has(id)) delA.push(a.cat);
   if (addA.length) changes.push('新增音檔:' + addA.join('、'));
   if (delA.length) changes.push('移除音檔:' + delA.join('、'));
+  if (repA.length) changes.push('更換音檔:' + repA.join('、'));
+  if (catA.length) changes.push('音檔分類:' + catA.join('、'));
 
   if (JSON.stringify(o.youtube_urls) !== JSON.stringify(n.youtube_urls)) changes.push('YouTube 變更');
   if (!changes.length && o.updated_at !== n.updated_at)
