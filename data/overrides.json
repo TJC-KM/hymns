@@ -8,6 +8,16 @@
     "自製音檔一律用自訂分類 audio_category_id 90～99（官方分類 3、4、6… 只留給官方音檔，才分得出來源）；建議從 91 起編，既有的 99（聚會）沿用即可。播放器順序為 四部合唱(6) → 自訂(≥90) → 人聲(4) → 其餘依 id，第一個即預設播放，所以自製音檔會排在官方人聲前面。",
     "改完可先在本機開網頁確認，若 JSON 語法錯誤頁面會跳紅色提示且整份忽略。"
   ],
+  "27": {
+    "audio_files+": [
+      {
+        "id": "custom-27-meeting",
+        "file_url": "assets/audio/27-meeting.mp3",
+        "audio_category_id": 99,
+        "audio_category": { "id": 99, "name": "聚會" }
+      }
+    ]
+  },
   "108": {
     "audio_files+": [
       {
